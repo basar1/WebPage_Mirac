@@ -867,10 +867,11 @@
       image.classList.remove("is-broken");
       if (thumb && thumb.getAttribute("src")) {
         image.src = thumb.getAttribute("src");
-        image.alt = titleEl.textContent;
+        image.alt = "Hançerlioğlu - " + titleEl.textContent.trim();
         if (thumb.classList.contains("is-broken")) image.classList.add("is-broken");
       } else {
         image.removeAttribute("src");
+        image.alt = "Hançerlioğlu - " + titleEl.textContent.trim();
         image.classList.add("is-broken");
       }
 
