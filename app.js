@@ -32,6 +32,15 @@
   var doc = document;
   var body = doc.body;
 
+  function label(key, fallback) {
+    var api = window.HancerliogluI18n;
+    if (api) {
+      var value = api.t(key);
+      if (value) return value;
+    }
+    return fallback;
+  }
+
   var hasGSAP = typeof window.gsap !== "undefined" && typeof window.ScrollTrigger !== "undefined";
   var hasLenis = typeof window.Lenis !== "undefined";
   var reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -649,7 +658,7 @@
       menu.classList.add("is-open");
       menu.setAttribute("aria-hidden", "false");
       toggle.setAttribute("aria-expanded", "true");
-      toggleLabel.textContent = "Kapat";
+      toggleLabel.textContent = label("nav.close", "Kapat");
       body.classList.add("is-menu-open");
       if (lenis) lenis.stop();
       gsap.to(header, { yPercent: 0, duration: 0.4, ease: "power3.out", overwrite: "auto" });
@@ -659,7 +668,7 @@
     function close() {
       menuIsOpen = false;
       toggle.setAttribute("aria-expanded", "false");
-      toggleLabel.textContent = "Menü";
+      toggleLabel.textContent = label("nav.menu", "Menü");
       body.classList.remove("is-menu-open");
       if (lenis) lenis.start();
       tl.reverse();
@@ -682,6 +691,11 @@
 
     window.addEventListener("resize", function () {
       if (menuIsOpen && window.innerWidth > 1024) close();
+    });
+
+    doc.addEventListener("i18n:change", function () {
+      if (!toggleLabel) return;
+      toggleLabel.textContent = menuIsOpen ? label("nav.close", "Kapat") : label("nav.menu", "Menü");
     });
   }
 
@@ -1244,7 +1258,7 @@
         menu.classList.toggle("is-open", menuIsOpen);
         menu.setAttribute("aria-hidden", menuIsOpen ? "false" : "true");
         toggle.setAttribute("aria-expanded", menuIsOpen ? "true" : "false");
-        toggleLabel.textContent = menuIsOpen ? "Kapat" : "Menü";
+        toggleLabel.textContent = menuIsOpen ? label("nav.close", "Kapat") : label("nav.menu", "Menü");
         body.classList.toggle("is-menu-open", menuIsOpen);
       });
 
@@ -1254,7 +1268,7 @@
           menu.classList.remove("is-open");
           menu.setAttribute("aria-hidden", "true");
           toggle.setAttribute("aria-expanded", "false");
-          toggleLabel.textContent = "Menü";
+          toggleLabel.textContent = label("nav.menu", "Menü");
           body.classList.remove("is-menu-open");
         });
       });
@@ -1341,5 +1355,16 @@
     });
   }
 
-  boot();
+  var i18n = window.HancerliogluI18n;
+  if (i18n && i18n.ready) i18n.ready.then(boot);
+  else boot();
+
+  doc.addEventListener("i18n:change", function () {
+    var refresh = function () {
+      rebuildSplits();
+      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+    };
+    if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(refresh);
+    else refresh();
+  });
 })();

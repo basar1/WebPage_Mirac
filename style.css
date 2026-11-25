@@ -178,7 +178,7 @@ figure {
 .skip-link {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  inset-inline-start: 1rem;
   z-index: 200;
   padding: 0.75rem 1.25rem;
   background-color: var(--color-gold);
@@ -650,7 +650,7 @@ p {
   height: 1px;
   background-color: var(--color-gold);
   transform: scaleX(0);
-  transform-origin: right center;
+  transform-origin: inline-end center;
   transition: transform 0.55s var(--ease-out-soft);
 }
 
@@ -1263,7 +1263,7 @@ p {
 .timeline__content {
   grid-row: 1;
   grid-column: 1;
-  text-align: right;
+  text-align: end;
 }
 
 .timeline__media {
@@ -1275,7 +1275,7 @@ p {
 
 .timeline__entry:nth-child(even) .timeline__content {
   grid-column: 3;
-  text-align: left;
+  text-align: start;
 }
 
 .timeline__entry:nth-child(even) .timeline__media {
@@ -1305,7 +1305,7 @@ p {
 }
 
 .timeline__entry:nth-child(odd) .timeline__text {
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 
@@ -2040,7 +2040,7 @@ p {
   .timeline__entry:nth-child(even) .timeline__content {
     grid-column: 2;
     grid-row: 1;
-    text-align: left;
+    text-align: start;
   }
 
   .timeline__media,
@@ -2052,7 +2052,7 @@ p {
   }
 
   .timeline__entry:nth-child(odd) .timeline__text {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
 
   .footer__columns {
@@ -2137,3 +2137,160 @@ p {
     display: none;
   }
 }
+
+/* ==========================================================================
+   20. LANGUAGE SWITCHER + RTL
+   ========================================================================== */
+
+html.is-i18n-wait {
+  background-color: #050505;
+}
+
+html.is-i18n-wait body {
+  visibility: hidden;
+}
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 0 0 auto;
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.lang--menu {
+  margin-top: clamp(1.5rem, 4vh, 2.5rem);
+}
+
+.lang__btn {
+  padding: 0.15rem 0;
+  border: 0;
+  background: none;
+  color: var(--color-text-dim);
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+  transition: color 0.45s var(--ease-out-soft);
+}
+
+.lang__btn.is-active,
+.lang__btn:hover {
+  color: var(--color-gold);
+}
+
+.lang__sep {
+  width: 1px;
+  height: 0.7em;
+  background-color: var(--color-line);
+}
+
+[data-bidi="ltr"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] body {
+  font-family: "Tajawal", var(--font-body);
+  line-height: 1.85;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .hero__title,
+html[dir="rtl"] .cover__title,
+html[dir="rtl"] .item__name,
+html[dir="rtl"] .category__title,
+html[dir="rtl"] .philosophy__statement {
+  font-family: "Cairo", var(--font-display);
+}
+
+html[dir="rtl"] .timeline__year,
+html[dir="rtl"] .legacy__stat-value,
+html[dir="rtl"] .hero__fact-value,
+html[dir="rtl"] .visit__hour-value,
+html[dir="rtl"] .header__meta-year,
+html[dir="rtl"] .preloader__counter,
+html[dir="rtl"] .drawer__counter,
+html[dir="rtl"] .item__index,
+html[dir="rtl"] .catnav__index,
+html[dir="rtl"] .catnav__count,
+html[dir="rtl"] .craft__panel-index {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .hero__overline,
+html[dir="rtl"] .header__brand-mark,
+html[dir="rtl"] .footer__mark,
+html[dir="rtl"] .preloader__mark,
+html[dir="rtl"] .u-sr-only {
+  font-family: var(--font-display);
+}
+
+html[dir="rtl"] .section-label__text,
+html[dir="rtl"] .header__link,
+html[dir="rtl"] .menu__link,
+html[dir="rtl"] .footer__column-title,
+html[dir="rtl"] .catnav__label-text,
+html[dir="rtl"] .cover__english,
+html[dir="rtl"] .item__tag,
+html[dir="rtl"] .lang,
+html[dir="rtl"] .visit__directions,
+html[dir="rtl"] .house__link,
+html[dir="rtl"] .item__cue,
+html[dir="rtl"] .preloader__tagline {
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+html[dir="rtl"] .header__list {
+  gap: clamp(0.7rem, 1.5vw, 1.6rem);
+}
+
+html[dir="rtl"] .split__line {
+  padding-bottom: 0.34em;
+  margin-bottom: -0.18em;
+}
+
+html[dir="rtl"] .hero__title {
+  max-width: min(9em, 100%);
+  line-height: 1.12;
+}
+
+html[dir="rtl"] .house__link-arrow,
+html[dir="rtl"] .cover__back-arrow,
+html[dir="rtl"] .item__cue-arrow {
+  scale: -1 1;
+}
+
+html[dir="rtl"] .house__link:hover .house__link-arrow {
+  transform: translateX(-0.5rem);
+}
+
+html[dir="rtl"] .cover__back:hover .cover__back-arrow {
+  transform: translateX(0.375rem);
+}
+
+/* The pinned tray is measured in physical pixels by GSAP. Keep its track
+   left-to-right so the scrub stays valid, and let the copy itself read RTL. */
+html[dir="rtl"] .has-motion .craft__track {
+  direction: ltr;
+}
+
+html[dir="rtl"] .craft__intro,
+html[dir="rtl"] .craft__panel-body,
+html[dir="rtl"] .craft__quote {
+  direction: rtl;
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] .timeline__spine {
+    left: auto;
+    right: 5px;
+  }
+}
+

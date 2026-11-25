@@ -2,13 +2,23 @@
 <html lang="tr" class="no-js">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      var lang = "tr";
+      try { lang = localStorage.getItem("hancerlioglu-lang") || "tr"; } catch (error) {}
+      if (lang !== "en" && lang !== "ar") lang = "tr";
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      if (lang !== "tr") document.documentElement.classList.add("is-i18n-wait");
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050505">
   <meta name="color-scheme" content="dark">
 
-  <title>Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli</title>
-  <meta name="description" content="Hançerlioğlu koleksiyonu: katmer, künefe, kadayıf, baklava, dondurma ve kaymak. 1995’ten beri Erdemli’de, elde tutulan kırk iki eser.">
-  <meta name="keywords" content="Hançerlioğlu koleksiyon, Hançerlioğlu katmer, Hançerlioğlu künefe, Hançerlioğlu baklava, Erdemli tatlı, kadayıf, dondurma, kaymak">
+  <title data-i18n="meta.collectionTitle">Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli</title>
+  <meta name="description" data-i18n-content="meta.collectionDescription" content="Hançerlioğlu koleksiyonu: katmer, künefe, kadayıf, baklava, dondurma ve kaymak. 1995’ten beri Erdemli’de, elde tutulan kırk iki eser.">
+  <meta name="keywords" data-i18n-content="meta.collectionKeywords" content="Hançerlioğlu koleksiyon, Hançerlioğlu katmer, Hançerlioğlu künefe, Hançerlioğlu baklava, Erdemli tatlı, kadayıf, dondurma, kaymak">
   <meta name="author" content="Hançerlioğlu">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,16 +30,16 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hançerlioğlu">
   <meta property="og:url" content="https://www.hancerlioglu.shop/collection.html">
-  <meta property="og:title" content="Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli">
-  <meta property="og:description" content="Yedi disiplinde kırk iki eser. 1995’ten beri Erdemli’de, elde. Hançerlioğlu resmi koleksiyonu.">
+  <meta property="og:title" data-i18n-content="meta.collectionTitle" content="Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli">
+  <meta property="og:description" data-i18n-content="meta.collectionDescriptionShort" content="Yedi disiplinde kırk iki eser. 1995’ten beri Erdemli’de, elde. Hançerlioğlu resmi koleksiyonu.">
   <meta property="og:image" content="https://www.hancerlioglu.shop/assets/collection/logo.png">
-  <meta property="og:image:alt" content="Hançerlioğlu logosu">
+  <meta property="og:image:alt" data-i18n-content="meta.logo" content="Hançerlioğlu logosu">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli">
-  <meta name="twitter:description" content="Yedi disiplinde kırk iki eser. 1995’ten beri Erdemli’de, elde. Hançerlioğlu resmi koleksiyonu.">
+  <meta name="twitter:title" data-i18n-content="meta.collectionTitle" content="Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli">
+  <meta name="twitter:description" data-i18n-content="meta.collectionDescriptionShort" content="Yedi disiplinde kırk iki eser. 1995’ten beri Erdemli’de, elde. Hançerlioğlu resmi koleksiyonu.">
   <meta name="twitter:image" content="https://www.hancerlioglu.shop/assets/collection/logo.png">
-  <meta name="twitter:image:alt" content="Hançerlioğlu logosu">
+  <meta name="twitter:image:alt" data-i18n-content="meta.logo" content="Hançerlioğlu logosu">
 
   <link rel="icon" href="assets/collection/logo.png" type="image/png">
 
@@ -118,6 +128,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script defer src="i18n.js"></script>
   <script defer src="collection.js"></script>
 
   <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -152,15 +163,15 @@
 
 <body class="page page--collection is-loading">
 
-  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">İçeriğe geç</a>
 
   <!-- ============================================================
        PRELOADER
        ============================================================ -->
-  <div class="preloader" id="preloader" role="progressbar" aria-label="Yükleniyor" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="preloader" id="preloader" role="progressbar" data-i18n-aria-label="preloader.loading" aria-label="Yükleniyor" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="preloader__inner">
       <p class="preloader__mark">Hançerlioğlu</p>
-      <p class="preloader__tagline">Ustalık Eserleri &middot; Başyapıtlar</p>
+      <p class="preloader__tagline" data-i18n="preloader.collection">Ustalık Eserleri &middot; Başyapıtlar</p>
       <div class="preloader__counter">
         <span class="preloader__number" id="preloaderNumber">0</span><span class="preloader__percent">%</span>
       </div>
@@ -190,25 +201,33 @@
        ============================================================ -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a class="header__brand" href="index.html" data-cursor="link" aria-label="Hançerlioğlu — ana sayfa">
+      <a class="header__brand" href="index.html" data-cursor="link" data-i18n-aria-label="nav.home" aria-label="Hançerlioğlu — ana sayfa">
         <span class="header__brand-mark">Hançerlioğlu</span>
         <span class="header__brand-sub">Erdemli</span>
       </a>
 
-      <nav class="header__nav" aria-label="Ana menü">
+      <nav class="header__nav" data-i18n-aria-label="nav.primary" aria-label="Ana menü">
         <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="index.html#legacy" data-cursor="link"><span class="header__link-index">01</span><span class="header__link-label">Kurucu</span></a></li>
-          <li class="header__item"><a class="header__link" href="index.html#heritage" data-cursor="link"><span class="header__link-index">02</span><span class="header__link-label">Tarihçe</span></a></li>
-          <li class="header__item"><a class="header__link" href="index.html#craft" data-cursor="link"><span class="header__link-index">03</span><span class="header__link-label">Zanaat</span></a></li>
-          <li class="header__item"><a class="header__link header__link--current" href="collection.html" aria-current="page" data-cursor="link"><span class="header__link-index">04</span><span class="header__link-label">Koleksiyon</span></a></li>
-          <li class="header__item"><a class="header__link" href="index.html#house" data-cursor="link"><span class="header__link-index">05</span><span class="header__link-label">Ev</span></a></li>
+          <li class="header__item"><a class="header__link" href="index.html#legacy" data-cursor="link"><span class="header__link-index">01</span><span class="header__link-label" data-i18n="nav.founder">Kurucu</span></a></li>
+          <li class="header__item"><a class="header__link" href="index.html#heritage" data-cursor="link"><span class="header__link-index">02</span><span class="header__link-label" data-i18n="nav.history">Tarihçe</span></a></li>
+          <li class="header__item"><a class="header__link" href="index.html#craft" data-cursor="link"><span class="header__link-index">03</span><span class="header__link-label" data-i18n="nav.craft">Zanaat</span></a></li>
+          <li class="header__item"><a class="header__link header__link--current" href="collection.html" aria-current="page" data-cursor="link"><span class="header__link-index">04</span><span class="header__link-label" data-i18n="nav.collection">Koleksiyon</span></a></li>
+          <li class="header__item"><a class="header__link" href="index.html#house" data-cursor="link"><span class="header__link-index">05</span><span class="header__link-label" data-i18n="nav.house">Ev</span></a></li>
         </ul>
       </nav>
 
-      <p class="header__meta">Kur. <span class="header__meta-year">1995</span></p>
+      <div class="lang" role="group" data-i18n-aria-label="lang.group" aria-label="Dil">
+        <button class="lang__btn is-active" type="button" data-lang="tr" aria-pressed="true" data-cursor="link">TR</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" data-cursor="link">EN</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false" data-cursor="link">AR</button>
+      </div>
+
+      <p class="header__meta"><span data-i18n="nav.established">Kur.</span> <span class="header__meta-year" data-bidi="ltr">1995</span></p>
 
       <button class="header__toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menu" data-cursor="link">
-        <span class="header__toggle-label" data-menu-label="open">Menü</span>
+        <span class="header__toggle-label" data-menu-label="open" data-i18n="nav.menu">Menü</span>
         <span class="header__toggle-lines" aria-hidden="true"><span></span><span></span></span>
       </button>
     </div>
@@ -219,15 +238,22 @@
        ============================================================ -->
   <div class="menu" id="menu" aria-hidden="true">
     <div class="menu__backdrop"></div>
-    <nav class="menu__inner" aria-label="Menü">
+    <nav class="menu__inner" data-i18n-aria-label="nav.menu" aria-label="Menü">
       <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="index.html#legacy" data-menu-link><span class="menu__link-index">01</span><span class="menu__link-text">Kurucu</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="index.html#heritage" data-menu-link><span class="menu__link-index">02</span><span class="menu__link-text">Tarihçe</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="index.html#craft" data-menu-link><span class="menu__link-index">03</span><span class="menu__link-text">Zanaat</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="collection.html" aria-current="page" data-menu-link><span class="menu__link-index">04</span><span class="menu__link-text">Koleksiyon</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="index.html#house" data-menu-link><span class="menu__link-index">05</span><span class="menu__link-text">Ev</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html#legacy" data-menu-link><span class="menu__link-index">01</span><span class="menu__link-text" data-i18n="nav.founder">Kurucu</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html#heritage" data-menu-link><span class="menu__link-index">02</span><span class="menu__link-text" data-i18n="nav.history">Tarihçe</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html#craft" data-menu-link><span class="menu__link-index">03</span><span class="menu__link-text" data-i18n="nav.craft">Zanaat</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="collection.html" aria-current="page" data-menu-link><span class="menu__link-index">04</span><span class="menu__link-text" data-i18n="nav.collection">Koleksiyon</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html#house" data-menu-link><span class="menu__link-index">05</span><span class="menu__link-text" data-i18n="nav.house">Ev</span></a></li>
       </ul>
-      <p class="menu__note">Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin</p>
+      <div class="lang lang--menu" role="group" data-i18n-aria-label="lang.group" aria-label="Dil">
+        <button class="lang__btn is-active" type="button" data-lang="tr" aria-pressed="true" data-cursor="link">TR</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" data-cursor="link">EN</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false" data-cursor="link">AR</button>
+      </div>
+      <p class="menu__note" data-bidi="ltr" data-i18n="nav.address">Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin</p>
     </nav>
   </div>
 
@@ -253,41 +279,41 @@
         <p class="cover__overline" data-cover="overline">
           <a class="cover__back" href="index.html" data-cursor="link">
             <span class="cover__back-arrow" aria-hidden="true">←</span>
-            <span>Ev</span>
+            <span data-i18n="nav.house">Ev</span>
           </a>
           <span class="cover__overline-rule" aria-hidden="true"></span>
-          <span>Katalog &middot; MMXXVI</span>
+          <span data-i18n="cover.catalog">Katalog &middot; MMXXVI</span>
         </p>
 
         <h1 class="cover__title" id="coverTitle" data-cover="title">
           <span class="u-sr-only">Hançerlioğlu</span>
-          <span class="split__line"><span class="split__line-inner">Ustalık</span></span>
-          <span class="split__line"><span class="split__line-inner"><em>Eserleri</em></span></span>
+          <span class="split__line"><span class="split__line-inner" data-i18n="cover.line1">Ustalık</span></span>
+          <span class="split__line"><span class="split__line-inner" data-i18n-html="cover.line2"><em>Eserleri</em></span></span>
         </h1>
 
-        <p class="cover__english" data-cover="english">Başyapıtlar</p>
+        <p class="cover__english" data-cover="english" data-i18n="cover.english">Başyapıtlar</p>
 
-        <p class="cover__lede" data-cover="lede">Erdemli bu tatlıları icat ettiğini söylemez; onları devralır ve elinden bırakmaz. Aşağıda evin bütün pratiği durur — yaprak, tel, ateş ve soğuk — günün onları kurduğu sırayla, kurulduğu gibi.</p>
+        <p class="cover__lede" data-cover="lede" data-i18n="cover.lede">Erdemli bu tatlıları icat ettiğini söylemez; onları devralır ve elinden bırakmaz. Aşağıda evin bütün pratiği durur — yaprak, tel, ateş ve soğuk — günün onları kurduğu sırayla, kurulduğu gibi.</p>
       </div>
 
       <div class="cover__footer">
         <dl class="cover__facts" data-cover="facts">
           <div class="cover__fact">
-            <dt class="cover__fact-label">Disiplinler</dt>
-            <dd class="cover__fact-value">Yedi</dd>
+            <dt class="cover__fact-label" data-i18n="cover.disciplines">Disiplinler</dt>
+            <dd class="cover__fact-value" data-i18n="cover.seven">Yedi</dd>
           </div>
           <div class="cover__fact">
-            <dt class="cover__fact-label">Eser</dt>
-            <dd class="cover__fact-value">Kırk iki</dd>
+            <dt class="cover__fact-label" data-i18n="cover.works">Eser</dt>
+            <dd class="cover__fact-value" data-i18n="cover.fortytwo">Kırk iki</dd>
           </div>
           <div class="cover__fact">
-            <dt class="cover__fact-label">Atölye</dt>
+            <dt class="cover__fact-label" data-i18n="cover.workshop">Atölye</dt>
             <dd class="cover__fact-value">Erdemli</dd>
           </div>
         </dl>
 
         <p class="cover__cue" data-cover="cue">
-          <span class="cover__cue-label">Dizine geçin</span>
+          <span class="cover__cue-label" data-i18n="cover.cue">Dizine geçin</span>
           <span class="cover__cue-line" aria-hidden="true"><span class="cover__cue-dot"></span></span>
         </p>
       </div>
@@ -301,9 +327,9 @@
 
         <!-- ---------- Left: sticky category index ---------- -->
         <aside class="collection__aside">
-          <nav class="catnav" id="catnav" aria-label="Kategoriler">
+          <nav class="catnav" id="catnav" data-i18n-aria-label="catnav.aria" aria-label="Kategoriler">
             <p class="catnav__label">
-              <span class="catnav__label-text">Dizin</span>
+              <span class="catnav__label-text" data-i18n="catnav.label">Dizin</span>
               <span class="catnav__label-rule" aria-hidden="true"></span>
             </p>
 
@@ -311,55 +337,55 @@
               <li class="catnav__item">
                 <a class="catnav__link" href="#katmerler" data-catnav="katmerler" data-cursor="link">
                   <span class="catnav__index">01</span>
-                  <span class="catnav__name">Katmerler</span>
+                  <span class="catnav__name" data-i18n="cat.katmer">Katmerler</span>
                   <span class="catnav__count">13</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#kunefeler" data-catnav="kunefeler" data-cursor="link">
                   <span class="catnav__index">02</span>
-                  <span class="catnav__name">Künefeler</span>
+                  <span class="catnav__name" data-i18n="cat.kune">Künefeler</span>
                   <span class="catnav__count">09</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#kadayiflar" data-catnav="kadayiflar" data-cursor="link">
                   <span class="catnav__index">03</span>
-                  <span class="catnav__name">Kadayıflar</span>
+                  <span class="catnav__name" data-i18n="cat.kadayif">Kadayıflar</span>
                   <span class="catnav__count">03</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#baklavalar" data-catnav="baklavalar" data-cursor="link">
                   <span class="catnav__index">04</span>
-                  <span class="catnav__name">Baklavalar</span>
+                  <span class="catnav__name" data-i18n="cat.baklava">Baklavalar</span>
                   <span class="catnav__count">03</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#dondurmalar" data-catnav="dondurmalar" data-cursor="link">
                   <span class="catnav__index">05</span>
-                  <span class="catnav__name">Dondurmalar</span>
+                  <span class="catnav__name" data-i18n="cat.ice">Dondurmalar</span>
                   <span class="catnav__count">06</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#kaymak" data-catnav="kaymak" data-cursor="link">
                   <span class="catnav__index">06</span>
-                  <span class="catnav__name">Kaymak</span>
+                  <span class="catnav__name" data-i18n="cat.kaymak">Kaymak</span>
                   <span class="catnav__count">01</span>
                 </a>
               </li>
               <li class="catnav__item">
                 <a class="catnav__link" href="#icecekler" data-catnav="icecekler" data-cursor="link">
                   <span class="catnav__index">07</span>
-                  <span class="catnav__name">İçecekler</span>
+                  <span class="catnav__name" data-i18n="cat.drinks">İçecekler</span>
                   <span class="catnav__count">07</span>
                 </a>
               </li>
             </ol>
 
-            <p class="catnav__note">
+            <p class="catnav__note" data-i18n-html="catnav.note">
               Her eser kendi öyküsüne açılır.<br>
               Okumak için bir ad seçin.
             </p>
@@ -377,314 +403,314 @@
               <p class="category__meta">
                 <span class="category__number">01</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">On üç eser</span>
+                <span class="category__count" data-i18n="cat.count13">On üç eser</span>
               </p>
               <h2 class="category__title" id="katmerlerTitle">
-                <span class="split__line"><span class="split__line-inner">Katmerler</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.katmer">Katmerler</span></span>
               </h2>
-              <p class="category__english">Şafağın yaprakları</p>
-              <p class="category__note">Hamur, bir masanın içinden okunacağı inceliğe dek havaya atılır. Katmer, kent uyanmadan önceki saate aittir; aşağıdaki her biçim, aynı kata verilmiş ayrı bir cevaptır.</p>
+              <p class="category__english" data-i18n="cat.katmerGloss">Şafağın yaprakları</p>
+              <p class="category__note" data-i18n="cat.katmerNote">Hamur, bir masanın içinden okunacağı inceliğe dek havaya atılır. Katmer, kent uyanmadan önceki saate aittir; aşağıdaki her biçim, aynı kata verilmiş ayrı bir cevaptır.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/katmer-klasik.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/katmer-klasik.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Klasik Katmer"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.01.aria" aria-label="Öyküyü okuyun: Klasik Katmer"></button>
                 <div class="item__inner">
                   <span class="item__index">01</span>
-                  <span class="item__name">Klasik Katmer <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Şafakta açılır</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Klasik Katmer <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.01.note">Şafakta açılır</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/katmer-klasik.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/katmer-klasik.jpg" alt="Hançerlioğlu - Klasik Katmer" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/katmer-klasik.jpg" data-i18n-alt="items.01.alt" alt="Hançerlioğlu - Klasik Katmer" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Klasik Katmer</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Hamur, bir masa genişliğinde ve neredeyse saydam olana dek havaya atılır; sonra manda kaymağı ve iri kıyılmış Antep fıstığının üzerine kapanır. Şafağa aittir: bekletilmez, yeniden ısıtılmaz ve yapıldığı odanın dışına çıkarılmaz.</p>
+                  <p data-i18n="items.01.story">Hamur, bir masa genişliğinde ve neredeyse saydam olana dek havaya atılır; sonra manda kaymağı ve iri kıyılmış Antep fıstığının üzerine kapanır. Şafağa aittir: bekletilmez, yeniden ısıtılmaz ve yapıldığı odanın dışına çıkarılmaz.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Hazırlık</dt><dd class="item__spec-value">Şafak vakti</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Fırın</dt><dd class="item__spec-value">Taş, açık ateş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Ömür</dt><dd class="item__spec-value">Bir saat</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.hazirlik">Hazırlık</dt><dd class="item__spec-value" data-i18n="spec.v.safak-vakti">Şafak vakti</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.firin">Fırın</dt><dd class="item__spec-value" data-i18n="spec.v.tas-acik-ates">Taş, açık ateş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.omur">Ömür</dt><dd class="item__spec-value" data-i18n="spec.v.bir-saat">Bir saat</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Kaymaklı Muska"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.02.aria" aria-label="Öyküyü okuyun: Kaymaklı Muska"></button>
                 <div class="item__inner">
                   <span class="item__index">02</span>
                   <span class="item__name">Kaymaklı Muska</span>
-                  <span class="item__note">Muska katı, kaymak</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.02.note">Muska katı, kaymak</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/muska-kaymakli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/muska.jpeg" alt="Hançerlioğlu - Kaymaklı Muska" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/muska.jpeg" data-i18n-alt="items.02.alt" alt="Hançerlioğlu - Kaymaklı Muska" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Kaymaklı Muska</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Aynı saydam yaprak, muska denen üçgene katlanır. İçinde manda kaymağından ve fıstıktan başka bir şey yoktur; kapanışı bir mühür değil, katın kendisi tutar.</p>
+                  <p data-i18n="items.02.story">Aynı saydam yaprak, muska denen üçgene katlanır. İçinde manda kaymağından ve fıstıktan başka bir şey yoktur; kapanışı bir mühür değil, katın kendisi tutar.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Katlama</dt><dd class="item__spec-value">Üçgen</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Kaymak &amp; fıstık</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.katlama">Katlama</dt><dd class="item__spec-value" data-i18n="spec.v.ucgen">Üçgen</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.kaymak-and-fistik">Kaymak &amp; fıstık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Çikolatalı Muska"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.03.aria" aria-label="Öyküyü okuyun: Çikolatalı Muska"></button>
                 <div class="item__inner">
                   <span class="item__index">03</span>
                   <span class="item__name">Çikolatalı Muska</span>
-                  <span class="item__note">Muska katı, çikolata</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.03.note">Muska katı, çikolata</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/muska-cikolatali.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/muskac.jpeg" alt="Hançerlioğlu - Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/muskac.jpeg" data-i18n-alt="items.03.alt" alt="Hançerlioğlu - Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Çikolatalı Muska</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Muska katı, taşın tuttuğu ısıdan başka bir şeyle erimeyen bitter çikolataya bırakılır. Köşeler çıtır kalır, orta kısım teslim olur; hemen yenmesinin bütün gerekçesi budur.</p>
+                  <p data-i18n="items.03.story">Muska katı, taşın tuttuğu ısıdan başka bir şeyle erimeyen bitter çikolataya bırakılır. Köşeler çıtır kalır, orta kısım teslim olur; hemen yenmesinin bütün gerekçesi budur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Katlama</dt><dd class="item__spec-value">Üçgen</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Bitter çikolata</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.katlama">Katlama</dt><dd class="item__spec-value" data-i18n="spec.v.ucgen">Üçgen</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.bitter-cikolata">Bitter çikolata</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Çikolatalı Kaymaklı Muska"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.04.aria" aria-label="Öyküyü okuyun: Çikolatalı Kaymaklı Muska"></button>
                 <div class="item__inner">
                   <span class="item__index">04</span>
                   <span class="item__name">Çikolatalı Kaymaklı Muska</span>
-                  <span class="item__note">İkisi, ayrı durur</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.04.note">İkisi, ayrı durur</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/muska-cikolatali-kaymakli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/muskac.jpeg" alt="Hançerlioğlu - Çikolatalı Kaymaklı Muska" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/muskac.jpeg" data-i18n-alt="items.04.alt" alt="Hançerlioğlu - Çikolatalı Kaymaklı Muska" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Çikolatalı Kaymaklı Muska</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Tek katın içinde çikolata ve manda kaymağı, biri diğerini boğmasın diye ayrı katmanlarda durur. İkisini okunur tutan, aralarındaki yapraktır.</p>
+                  <p data-i18n="items.04.story">Tek katın içinde çikolata ve manda kaymağı, biri diğerini boğmasın diye ayrı katmanlarda durur. İkisini okunur tutan, aralarındaki yapraktır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Katlama</dt><dd class="item__spec-value">Üçgen</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Çift katman</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.katlama">Katlama</dt><dd class="item__spec-value" data-i18n="spec.v.ucgen">Üçgen</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.cift-katman">Çift katman</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Belçika Çikolatalı Muska"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.05.aria" aria-label="Öyküyü okuyun: Belçika Çikolatalı Muska"></button>
                 <div class="item__inner">
                   <span class="item__index">05</span>
                   <span class="item__name">Belçika Çikolatalı Muska</span>
-                  <span class="item__note">Belçika kuvertürü</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.05.note">Belçika kuvertürü</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/muska-belcika.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/Belcikamuska.jpeg" alt="Hançerlioğlu - Belçika Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/Belcikamuska.jpeg" data-i18n-alt="items.05.alt" alt="Hançerlioğlu - Belçika Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Belçika Çikolatalı Muska</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Belçika kuvertürü temperlenir ve kat kapanmadan önce tek, ince bir tabaka halinde serilir. Evin çikolatasından daha koyu ve belirgin biçimde daha zengindir; fıstık bu yüzden bilerek geri tutulur.</p>
+                  <p data-i18n="items.05.story">Belçika kuvertürü temperlenir ve kat kapanmadan önce tek, ince bir tabaka halinde serilir. Evin çikolatasından daha koyu ve belirgin biçimde daha zengindir; fıstık bu yüzden bilerek geri tutulur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Çikolata</dt><dd class="item__spec-value">Belçika kuvertür</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Temperleme</dt><dd class="item__spec-value">Mermer üstünde</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.cikolata">Çikolata</dt><dd class="item__spec-value" data-i18n="spec.v.belcika-kuvertur">Belçika kuvertür</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.temperleme">Temperleme</dt><dd class="item__spec-value" data-i18n="spec.v.mermer-ustunde">Mermer üstünde</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Beyaz Çikolatalı Muska"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.06.aria" aria-label="Öyküyü okuyun: Beyaz Çikolatalı Muska"></button>
                 <div class="item__inner">
                   <span class="item__index">06</span>
                   <span class="item__name">Beyaz Çikolatalı Muska</span>
-                  <span class="item__note">Beyaz, yeşilin karşısında</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.06.note">Beyaz, yeşilin karşısında</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/muska-beyaz.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/Beyazmuska.jpeg" alt="Hançerlioğlu - Beyaz Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/Beyazmuska.jpeg" data-i18n-alt="items.06.alt" alt="Hançerlioğlu - Beyaz Çikolatalı Muska" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Beyaz Çikolatalı Muska</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Beyaz çikolata, Antep fıstığının koyu yeşiline karşı kurulur — evin bu kadar yüksek bir karşıtlığa izin verdiği tek yer. Etrafındaki her şeyden tatlıdır ve bilerek kestiğimiz en küçük paydır.</p>
+                  <p data-i18n="items.06.story">Beyaz çikolata, Antep fıstığının koyu yeşiline karşı kurulur — evin bu kadar yüksek bir karşıtlığa izin verdiği tek yer. Etrafındaki her şeyden tatlıdır ve bilerek kestiğimiz en küçük paydır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Çikolata</dt><dd class="item__spec-value">Beyaz</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Fıstık</dt><dd class="item__spec-value">İri çekilmiş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.cikolata">Çikolata</dt><dd class="item__spec-value" data-i18n="spec.v.beyaz">Beyaz</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.fistik">Fıstık</dt><dd class="item__spec-value" data-i18n="spec.v.iri-cekilmis">İri çekilmiş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <!-- USER: film wired up — assets/collection/video/katmer-tepsi.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/katmer-tepsi.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Tepsi Katmer"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.07.aria" aria-label="Öyküyü okuyun: Tepsi Katmer"></button>
                 <div class="item__inner">
                   <span class="item__index">07</span>
                   <span class="item__name">Tepsi Katmer</span>
-                  <span class="item__note">Bir sofra için</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.07.note">Bir sofra için</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/katmer-tepsi.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/katmer-tepsi.jpg" alt="Hançerlioğlu - Tepsi Katmer" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/katmer-tepsi.jpg" data-i18n-alt="items.07.alt" alt="Hançerlioğlu - Tepsi Katmer" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Tepsi Katmer</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Bir kişi için değil, bir sofra için kurulan katmer: bakır tepsiye kenar kenara yayılır ve ancak dışarı taşındığı anda kesilir. Orta kısım yumuşak kalır, kenar metale yaslanıp çıtırlaşır.</p>
+                  <p data-i18n="items.07.story">Bir kişi için değil, bir sofra için kurulan katmer: bakır tepsiye kenar kenara yayılır ve ancak dışarı taşındığı anda kesilir. Orta kısım yumuşak kalır, kenar metale yaslanıp çıtırlaşır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kap</dt><dd class="item__spec-value">Bakır tepsi</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kesim</dt><dd class="item__spec-value">Servis anında</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kişi</dt><dd class="item__spec-value">Dört ila altı</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kap">Kap</dt><dd class="item__spec-value" data-i18n="spec.v.bakir-tepsi">Bakır tepsi</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kesim">Kesim</dt><dd class="item__spec-value" data-i18n="spec.v.servis-aninda">Servis anında</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kisi">Kişi</dt><dd class="item__spec-value" data-i18n="spec.v.dort-ila-alti">Dört ila altı</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Burma Katmer, Kaymaklı"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.08.aria" aria-label="Öyküyü okuyun: Burma Katmer, Kaymaklı"></button>
                 <div class="item__inner">
                   <span class="item__index">08</span>
                   <span class="item__name">Burma Katmer &middot; Kaymaklı</span>
-                  <span class="item__note">Sarılmış, içinden kaymak</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.08.note">Sarılmış, içinden kaymak</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/burma-kaymakli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/burma1.jpeg" alt="Hançerlioğlu - Burma Katmer &middot; Kaymaklı" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/burma1.jpeg" data-i18n-alt="items.08.alt" alt="Hançerlioğlu - Burma Katmer &middot; Kaymaklı" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Burma Katmer &middot; Kaymaklı</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Yaprak oklavanın etrafına sarılır, boyu boyunca toplanır ve burulur. Kaymak üzerine sürülmez; kıvrımların içinden çekilir, böylece yüzeyde değil kesitte görünür.</p>
+                  <p data-i18n="items.08.story">Yaprak oklavanın etrafına sarılır, boyu boyunca toplanır ve burulur. Kaymak üzerine sürülmez; kıvrımların içinden çekilir, böylece yüzeyde değil kesitte görünür.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Sarma, burgu</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Kaymak</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Ilık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.sarma-burgu">Sarma, burgu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.kaymak">Kaymak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.ilik">Ilık</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Burma Katmer, Çikolatalı"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.09.aria" aria-label="Öyküyü okuyun: Burma Katmer, Çikolatalı"></button>
                 <div class="item__inner">
                   <span class="item__index">09</span>
                   <span class="item__name">Burma Katmer &middot; Çikolatalı</span>
-                  <span class="item__note">Sarılmış, çikolata</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.09.note">Sarılmış, çikolata</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/burma-cikolatali.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/burmac.jpeg" alt="Hançerlioğlu - Burma Katmer &middot; Çikolatalı" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/burmac.jpeg" data-i18n-alt="items.09.alt" alt="Hançerlioğlu - Burma Katmer &middot; Çikolatalı" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Burma Katmer &middot; Çikolatalı</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Aynı burgu, bu kez taşın üzerinde yumuşayan bitter çikolatanın etrafına sarılır. Enine kesildiğinde sarmal, soluk yaprağın içinde dönen koyu bir tel gibi durur.</p>
+                  <p data-i18n="items.09.story">Aynı burgu, bu kez taşın üzerinde yumuşayan bitter çikolatanın etrafına sarılır. Enine kesildiğinde sarmal, soluk yaprağın içinde dönen koyu bir tel gibi durur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Sarma, burgu</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Bitter çikolata</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Ilık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.sarma-burgu">Sarma, burgu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.bitter-cikolata">Bitter çikolata</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.ilik">Ilık</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Burma Katmer, Çikolatalı Kaymaklı"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.10.aria" aria-label="Öyküyü okuyun: Burma Katmer, Çikolatalı Kaymaklı"></button>
                 <div class="item__inner">
                   <span class="item__index">10</span>
                   <span class="item__name">Burma Katmer &middot; Çikolatalı Kaymaklı</span>
-                  <span class="item__note">İki kez sarılmış</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.10.note">İki kez sarılmış</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/burma-cikolatali-kaymakli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/burmac3.jpeg" alt="Hançerlioğlu - Burma Katmer &middot; Çikolatalı Kaymaklı" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/burmac3.jpeg" data-i18n-alt="items.10.alt" alt="Hançerlioğlu - Burma Katmer &middot; Çikolatalı Kaymaklı" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Burma Katmer &middot; Çikolatalı Kaymaklı</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>İki kez sarılan bir burgu: iç kıvrımlarda kaymak, dış kıvrımlarda çikolata. Bu bölümün teknik olarak en nazlı işidir; yalnızca ısmarlandığında yapılır.</p>
+                  <p data-i18n="items.10.story">İki kez sarılan bir burgu: iç kıvrımlarda kaymak, dış kıvrımlarda çikolata. Bu bölümün teknik olarak en nazlı işidir; yalnızca ısmarlandığında yapılır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Çift sarma</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Kaymak &amp; çikolata</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Hazırlık</dt><dd class="item__spec-value">Siparişle</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.cift-sarma">Çift sarma</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.kaymak-and-cikolata">Kaymak &amp; çikolata</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.hazirlik">Hazırlık</dt><dd class="item__spec-value" data-i18n="spec.v.siparisle">Siparişle</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Çubuk Katmer"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.11.aria" aria-label="Öyküyü okuyun: Çubuk Katmer"></button>
                 <div class="item__inner">
                   <span class="item__index">11</span>
                   <span class="item__name">Çubuk Katmer</span>
-                  <span class="item__note">Kamış inceliğinde</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.11.note">Kamış inceliğinde</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/katmer-cubuk.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/cubukatmer.jpeg" alt="Hançerlioğlu - Çubuk Katmer" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/cubukatmer.jpeg" data-i18n-alt="items.11.alt" alt="Hançerlioğlu - Çubuk Katmer" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Çubuk Katmer</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Kamış inceliğinde sarılır ve bükülmek yerine çıt diye kırılana dek pişer. Atölyeden çıkan en nazik şeydir ve kutuya koymayı reddettiğimiz tek parçadır.</p>
+                  <p data-i18n="items.11.story">Kamış inceliğinde sarılır ve bükülmek yerine çıt diye kırılana dek pişer. Atölyeden çıkan en nazik şeydir ve kutuya koymayı reddettiğimiz tek parçadır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">İnce çubuk</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Kırılgan</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Paket</dt><dd class="item__spec-value">Yok</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.ince-cubuk">İnce çubuk</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.kirilgan">Kırılgan</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.paket">Paket</dt><dd class="item__spec-value" data-i18n="spec.v.yok">Yok</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Çikolatalı Simit"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.12.aria" aria-label="Öyküyü okuyun: Çikolatalı Simit"></button>
                 <div class="item__inner">
                   <span class="item__index">12</span>
                   <span class="item__name">Çikolatalı Simit</span>
-                  <span class="item__note">Halka, çikolata</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.12.note">Halka, çikolata</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/simit-cikolatali.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/simit2.jpeg" alt="Hançerlioğlu - Çikolatalı Simit" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/simit2.jpeg" data-i18n-alt="items.12.alt" alt="Hançerlioğlu - Çikolatalı Simit" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Çikolatalı Simit</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Yaprak bir halkaya getirilir, çikolata birleşim yerinin içine kapatılır ve dikiş bütünüyle kaybolana dek pişer. Ayakta, elle yenmek içindir; sokak onu hep böyle yedi.</p>
+                  <p data-i18n="items.12.story">Yaprak bir halkaya getirilir, çikolata birleşim yerinin içine kapatılır ve dikiş bütünüyle kaybolana dek pişer. Ayakta, elle yenmek içindir; sokak onu hep böyle yedi.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Halka</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Çikolata</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Elde, ayakta</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.halka">Halka</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.cikolata">Çikolata</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.elde-ayakta">Elde, ayakta</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Kaymaklı Simit"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.13.aria" aria-label="Öyküyü okuyun: Kaymaklı Simit"></button>
                 <div class="item__inner">
                   <span class="item__index">13</span>
                   <span class="item__name">Kaymaklı Simit</span>
-                  <span class="item__note">Halka, kaymak</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.13.note">Halka, kaymak</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/simit-kaymakli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/simit.jpeg" alt="Hançerlioğlu - Kaymaklı Simit" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/simit.jpeg" data-i18n-alt="items.13.alt" alt="Hançerlioğlu - Kaymaklı Simit" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Kaymaklı Simit</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Aynı halka, aynı sabah alınan kaymakla doldurulur ve yaprak soğumadan kapatılır. Kaymak hamurun içinde ikinci güne dayanmaz; bu yüzden kısa partiler halinde, günde iki kez yapılır.</p>
+                  <p data-i18n="items.13.story">Aynı halka, aynı sabah alınan kaymakla doldurulur ve yaprak soğumadan kapatılır. Kaymak hamurun içinde ikinci güne dayanmaz; bu yüzden kısa partiler halinde, günde iki kez yapılır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Halka</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dolgu</dt><dd class="item__spec-value">Günlük kaymak</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Üretim</dt><dd class="item__spec-value">Günde iki kez</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.halka">Halka</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dolgu">Dolgu</dt><dd class="item__spec-value" data-i18n="spec.v.gunluk-kaymak">Günlük kaymak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.uretim">Üretim</dt><dd class="item__spec-value" data-i18n="spec.v.gunde-iki-kez">Günde iki kez</dd></div>
                   </dl>
                 </div>
               </li>
@@ -700,223 +726,223 @@
               <p class="category__meta">
                 <span class="category__number">02</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Dokuz eser</span>
+                <span class="category__count" data-i18n="cat.count9">Dokuz eser</span>
               </p>
               <h2 class="category__title" id="kunefelerTitle">
-                <span class="split__line"><span class="split__line-inner">Künefeler</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.kune">Künefeler</span></span>
               </h2>
-              <p class="category__english">Ateş ve tel</p>
-              <p class="category__note">Açık ateşin üzerinde dövme bakır ve aynı sabah çekilmiş peynir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak bitmiştir.</p>
+              <p class="category__english" data-i18n="cat.kuneGloss">Ateş ve tel</p>
+              <p class="category__note" data-i18n="cat.kuneNote">Açık ateşin üzerinde dövme bakır ve aynı sabah çekilmiş peynir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak bitmiştir.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/kunefe-klasik.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/kunefe-klasik.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Klasik Künefe"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.14.aria" aria-label="Öyküyü okuyun: Klasik Künefe"></button>
                 <div class="item__inner">
                   <span class="item__index">14</span>
-                  <span class="item__name">Klasik Künefe <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Bakır, ateş, tel</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Klasik Künefe <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.14.note">Bakır, ateş, tel</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kunefe-klasik.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/klasik.jpeg" alt="Hançerlioğlu - Klasik Künefe" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/klasik.jpeg" data-i18n-alt="items.14.alt" alt="Hançerlioğlu - Klasik Künefe" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Klasik Künefe</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Saç inceliğinde çekilen kadayıf, aynı sabah alınan tuzsuz peyniri sarar ve elde dövülmüş bakırın üzerinde, açık ateşte çevrilir. Hiçbir parçası önceden hazırlanamaz; bu yüzden en son istenir ve ilk yenir.</p>
+                  <p data-i18n="items.14.story">Saç inceliğinde çekilen kadayıf, aynı sabah alınan tuzsuz peyniri sarar ve elde dövülmüş bakırın üzerinde, açık ateşte çevrilir. Hiçbir parçası önceden hazırlanamaz; bu yüzden en son istenir ve ilk yenir.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kap</dt><dd class="item__spec-value">Dövme bakır</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Peynir</dt><dd class="item__spec-value">Aynı sabah</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">90 saniye içinde</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kap">Kap</dt><dd class="item__spec-value" data-i18n="spec.v.dovme-bakir">Dövme bakır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.peynir">Peynir</dt><dd class="item__spec-value" data-i18n="spec.v.ayni-sabah">Aynı sabah</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.90-saniye-icinde">90 saniye içinde</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Hasır Künefe"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.15.aria" aria-label="Öyküyü okuyun: Hasır Künefe"></button>
                 <div class="item__inner">
                   <span class="item__index">15</span>
                   <span class="item__name">Hasır Künefe</span>
-                  <span class="item__note">Hasır gibi örülmüş</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.15.note">Hasır gibi örülmüş</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kunefe-hasir.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/hasır.jpeg" alt="Hançerlioğlu - Hasır Künefe" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/hasır.jpeg" data-i18n-alt="items.15.alt" alt="Hançerlioğlu - Hasır Künefe" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Hasır Künefe</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Kadayıf düz sıkıştırmak yerine hasır gibi örülür; ateş peynire kenardan değil, aralıklardan ulaşır. Alevden bir hasır gibi iner — adı da tam olarak budur.</p>
+                  <p data-i18n="items.15.story">Kadayıf düz sıkıştırmak yerine hasır gibi örülür; ateş peynire kenardan değil, aralıklardan ulaşır. Alevden bir hasır gibi iner — adı da tam olarak budur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Dizim</dt><dd class="item__spec-value">Örgü</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Daha çıtır</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak, bakırda</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dizim">Dizim</dt><dd class="item__spec-value" data-i18n="spec.v.orgu">Örgü</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.daha-citir">Daha çıtır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak-bakirda">Sıcak, bakırda</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Stevia Künefe"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.16.aria" aria-label="Öyküyü okuyun: Stevia Künefe"></button>
                 <div class="item__inner">
                   <span class="item__index">16</span>
                   <span class="item__name">Stevia Künefe</span>
-                  <span class="item__note">Düşük kalori, aynı ateş</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.16.note">Düşük kalori, aynı ateş</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kunefe-stevia.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/klasik2.jpeg" alt="Hançerlioğlu - Stevia Künefe" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/klasik2.jpeg" data-i18n-alt="items.16.alt" alt="Hançerlioğlu - Stevia Künefe" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Stevia Künefe</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Klasik ile aynı kurulur, şerbetin yerini stevia alır. Alınan tek şey şekerdir — bakır, peynir ve alev yerinde durur; aldığı zaman da.</p>
+                  <p data-i18n="items.16.story">Klasik ile aynı kurulur, şerbetin yerini stevia alır. Alınan tek şey şekerdir — bakır, peynir ve alev yerinde durur; aldığı zaman da.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Tatlandırıcı</dt><dd class="item__spec-value">Stevia</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Şurup</dt><dd class="item__spec-value">Yok</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.tatlandirici">Tatlandırıcı</dt><dd class="item__spec-value" data-i18n="spec.v.stevia">Stevia</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.surup">Şurup</dt><dd class="item__spec-value" data-i18n="spec.v.yok">Yok</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak">Sıcak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Paşa Künefe"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.17.aria" aria-label="Öyküyü okuyun: Paşa Künefe"></button>
                 <div class="item__inner">
                   <span class="item__index">17</span>
                   <span class="item__name">Paşa Künefe</span>
-                  <span class="item__note">Paşanın payı</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.17.note">Paşanın payı</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kunefe-pasa.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/pasa.jpeg" alt="Hançerlioğlu - Paşa Künefe" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/pasa.jpeg" data-i18n-alt="items.17.alt" alt="Hançerlioğlu - Paşa Künefe" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Paşa Künefe</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Tavada daha derin, ende daha geniş ve evin olağan elinden daha ağır bir fıstık tacıyla gelir. Birden fazla kişinin bölüşmesi içindir ve birden fazla çatalla iner.</p>
+                  <p data-i18n="items.17.story">Tavada daha derin, ende daha geniş ve evin olağan elinden daha ağır bir fıstık tacıyla gelir. Birden fazla kişinin bölüşmesi içindir ve birden fazla çatalla iner.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kap</dt><dd class="item__spec-value">Geniş bakır</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Fıstık</dt><dd class="item__spec-value">Cömert</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kişi</dt><dd class="item__spec-value">İki ila üç</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kap">Kap</dt><dd class="item__spec-value" data-i18n="spec.v.genis-bakir">Geniş bakır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.fistik">Fıstık</dt><dd class="item__spec-value" data-i18n="spec.v.comert">Cömert</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kisi">Kişi</dt><dd class="item__spec-value" data-i18n="spec.v.iki-ila-uc">İki ila üç</dd></div>
                   </dl>
                 </div>
               </li>
 
               <!-- USER: film wired up — assets/collection/video/billuriye.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/billuriye.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Billuriye"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.18.aria" aria-label="Öyküyü okuyun: Billuriye"></button>
                 <div class="item__inner">
                   <span class="item__index">18</span>
                   <span class="item__name">Billuriye</span>
-                  <span class="item__note">Cam gibi kesilmiş</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.18.note">Cam gibi kesilmiş</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/billuriye.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/billuriye.jpeg" alt="Hançerlioğlu - Billuriye" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/billuriye.jpeg" data-i18n-alt="items.18.alt" alt="Hançerlioğlu - Billuriye" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Billuriye</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Kadayıf kısa ve billur kesilir; kesme cam gibi ışığı tutar. Klasikten daha çıtırdır ve yavaş ele pek izin vermez, çünkü kısa tel saniyeler içinde renk alır.</p>
+                  <p data-i18n="items.18.story">Kadayıf kısa ve billur kesilir; kesme cam gibi ışığı tutar. Klasikten daha çıtırdır ve yavaş ele pek izin vermez, çünkü kısa tel saniyeler içinde renk alır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kadayıf</dt><dd class="item__spec-value">Kısa kesim</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Billur, çıtır</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Ateş</dt><dd class="item__spec-value">Yüksek, kısa</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kadayif">Kadayıf</dt><dd class="item__spec-value" data-i18n="spec.v.kisa-kesim">Kısa kesim</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.billur-citir">Billur, çıtır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.ates">Ateş</dt><dd class="item__spec-value" data-i18n="spec.v.yuksek-kisa">Yüksek, kısa</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Billurzade"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.19.aria" aria-label="Öyküyü okuyun: Billurzade"></button>
                 <div class="item__inner">
                   <span class="item__index">19</span>
                   <span class="item__name">Billurzade</span>
-                  <span class="item__note">Billur, kaymak damarıyla</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.19.note">Billur, kaymak damarıyla</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/billurzade.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/billurzade.jpeg" alt="Hançerlioğlu - Billurzade" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/billurzade.jpeg" data-i18n-alt="items.19.alt" alt="Hançerlioğlu - Billurzade" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Billurzade</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Billuriyenin ortasından bir manda kaymağı damarı geçer; billur kenar her seferinde yumuşak bir şeyle karşılaşır. Karşıtlık yalnızca birkaç dakika tutar — hızlı servisin bütün gerekçesi budur.</p>
+                  <p data-i18n="items.19.story">Billuriyenin ortasından bir manda kaymağı damarı geçer; billur kenar her seferinde yumuşak bir şeyle karşılaşır. Karşıtlık yalnızca birkaç dakika tutar — hızlı servisin bütün gerekçesi budur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kadayıf</dt><dd class="item__spec-value">Kısa kesim</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Katman</dt><dd class="item__spec-value">Kaymak damarı</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Hemen</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kadayif">Kadayıf</dt><dd class="item__spec-value" data-i18n="spec.v.kisa-kesim">Kısa kesim</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.katman">Katman</dt><dd class="item__spec-value" data-i18n="spec.v.kaymak-damari">Kaymak damarı</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.hemen">Hemen</dd></div>
                   </dl>
                 </div>
               </li>
 
               <!-- USER: film wired up — assets/collection/video/fistikzade.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/fistikzade.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fıstıkzade"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.20.aria" aria-label="Öyküyü okuyun: Fıstıkzade"></button>
                 <div class="item__inner">
                   <span class="item__index">20</span>
-                  <span class="item__name">Fıstıkzade <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Yeşile gömülü</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Fıstıkzade <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.20.note">Yeşile gömülü</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/fistikzade.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/fistikzade.jpeg" alt="Hançerlioğlu - Fıstıkzade" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/fistikzade.jpeg" data-i18n-alt="items.20.alt" alt="Hançerlioğlu - Fıstıkzade" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fıstıkzade</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Her tanesi ayrı kalsın diye iri çekilmiş Antep fıstığının altına gömülür. Alttaki kadayıf güçlükle görünür ve mesele tam olarak budur — yemek fıstıktır, tel yalnızca usuldür.</p>
+                  <p data-i18n="items.20.story">Her tanesi ayrı kalsın diye iri çekilmiş Antep fıstığının altına gömülür. Alttaki kadayıf güçlükle görünür ve mesele tam olarak budur — yemek fıstıktır, tel yalnızca usuldür.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Fıstık</dt><dd class="item__spec-value">Kendi bahçemiz</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Öğütüm</dt><dd class="item__spec-value">İri</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Sıcak, bakırda</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.fistik">Fıstık</dt><dd class="item__spec-value" data-i18n="spec.v.kendi-bahcemiz">Kendi bahçemiz</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.ogutum">Öğütüm</dt><dd class="item__spec-value" data-i18n="spec.v.iri">İri</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.sicak-bakirda">Sıcak, bakırda</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Yarım Fıstıkzade ve Yarım Hasır"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.21.aria" aria-label="Öyküyü okuyun: Yarım Fıstıkzade ve Yarım Hasır"></button>
                 <div class="item__inner">
                   <span class="item__index">21</span>
                   <span class="item__name">Yarım Fıstıkzade &amp; Yarım Hasır</span>
-                  <span class="item__note">İki yarım, tek tabak</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.21.note">İki yarım, tek tabak</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/yarim-yarim.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/hasirfistik.jpeg" alt="Hançerlioğlu - Yarım Fıstıkzade &amp; Yarım Hasır" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/hasirfistik.jpeg" data-i18n-alt="items.21.alt" alt="Hançerlioğlu - Yarım Fıstıkzade &amp; Yarım Hasır" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Yarım Fıstıkzade &amp; Yarım Hasır</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Tek bakır tabak ortasından bölünür: bir yanda fıstık yığını, öte yanda hasır örgü. Sofra karar veremediği için vardır; ikisi anlatılmaktan çok tartışılmaya değer.</p>
+                  <p data-i18n="items.21.story">Tek bakır tabak ortasından bölünür: bir yanda fıstık yığını, öte yanda hasır örgü. Sofra karar veremediği için vardır; ikisi anlatılmaktan çok tartışılmaya değer.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Bölüm</dt><dd class="item__spec-value">İkiye ayrık</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kap</dt><dd class="item__spec-value">Tek bakır</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kişi</dt><dd class="item__spec-value">İki</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bolum">Bölüm</dt><dd class="item__spec-value" data-i18n="spec.v.ikiye-ayrik">İkiye ayrık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kap">Kap</dt><dd class="item__spec-value" data-i18n="spec.v.tek-bakir">Tek bakır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kisi">Kişi</dt><dd class="item__spec-value" data-i18n="spec.v.iki">İki</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Burger Künefe"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.22.aria" aria-label="Öyküyü okuyun: Burger Künefe"></button>
                 <div class="item__inner">
                   <span class="item__index">22</span>
                   <span class="item__name">Burger Künefe</span>
-                  <span class="item__note">Yeni biçim, eski usul</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.22.note">Yeni biçim, eski usul</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kunefe-burger.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/kunefe-burger.jpg" alt="Hançerlioğlu - Burger Künefe" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/kunefe-burger.jpg" data-i18n-alt="items.22.alt" alt="Hançerlioğlu - Burger Künefe" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Burger Künefe</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>İki yuvarlak kadayıf, peynir ve fıstığın üzerine kapanır; kenarlar birleşene dek alevde bastırılır. Yeni bir biçim, bütünüyle eski bir usulü taşır — evin bugüne verdiği tek gerçek taviz budur.</p>
+                  <p data-i18n="items.22.story">İki yuvarlak kadayıf, peynir ve fıstığın üzerine kapanır; kenarlar birleşene dek alevde bastırılır. Yeni bir biçim, bütünüyle eski bir usulü taşır — evin bugüne verdiği tek gerçek taviz budur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Çift yuvarlak</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Pişirme</dt><dd class="item__spec-value">Preste, ateşte</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Elde</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.cift-yuvarlak">Çift yuvarlak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.pisirme">Pişirme</dt><dd class="item__spec-value" data-i18n="spec.v.preste-ateste">Preste, ateşte</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.elde">Elde</dd></div>
                   </dl>
                 </div>
               </li>
@@ -932,83 +958,83 @@
               <p class="category__meta">
                 <span class="category__number">03</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Üç eser</span>
+                <span class="category__count" data-i18n="cat.count3">Üç eser</span>
               </p>
               <h2 class="category__title" id="kadayiflarTitle">
-                <span class="split__line"><span class="split__line-inner">Kadayıflar</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.kadayif">Kadayıflar</span></span>
               </h2>
-              <p class="category__english">İnce teller</p>
-              <p class="category__note">Künefenin teli, peynirden ayrılarak kendi başına bırakılır. Tereyağı, fıstık ve sabır; arkasına saklanacak başka bir şey yoktur.</p>
+              <p class="category__english" data-i18n="cat.kadayifGloss">İnce teller</p>
+              <p class="category__note" data-i18n="cat.kadayifNote">Künefenin teli, peynirden ayrılarak kendi başına bırakılır. Tereyağı, fıstık ve sabır; arkasına saklanacak başka bir şey yoktur.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/kadayif-fistikli.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/kadayif-fistikli.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fıstıklı Tel Kadayıf"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.23.aria" aria-label="Öyküyü okuyun: Fıstıklı Tel Kadayıf"></button>
                 <div class="item__inner">
                   <span class="item__index">23</span>
-                  <span class="item__name">Fıstıklı Tel Kadayıf <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Tel tel yağlanmış</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Fıstıklı Tel Kadayıf <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.23.note">Tel tel yağlanmış</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kadayif-fistikli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/kadaif2.jpeg" alt="Hançerlioğlu - Fıstıklı Tel Kadayıf" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/kadaif2.jpeg" data-i18n-alt="items.23.alt" alt="Hançerlioğlu - Fıstıklı Tel Kadayıf" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fıstıklı Tel Kadayıf</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Tel tel yağlanan ince kadayıf, ateşle karşılaşmadan önce fıstıkla doldurulur. Dışı yaldızlanırken ortası yumuşak kalsın diye yavaş pişer — acele edilirse renk gelir, doku gelmez.</p>
+                  <p data-i18n="items.23.story">Tel tel yağlanan ince kadayıf, ateşle karşılaşmadan önce fıstıkla doldurulur. Dışı yaldızlanırken ortası yumuşak kalsın diye yavaş pişer — acele edilirse renk gelir, doku gelmez.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Yağ</dt><dd class="item__spec-value">Sade yağ</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Pişirme</dt><dd class="item__spec-value">Ağır, uzun</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Ilık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.yag">Yağ</dt><dd class="item__spec-value" data-i18n="spec.v.sade-yag">Sade yağ</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.pisirme">Pişirme</dt><dd class="item__spec-value" data-i18n="spec.v.agir-uzun">Ağır, uzun</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.ilik">Ilık</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Billuriye Kadayıf"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.24.aria" aria-label="Öyküyü okuyun: Billuriye Kadayıf"></button>
                 <div class="item__inner">
                   <span class="item__index">24</span>
                   <span class="item__name">Billuriye Kadayıf</span>
-                  <span class="item__note">Billur kesim, tek başına</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.24.note">Billur kesim, tek başına</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kadayif-billuriye.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/billuriyekadaif.jpeg" alt="Hançerlioğlu - Billuriye Kadayıf" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/billuriyekadaif.jpeg" data-i18n-alt="items.24.alt" alt="Hançerlioğlu - Billuriye Kadayıf" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Billuriye Kadayıf</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Billur kesim bakır tavadan çıkarılır ve kendi başına bir yemek olarak gelir: gevrek, parlak ve şerbetle ancak son anda buluşur. Biraz daha bekletilirse bütün mesele yumuşayıp kaybolur.</p>
+                  <p data-i18n="items.24.story">Billur kesim bakır tavadan çıkarılır ve kendi başına bir yemek olarak gelir: gevrek, parlak ve şerbetle ancak son anda buluşur. Biraz daha bekletilirse bütün mesele yumuşayıp kaybolur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kesim</dt><dd class="item__spec-value">Billur</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Şurup</dt><dd class="item__spec-value">Son anda</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Kırılgan</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kesim">Kesim</dt><dd class="item__spec-value" data-i18n="spec.v.billur">Billur</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.surup">Şurup</dt><dd class="item__spec-value" data-i18n="spec.v.son-anda">Son anda</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.kirilgan">Kırılgan</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fıstıkzade Kadayıf"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.25.aria" aria-label="Öyküyü okuyun: Fıstıkzade Kadayıf"></button>
                 <div class="item__inner">
                   <span class="item__index">25</span>
                   <span class="item__name">Fıstıkzade Kadayıf</span>
-                  <span class="item__note">Fıstık ile tel arasında hiçbir şey</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.25.note">Fıstık ile tel arasında hiçbir şey</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kadayif-fistikzade.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/fistikzadekadaif.jpeg" alt="Hançerlioğlu - Fıstıkzade Kadayıf" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/fistikzadekadaif.jpeg" data-i18n-alt="items.25.alt" alt="Hançerlioğlu - Fıstıkzade Kadayıf" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fıstıkzade Kadayıf</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Fıstık yığını künefenin değil kadayıfın üzerine serilir: peynir yok, kaymak yok, fıstık ile tel arasında hiçbir şey yok. Katalogdaki en sade iştir ve arkasına saklanması en zor olanıdır.</p>
+                  <p data-i18n="items.25.story">Fıstık yığını künefenin değil kadayıfın üzerine serilir: peynir yok, kaymak yok, fıstık ile tel arasında hiçbir şey yok. Katalogdaki en sade iştir ve arkasına saklanması en zor olanıdır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Fıstık</dt><dd class="item__spec-value">İri çekilmiş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Peynir</dt><dd class="item__spec-value">Yok</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Ilık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.fistik">Fıstık</dt><dd class="item__spec-value" data-i18n="spec.v.iri-cekilmis">İri çekilmiş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.peynir">Peynir</dt><dd class="item__spec-value" data-i18n="spec.v.yok">Yok</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.ilik">Ilık</dd></div>
                   </dl>
                 </div>
               </li>
@@ -1024,83 +1050,83 @@
               <p class="category__meta">
                 <span class="category__number">04</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Üç eser</span>
+                <span class="category__count" data-i18n="cat.count3">Üç eser</span>
               </p>
               <h2 class="category__title" id="baklavalarTitle">
-                <span class="split__line"><span class="split__line-inner">Baklavalar</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.baklava">Baklavalar</span></span>
               </h2>
-              <p class="category__english">Kırk yaprak</p>
-              <p class="category__note">Tepside kırk yaprak; her biri, basılı bir sayfanın içinden okunacağı inceliğe dek açılır. Ev bu sayıyı hiç değiştirmedi ve hiç değiştirmesi istenmedi.</p>
+              <p class="category__english" data-i18n="cat.baklavaGloss">Kırk yaprak</p>
+              <p class="category__note" data-i18n="cat.baklavaNote">Tepside kırk yaprak; her biri, basılı bir sayfanın içinden okunacağı inceliğe dek açılır. Ev bu sayıyı hiç değiştirmedi ve hiç değiştirmesi istenmedi.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/baklava-fistikli.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/baklava-fistikli.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fıstıklı Baklava"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.26.aria" aria-label="Öyküyü okuyun: Fıstıklı Baklava"></button>
                 <div class="item__inner">
                   <span class="item__index">26</span>
-                  <span class="item__name">Fıstıklı Baklava <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Kırk yaprak ışık</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Fıstıklı Baklava <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.26.note">Kırk yaprak ışık</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baklava-fistikli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/baklavaki.jpeg" alt="Hançerlioğlu - Fıstıklı Baklava" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/baklavaki.jpeg" data-i18n-alt="items.26.alt" alt="Hançerlioğlu - Fıstıklı Baklava" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fıstıklı Baklava</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Kırk yaprak yufka, her biri basılı bir sayfanın içinden okunacak incelikte açılır; sade yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, sonra yaprakları birbirinden ayrı tutan tam ısı farkıyla şerbetle buluşur.</p>
+                  <p data-i18n="items.26.story">Kırk yaprak yufka, her biri basılı bir sayfanın içinden okunacak incelikte açılır; sade yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, sonra yaprakları birbirinden ayrı tutan tam ısı farkıyla şerbetle buluşur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Yaprak</dt><dd class="item__spec-value">Kırk</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Yağ</dt><dd class="item__spec-value">Şafakta sadeleştirilmiş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dinlenme</dt><dd class="item__spec-value">Altı saat</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.yaprak">Yaprak</dt><dd class="item__spec-value" data-i18n="spec.v.kirk">Kırk</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.yag">Yağ</dt><dd class="item__spec-value" data-i18n="spec.v.safakta-sadelestirilmis">Şafakta sadeleştirilmiş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dinlenme">Dinlenme</dt><dd class="item__spec-value" data-i18n="spec.v.alti-saat">Altı saat</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Özel Dilim Baklava"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.27.aria" aria-label="Öyküyü okuyun: Özel Dilim Baklava"></button>
                 <div class="item__inner">
                   <span class="item__index">27</span>
                   <span class="item__name">Özel Dilim Baklava</span>
-                  <span class="item__note">Özel dilim</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.27.note">Özel dilim</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baklava-ozel-dilim.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/baklava.jpeg" alt="Hançerlioğlu - Özel Dilim Baklava" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/baklava.jpeg" data-i18n-alt="items.27.alt" alt="Hançerlioğlu - Özel Dilim Baklava" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Özel Dilim Baklava</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Baklava dilimi yerine uzun ve dar kesilir; şerbetin yapraklar arasındaki yolu da, köşenin çatalda kırılışı da değişir. Aynı tepsi, başka türlü okunmuş.</p>
+                  <p data-i18n="items.27.story">Baklava dilimi yerine uzun ve dar kesilir; şerbetin yapraklar arasındaki yolu da, köşenin çatalda kırılışı da değişir. Aynı tepsi, başka türlü okunmuş.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kesim</dt><dd class="item__spec-value">Uzun dilim</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Yaprak</dt><dd class="item__spec-value">Kırk</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Oda sıcaklığı</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kesim">Kesim</dt><dd class="item__spec-value" data-i18n="spec.v.uzun-dilim">Uzun dilim</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.yaprak">Yaprak</dt><dd class="item__spec-value" data-i18n="spec.v.kirk">Kırk</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.oda-sicakligi">Oda sıcaklığı</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Soğuk Baklava"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.28.aria" aria-label="Öyküyü okuyun: Soğuk Baklava"></button>
                 <div class="item__inner">
                   <span class="item__index">28</span>
                   <span class="item__name">Soğuk Baklava</span>
-                  <span class="item__note">Soğuk, sütle</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.28.note">Soğuk, sütle</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baklava-soguk.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/sogukbaklava.jpeg" alt="Hançerlioğlu - Soğuk Baklava" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/sogukbaklava.jpeg" data-i18n-alt="items.28.alt" alt="Hançerlioğlu - Soğuk Baklava" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Soğuk Baklava</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Soğukta dinlenir ve şerbet yerine sütle tamamlanır. Bir yaz yemeğidir ve evde sıcak yenmeyen tek baklavadır — yaprakları ayrı tutan şeker değil, soğuktur.</p>
+                  <p data-i18n="items.28.story">Soğukta dinlenir ve şerbet yerine sütle tamamlanır. Bir yaz yemeğidir ve evde sıcak yenmeyen tek baklavadır — yaprakları ayrı tutan şeker değil, soğuktur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Sıvı</dt><dd class="item__spec-value">Süt</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Dinlenme</dt><dd class="item__spec-value">Soğukta, gece</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Mevsim</dt><dd class="item__spec-value">Yaz</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.sivi">Sıvı</dt><dd class="item__spec-value" data-i18n="spec.v.sut">Süt</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.dinlenme">Dinlenme</dt><dd class="item__spec-value" data-i18n="spec.v.sogukta-gece">Soğukta, gece</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.mevsim">Mevsim</dt><dd class="item__spec-value" data-i18n="spec.v.yaz">Yaz</dd></div>
                   </dl>
                 </div>
               </li>
@@ -1116,152 +1142,152 @@
               <p class="category__meta">
                 <span class="category__number">05</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Altı eser</span>
+                <span class="category__count" data-i18n="cat.count6">Altı eser</span>
               </p>
               <h2 class="category__title" id="dondurmalarTitle">
-                <span class="split__line"><span class="split__line-inner">Dondurmalar</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.ice">Dondurmalar</span></span>
               </h2>
-              <p class="category__english">Soğuk oda</p>
-              <p class="category__note">Salep ve sakız, sonuç kepçeyle değil bıçakla alınacak kadar yavaş çevrilir. Soğuk oda, atölyede ateşin hiç ulaşmadığı tek yerdir.</p>
+              <p class="category__english" data-i18n="cat.iceGloss">Soğuk oda</p>
+              <p class="category__note" data-i18n="cat.iceNote">Salep ve sakız, sonuç kepçeyle değil bıçakla alınacak kadar yavaş çevrilir. Soğuk oda, atölyede ateşin hiç ulaşmadığı tek yerdir.</p>
             </header>
 
             <ol class="category__list">
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Sade Dilim"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.29.aria" aria-label="Öyküyü okuyun: Sade Dilim"></button>
                 <div class="item__inner">
                   <span class="item__index">29</span>
                   <span class="item__name">Sade Dilim</span>
-                  <span class="item__note">Sıcak bıçakla</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.29.note">Sıcak bıçakla</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/dondurma-sade-dilim.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/dondurma-sade-dilim.jpg" alt="Hançerlioğlu - Sade Dilim" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/dondurma-sade-dilim.jpg" data-i18n-alt="items.29.alt" alt="Hançerlioğlu - Sade Dilim" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Sade Dilim</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Bloktan ısıtılmış bıçakla kesilir. Salep ve sakız, kare bir kenarı tutacak kadar yavaş çevrilir; doğru yapılıp yapılmadığının tek dürüst sınavı budur.</p>
+                  <p data-i18n="items.29.story">Bloktan ısıtılmış bıçakla kesilir. Salep ve sakız, kare bir kenarı tutacak kadar yavaş çevrilir; doğru yapılıp yapılmadığının tek dürüst sınavı budur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Taban</dt><dd class="item__spec-value">Salep &amp; sakız</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kesim</dt><dd class="item__spec-value">Sıcak bıçak</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Dilimlenebilir</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.taban">Taban</dt><dd class="item__spec-value" data-i18n="spec.v.salep-and-sakiz">Salep &amp; sakız</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kesim">Kesim</dt><dd class="item__spec-value" data-i18n="spec.v.sicak-bicak">Sıcak bıçak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.dilimlenebilir">Dilimlenebilir</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fıstık Ezmeli Dilim"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.30.aria" aria-label="Öyküyü okuyun: Fıstık Ezmeli Dilim"></button>
                 <div class="item__inner">
                   <span class="item__index">30</span>
                   <span class="item__name">Fıstık Ezmeli Dilim</span>
-                  <span class="item__note">Fıstık ezmesi damarı</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.30.note">Fıstık ezmesi damarı</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/dondurma-fistik-ezmeli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/dondurma-fistik-ezmeli.jpg" alt="Hançerlioğlu - Fıstık Ezmeli Dilim" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/dondurma-fistik-ezmeli.jpg" data-i18n-alt="items.30.alt" alt="Hançerlioğlu - Fıstık Ezmeli Dilim" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fıstık Ezmeli Dilim</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Aynı dilim, evde iri ve yağlı bir yeşile çekilmiş fıstık ezmesinin damarına yaslanır. Ezme hiç tatlandırılmaz; şeker için değil, ağırlık ve renk için oradadır.</p>
+                  <p data-i18n="items.30.story">Aynı dilim, evde iri ve yağlı bir yeşile çekilmiş fıstık ezmesinin damarına yaslanır. Ezme hiç tatlandırılmaz; şeker için değil, ağırlık ve renk için oradadır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Ezme</dt><dd class="item__spec-value">Kendi değirmenimiz</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Şeker</dt><dd class="item__spec-value">Ezmede yok</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kesim</dt><dd class="item__spec-value">Sıcak bıçak</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.ezme">Ezme</dt><dd class="item__spec-value" data-i18n="spec.v.kendi-degirmenimiz">Kendi değirmenimiz</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.seker">Şeker</dt><dd class="item__spec-value" data-i18n="spec.v.ezmede-yok">Ezmede yok</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kesim">Kesim</dt><dd class="item__spec-value" data-i18n="spec.v.sicak-bicak">Sıcak bıçak</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Baton Sade"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.31.aria" aria-label="Öyküyü okuyun: Baton Sade"></button>
                 <div class="item__inner">
                   <span class="item__index">31</span>
                   <span class="item__name">Baton &middot; Sade</span>
-                  <span class="item__note">Elde preslenmiş</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.31.note">Elde preslenmiş</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baton-sade.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/baton-sade.jpg" alt="Hançerlioğlu - Baton &middot; Sade" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/baton-sade.jpg" data-i18n-alt="items.31.alt" alt="Hançerlioğlu - Baton &middot; Sade" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Baton &middot; Sade</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Sade baton, kalıba elle bastırılır ve kenarını koruyacağı tek ısıda tutulur. Üzerine bir şey eklenmez; hükmedilsin diye ortada duran temel tariftir.</p>
+                  <p data-i18n="items.31.story">Sade baton, kalıba elle bastırılır ve kenarını koruyacağı tek ısıda tutulur. Üzerine bir şey eklenmez; hükmedilsin diye ortada duran temel tariftir.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Biçim</dt><dd class="item__spec-value">Elde preslenmiş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Taban</dt><dd class="item__spec-value">Salep &amp; sakız</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Çıtır külahsız</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bicim">Biçim</dt><dd class="item__spec-value" data-i18n="spec.v.elde-preslenmis">Elde preslenmiş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.taban">Taban</dt><dd class="item__spec-value" data-i18n="spec.v.salep-and-sakiz">Salep &amp; sakız</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.citir-kulahsiz">Çıtır külahsız</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Baton Fıstıklı"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.32.aria" aria-label="Öyküyü okuyun: Baton Fıstıklı"></button>
                 <div class="item__inner">
                   <span class="item__index">32</span>
                   <span class="item__name">Baton &middot; Fıstıklı</span>
-                  <span class="item__note">Tümü yeşile bulanana dek</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.32.note">Tümü yeşile bulanana dek</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baton-fistikli.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/baton-fistikli.jpg" alt="Hançerlioğlu - Baton &middot; Fıstıklı" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/baton-fistikli.jpg" data-i18n-alt="items.32.alt" alt="Hançerlioğlu - Baton &middot; Fıstıklı" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Baton &middot; Fıstıklı</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Baton, yüzeyde hiç beyaz kalmayana dek çekilmiş Antep fıstığının içinde yuvarlanır. Blok hâlâ sertken yapılır; fıstık içine gömülmek yerine dışarıda oturur.</p>
+                  <p data-i18n="items.32.story">Baton, yüzeyde hiç beyaz kalmayana dek çekilmiş Antep fıstığının içinde yuvarlanır. Blok hâlâ sertken yapılır; fıstık içine gömülmek yerine dışarıda oturur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kaplama</dt><dd class="item__spec-value">Kırılmış fıstık</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Uygulama</dt><dd class="item__spec-value">Donmuşken</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Soğuk</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kaplama">Kaplama</dt><dd class="item__spec-value" data-i18n="spec.v.kirilmis-fistik">Kırılmış fıstık</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.uygulama">Uygulama</dt><dd class="item__spec-value" data-i18n="spec.v.donmusken">Donmuşken</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.soguk">Soğuk</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Baton Çikolatalı"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.33.aria" aria-label="Öyküyü okuyun: Baton Çikolatalı"></button>
                 <div class="item__inner">
                   <span class="item__index">33</span>
                   <span class="item__name">Baton &middot; Çikolatalı</span>
-                  <span class="item__note">Çatlayan bir kabuk</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.33.note">Çatlayan bir kabuk</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/baton-cikolatali.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/baton-cikolatali.jpg" alt="Hançerlioğlu - Baton &middot; Çikolatalı" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/baton-cikolatali.jpg" data-i18n-alt="items.33.alt" alt="Hançerlioğlu - Baton &middot; Çikolatalı" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Baton &middot; Çikolatalı</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Soğuğa karşı sertleşen ve ilk ısırıkta temiz çatlayan bitter çikolataya batırılır. Kabuk bilerek incedir — çıtırdayacak kadar, çiğnenecek kadar değil.</p>
+                  <p data-i18n="items.33.story">Soğuğa karşı sertleşen ve ilk ısırıkta temiz çatlayan bitter çikolataya batırılır. Kabuk bilerek incedir — çıtırdayacak kadar, çiğnenecek kadar değil.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Kaplama</dt><dd class="item__spec-value">Bitter çikolata</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Kalınlık</dt><dd class="item__spec-value">İnce</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Soğuk</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kaplama">Kaplama</dt><dd class="item__spec-value" data-i18n="spec.v.bitter-cikolata">Bitter çikolata</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.kalinlik">Kalınlık</dt><dd class="item__spec-value" data-i18n="spec.v.ince">İnce</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.soguk">Soğuk</dd></div>
                   </dl>
                 </div>
               </li>
 
               <!-- USER: film wired up — assets/collection/video/kol-dondurma.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/kol-dondurma.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Kol Dondurma"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.34.aria" aria-label="Öyküyü okuyun: Kol Dondurma"></button>
                 <div class="item__inner">
                   <span class="item__index">34</span>
-                  <span class="item__name">Kol Dondurma <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Kolla çekilen</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Kol Dondurma <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.34.note">Kolla çekilen</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kol-dondurma.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/kol-dondurma.jpg" alt="Hançerlioğlu - Kol Dondurma" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/kol-dondurma.jpg" data-i18n-alt="items.34.alt" alt="Hançerlioğlu - Kol Dondurma" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Kol Dondurma</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Hamur gibi uzayana ve koldan düşmeden asılabilene dek uzun saplı kürekle çalışılır. Salep kıvamında, esnektir; eski usulle gelir — bıçakla kesilir, kepçelenmez.</p>
+                  <p data-i18n="items.34.story">Hamur gibi uzayana ve koldan düşmeden asılabilene dek uzun saplı kürekle çalışılır. Salep kıvamında, esnektir; eski usulle gelir — bıçakla kesilir, kepçelenmez.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Yöntem</dt><dd class="item__spec-value">Uzun kollu döğme</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Doku</dt><dd class="item__spec-value">Uzayan</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Bıçakla</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.yontem">Yöntem</dt><dd class="item__spec-value" data-i18n="spec.v.uzun-kollu-dogme">Uzun kollu döğme</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.doku">Doku</dt><dd class="item__spec-value" data-i18n="spec.v.uzayan">Uzayan</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.bicakla">Bıçakla</dd></div>
                   </dl>
                 </div>
               </li>
@@ -1277,37 +1303,37 @@
               <p class="category__meta">
                 <span class="category__number">06</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Bir eser</span>
+                <span class="category__count" data-i18n="cat.count1">Bir eser</span>
               </p>
               <h2 class="category__title" id="kaymakTitle">
-                <span class="split__line"><span class="split__line-inner">Kaymak</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.kaymak">Kaymak</span></span>
               </h2>
-              <p class="category__english">Sütün kaymağı</p>
-              <p class="category__note">Tek kayıt, çünkü tek bir usul vardır. Bu katalogda kaymak taşıyan her şey, sabahın dördünde burada başlar.</p>
+              <p class="category__english" data-i18n="cat.kaymakGloss">Sütün kaymağı</p>
+              <p class="category__note" data-i18n="cat.kaymakNote">Tek kayıt, çünkü tek bir usul vardır. Bu katalogda kaymak taşıyan her şey, sabahın dördünde burada başlar.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/sut-kaymak.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/sut-kaymak.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Süt Kaymak"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.35.aria" aria-label="Öyküyü okuyun: Süt Kaymak"></button>
                 <div class="item__inner">
                   <span class="item__index">35</span>
-                  <span class="item__name">Süt Kaymak <span class="item__tag">İmza</span></span>
-                  <span class="item__note">Şafakta kaldırılır</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__name">Süt Kaymak <span class="item__tag" data-i18n="catalog.signature">İmza</span></span>
+                  <span class="item__note" data-i18n="items.35.note">Şafakta kaldırılır</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/sut-kaymak.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/sut-kaymak.jpg" alt="Hançerlioğlu - Süt Kaymak" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/sut-kaymak.jpg" data-i18n-alt="items.35.alt" alt="Hançerlioğlu - Süt Kaymak" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Süt Kaymak</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Manda sütü, gece boyunca kaymak yükselip tek bir tabaka halinde oturana dek en kısık ateşte tutulur. Şafakta kaldırılır, dürülür ve baldan ya da fıstıktan başka bir şeyle gelmez — fazlası onunla tartışmak olur.</p>
+                  <p data-i18n="items.35.story">Manda sütü, gece boyunca kaymak yükselip tek bir tabaka halinde oturana dek en kısık ateşte tutulur. Şafakta kaldırılır, dürülür ve baldan ya da fıstıktan başka bir şeyle gelmez — fazlası onunla tartışmak olur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Süt</dt><dd class="item__spec-value">Manda</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Zaman</dt><dd class="item__spec-value">Gece boyu</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Bal ya da fıstıkla</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.sut">Süt</dt><dd class="item__spec-value" data-i18n="spec.v.manda">Manda</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.zaman">Zaman</dt><dd class="item__spec-value" data-i18n="spec.v.gece-boyu">Gece boyu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.bal-ya-da-fistikla">Bal ya da fıstıkla</dd></div>
                   </dl>
                 </div>
               </li>
@@ -1323,170 +1349,170 @@
               <p class="category__meta">
                 <span class="category__number">07</span>
                 <span class="category__rule" aria-hidden="true"></span>
-                <span class="category__count">Yedi eser</span>
+                <span class="category__count" data-i18n="cat.count7">Yedi eser</span>
               </p>
               <h2 class="category__title" id="iceceklerTitle">
-                <span class="split__line"><span class="split__line-inner">İçecekler</span></span>
+                <span class="split__line"><span class="split__line-inner" data-i18n="cat.drinks">İçecekler</span></span>
               </h2>
-              <p class="category__english">Eşlik edenler</p>
-              <p class="category__note">Sofraya yanında götürülenler. İkisi burada yapılır ve bu katalogdaki herhangi bir eser kadar zaman ister; geri kalanı soğuk, camda ve ikinci kez sorulmadan gelir.</p>
+              <p class="category__english" data-i18n="cat.drinksGloss">Eşlik edenler</p>
+              <p class="category__note" data-i18n="cat.drinksNote">Sofraya yanında götürülenler. İkisi burada yapılır ve bu katalogdaki herhangi bir eser kadar zaman ister; geri kalanı soğuk, camda ve ikinci kez sorulmadan gelir.</p>
             </header>
 
             <ol class="category__list">
 
               <!-- USER: film wired up — assets/collection/video/turk-kahvesi.mp4 -->
               <li class="item" data-item data-video="assets/collection/video/turk-kahvesi.mp4">
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Türk Kahvesi"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.36.aria" aria-label="Öyküyü okuyun: Türk Kahvesi"></button>
                 <div class="item__inner">
                   <span class="item__index">36</span>
                   <span class="item__name">Türk Kahvesi</span>
-                  <span class="item__note">Bozulmayan köpük</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.36.note">Bozulmayan köpük</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/turk-kahvesi.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/turk-kahvesi.jpg" alt="Hançerlioğlu - Türk Kahvesi" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/turk-kahvesi.jpg" data-i18n-alt="items.36.alt" alt="Hançerlioğlu - Türk Kahvesi" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Türk Kahvesi</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Toz haline gelene dek çekilir ve köpük tam bir kez yükselip hiç bozulmasın diye bakır cezvede yavaş pişer. Önce su gelir, her zaman — kahveye temiz bir ağızla varılır.</p>
+                  <p data-i18n="items.36.story">Toz haline gelene dek çekilir ve köpük tam bir kez yükselip hiç bozulmasın diye bakır cezvede yavaş pişer. Önce su gelir, her zaman — kahveye temiz bir ağızla varılır.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Öğütüm</dt><dd class="item__spec-value">Toz</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Pişirme</dt><dd class="item__spec-value">Cezvede, ağır ateş</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Su ile, önce su</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.ogutum">Öğütüm</dt><dd class="item__spec-value" data-i18n="spec.v.toz">Toz</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.pisirme">Pişirme</dt><dd class="item__spec-value" data-i18n="spec.v.cezvede-agir-ates">Cezvede, ağır ateş</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.su-ile-once-su">Su ile, önce su</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Çay"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.37.aria" aria-label="Öyküyü okuyun: Çay"></button>
                 <div class="item__inner">
                   <span class="item__index">37</span>
                   <span class="item__name">Çay</span>
-                  <span class="item__note">İnce belli, çift demlik</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.37.note">İnce belli, çift demlik</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/cay.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/cay.jpg" alt="Hançerlioğlu - Çay" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/cay.jpg" data-i18n-alt="items.37.alt" alt="Hançerlioğlu - Çay" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Çay</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Çift demlikte demlenir ve misafirin istediği renge, tavşan kanından açık kehribara dek dökülür. İnce belli bardak, tabak, yanında iki kesme şeker — sizin için karıştırılmaz.</p>
+                  <p data-i18n="items.37.story">Çift demlikte demlenir ve misafirin istediği renge, tavşan kanından açık kehribara dek dökülür. İnce belli bardak, tabak, yanında iki kesme şeker — sizin için karıştırılmaz.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Demleme</dt><dd class="item__spec-value">Çift demlik</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Bardak</dt><dd class="item__spec-value">İnce belli</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Şeker</dt><dd class="item__spec-value">Kenarda</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.demleme">Demleme</dt><dd class="item__spec-value" data-i18n="spec.v.cift-demlik">Çift demlik</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.bardak">Bardak</dt><dd class="item__spec-value" data-i18n="spec.v.ince-belli">İnce belli</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.seker">Şeker</dt><dd class="item__spec-value" data-i18n="spec.v.kenarda">Kenarda</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Kola"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.38.aria" aria-label="Öyküyü okuyun: Kola"></button>
                 <div class="item__inner">
                   <span class="item__index">38</span>
                   <span class="item__name">Kola</span>
-                  <span class="item__note">Buz gibi, camda</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.38.note">Buz gibi, camda</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/kola.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/kola.jpg" alt="Hançerlioğlu - Kola" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/kola.jpg" data-i18n-alt="items.38.alt" alt="Hançerlioğlu - Kola" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Kola</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Dolabın en soğuk yerinde tutulur ve tezgâhın arkasında değil, sofrada açılır. Yalnızca cam şişe — ev hiç kutu servis etmedi ve etmeye de niyeti yoktur.</p>
+                  <p data-i18n="items.38.story">Dolabın en soğuk yerinde tutulur ve tezgâhın arkasında değil, sofrada açılır. Yalnızca cam şişe — ev hiç kutu servis etmedi ve etmeye de niyeti yoktur.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Şişe</dt><dd class="item__spec-value">Cam</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Masada açılır</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.sise">Şişe</dt><dd class="item__spec-value" data-i18n="spec.v.cam">Cam</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.masada-acilir">Masada açılır</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Fanta"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.39.aria" aria-label="Öyküyü okuyun: Fanta"></button>
                 <div class="item__inner">
                   <span class="item__index">39</span>
                   <span class="item__name">Fanta</span>
-                  <span class="item__note">İstenirse bir dilimle</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.39.note">İstenirse bir dilimle</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/fanta.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/fanta.jpg" alt="Hançerlioğlu - Fanta" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/fanta.jpg" data-i18n-alt="items.39.alt" alt="Hançerlioğlu - Fanta" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Fanta</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Soğutulmuş, camda, buzun üzerine dökülür; sofra isterse bir limon dilimiyle. Ağır bir fıstık tabağını bu listedeki her şeyden daha temiz keser.</p>
+                  <p data-i18n="items.39.story">Soğutulmuş, camda, buzun üzerine dökülür; sofra isterse bir limon dilimiyle. Ağır bir fıstık tabağını bu listedeki her şeyden daha temiz keser.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Şişe</dt><dd class="item__spec-value">Cam</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Buzlu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.sise">Şişe</dt><dd class="item__spec-value" data-i18n="spec.v.cam">Cam</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.buzlu">Buzlu</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Sprite"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.40.aria" aria-label="Öyküyü okuyun: Sprite"></button>
                 <div class="item__inner">
                   <span class="item__index">40</span>
                   <span class="item__name">Sprite</span>
-                  <span class="item__note">Soğuk ve duru</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.40.note">Soğuk ve duru</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/sprite.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/sprite.jpg" alt="Hançerlioğlu - Sprite" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/sprite.jpg" data-i18n-alt="items.40.alt" alt="Hançerlioğlu - Sprite" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Sprite</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Evin en tatlı tabakların karşısına koyduğu içecektir, çünkü damakta hiçbir şey bırakmaz. Soğuk, duru ve bilerek yalnız.</p>
+                  <p data-i18n="items.40.story">Evin en tatlı tabakların karşısına koyduğu içecektir, çünkü damakta hiçbir şey bırakmaz. Soğuk, duru ve bilerek yalnız.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Şişe</dt><dd class="item__spec-value">Cam</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Buzlu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.sise">Şişe</dt><dd class="item__spec-value" data-i18n="spec.v.cam">Cam</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.buzlu">Buzlu</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Soda"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.41.aria" aria-label="Öyküyü okuyun: Soda"></button>
                 <div class="item__inner">
                   <span class="item__index">41</span>
                   <span class="item__name">Soda</span>
-                  <span class="item__note">Geleneksel kapanış</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.41.note">Geleneksel kapanış</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/soda.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/soda.jpg" alt="Hançerlioğlu - Soda" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/soda.jpg" data-i18n-alt="items.41.alt" alt="Hançerlioğlu - Soda" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Soda</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Sade ya da limon değmiş, dolabın izin verdiği kadar soğuk çekilir. Ağır bir tabağı kapatan budur; müdavimler yemeği bitirmeden ister.</p>
+                  <p data-i18n="items.41.story">Sade ya da limon değmiş, dolabın izin verdiği kadar soğuk çekilir. Ağır bir tabağı kapatan budur; müdavimler yemeği bitirmeden ister.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Çeşit</dt><dd class="item__spec-value">Sade ya da limonlu</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Buz gibi</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.cesit">Çeşit</dt><dd class="item__spec-value" data-i18n="spec.v.sade-ya-da-limonlu">Sade ya da limonlu</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.buz-gibi">Buz gibi</dd></div>
                   </dl>
                 </div>
               </li>
 
               <li class="item" data-item>
-                <button class="item__trigger" type="button" data-item-open data-cursor="item" aria-label="Öyküyü okuyun: Su"></button>
+                <button class="item__trigger" type="button" data-item-open data-cursor="item" data-i18n-aria-label="items.42.aria" aria-label="Öyküyü okuyun: Su"></button>
                 <div class="item__inner">
                   <span class="item__index">42</span>
                   <span class="item__name">Su</span>
-                  <span class="item__note">Her şeyden önce</span>
-                  <span class="item__cue" aria-hidden="true">Öykü<span class="item__cue-arrow">→</span></span>
+                  <span class="item__note" data-i18n="items.42.note">Her şeyden önce</span>
+                  <span class="item__cue" aria-hidden="true"><span data-i18n="catalog.cue">Öykü</span><span class="item__cue-arrow">→</span></span>
                 </div>
                 <figure class="preview" aria-hidden="true">
                   <!-- USER: assets/collection/su.jpg — 1080x1350 -->
-                  <img class="preview__img" src="assets/collection/su.jpg" alt="Hançerlioğlu - Su" loading="lazy" decoding="async" data-media-img>
+                  <img class="preview__img" src="assets/collection/su.jpg" data-i18n-alt="items.42.alt" alt="Hançerlioğlu - Su" loading="lazy" decoding="async" data-media-img>
                   <figcaption class="preview__fallback">Su</figcaption>
                 </figure>
                 <div class="item__story" hidden>
-                  <p>Düz ya da mineralli, tek bir sipariş alınmadan sofraya konur. Masaya ilk varan odur ve kimsenin istemek zorunda olmadığı tek şeydir.</p>
+                  <p data-i18n="items.42.story">Düz ya da mineralli, tek bir sipariş alınmadan sofraya konur. Masaya ilk varan odur ve kimsenin istemek zorunda olmadığı tek şeydir.</p>
                   <dl class="item__specs">
-                    <div class="item__spec"><dt class="item__spec-key">Çeşit</dt><dd class="item__spec-value">Sade ya da maden</dd></div>
-                    <div class="item__spec"><dt class="item__spec-key">Servis</dt><dd class="item__spec-value">Her şeyden önce</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.cesit">Çeşit</dt><dd class="item__spec-value" data-i18n="spec.v.sade-ya-da-maden">Sade ya da maden</dd></div>
+                    <div class="item__spec"><dt class="item__spec-key" data-i18n="spec.k.servis">Servis</dt><dd class="item__spec-value" data-i18n="spec.v.her-seyden-once">Her şeyden önce</dd></div>
                   </dl>
                 </div>
               </li>
@@ -1499,9 +1525,9 @@
                ====================================================== -->
           <div class="collection__close">
             <p class="collection__close-mark" aria-hidden="true">✦</p>
-            <p class="collection__close-text" data-reveal="fade">Kırk iki eser, tek ölçü. Bu katalogda olmayan, bu evde yapılmaz.</p>
+            <p class="collection__close-text" data-reveal="fade" data-i18n="catalog.close">Kırk iki eser, tek ölçü. Bu katalogda olmayan, bu evde yapılmaz.</p>
             <a class="collection__close-link" href="index.html#house" data-reveal="fade" data-cursor="link">
-              <span>Eve dönün</span>
+              <span data-i18n="catalog.return">Eve dönün</span>
               <span class="collection__close-arrow" aria-hidden="true">→</span>
             </a>
           </div>
@@ -1520,42 +1546,42 @@
 
       <div class="footer__brand">
         <p class="footer__mark" data-footer-reveal>Hançerlioğlu</p>
-        <p class="footer__tagline" data-footer-reveal>1995’ten beri Erdemli’de, elde tutulan bir ustalık.</p>
+        <p class="footer__tagline" data-footer-reveal data-i18n="footer.tagline">1995’ten beri Erdemli’de, elde tutulan bir ustalık.</p>
       </div>
 
       <div class="footer__columns">
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Atölye</h3>
-          <address class="footer__address" data-footer-reveal>
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.workshop">Atölye</h3>
+          <address class="footer__address" data-footer-reveal data-bidi="ltr" data-i18n-html="footer.address">
             Alata, Erdemoğlu Blv. No : 183 A<br>
             33730 Erdemli/Mersin
           </address>
         </div>
 
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Saatler</h3>
-          <p class="footer__lines" data-footer-reveal>
-            Katmer &middot; 04:00 — 09:00<br>
-            Ev &middot; 09:00 — 22:00<br>
-            Yılın ilk günü kapalı
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.hours">Saatler</h3>
+          <p class="footer__lines" data-footer-reveal data-bidi="ltr">
+            <span data-i18n="footer.katmer">Katmer</span> · <span>04:00 — 09:00</span><br>
+            <span data-i18n="footer.open">Ev</span> · <span>09:00 — 22:00</span><br>
+            <span data-i18n="footer.closed">Yılın ilk günü kapalı</span>
           </p>
         </div>
 
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Başka yerde</h3>
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.elsewhere">Başka yerde</h3>
           <ul class="footer__social">
-            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="index.html" data-cursor="link">Ev<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
+            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="index.html" data-cursor="link"><span data-i18n="footer.home">Ev</span><span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
             <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="https://www.instagram.com/hancerlioglu_/" target="_blank" rel="noopener noreferrer" data-cursor="link">Instagram<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
-            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#cover" data-cursor="link">Günce<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
+            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#cover" data-cursor="link"><span data-i18n="footer.journal">Günce</span><span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer__bar">
-        <p class="footer__copy" data-footer-reveal>&copy; <span id="year">2026</span> Hançerlioğlu &middot; Erdemli. Tüm hakları saklıdır.</p>
-        <p class="footer__credit" data-footer-reveal>1995’ten beri, ağır ağır.</p>
+        <p class="footer__copy" data-footer-reveal>&copy; <span id="year" data-bidi="ltr">2026</span> <span data-i18n="footer.rights">Hançerlioğlu · Erdemli. Tüm hakları saklıdır.</span></p>
+        <p class="footer__credit" data-footer-reveal data-i18n="footer.credit">1995’ten beri, ağır ağır.</p>
         <button class="footer__top" id="backToTop" type="button" data-cursor="link" data-footer-reveal>
-          <span>Başa dönün</span>
+          <span data-i18n="footer.top">Başa dönün</span>
           <span class="footer__top-arrow" aria-hidden="true">↑</span>
         </button>
       </div>
@@ -1581,14 +1607,14 @@
         <p class="drawer__counter"><span id="drawerIndex">01</span> <span class="drawer__counter-sep">/</span> 42</p>
 
         <div class="drawer__controls">
-          <button class="drawer__step" type="button" data-drawer-prev data-cursor="link" aria-label="Önceki eser">
+          <button class="drawer__step" type="button" data-drawer-prev data-cursor="link" data-i18n-aria-label="drawer.prev" aria-label="Önceki eser">
             <span aria-hidden="true">←</span>
           </button>
-          <button class="drawer__step" type="button" data-drawer-next data-cursor="link" aria-label="Sonraki eser">
+          <button class="drawer__step" type="button" data-drawer-next data-cursor="link" data-i18n-aria-label="drawer.next" aria-label="Sonraki eser">
             <span aria-hidden="true">→</span>
           </button>
-          <button class="drawer__close" type="button" data-drawer-close data-cursor="link" aria-label="Kapat">
-            <span class="drawer__close-label">Kapat</span>
+          <button class="drawer__close" type="button" data-drawer-close data-cursor="link" data-i18n-aria-label="nav.close" aria-label="Kapat">
+            <span class="drawer__close-label" data-i18n="nav.close">Kapat</span>
             <span class="drawer__close-mark" aria-hidden="true"></span>
           </button>
         </div>
@@ -1600,14 +1626,14 @@
           <img class="drawer__img" id="drawerImg" src="" alt="Hançerlioğlu" loading="lazy" data-media-img>
           <figcaption class="drawer__media-fallback" id="drawerFallback" aria-hidden="true">
             <span class="drawer__media-mark">Hançerlioğlu</span>
-            <span class="drawer__media-text">Fotoğraf bekleniyor</span>
+            <span class="drawer__media-text" data-i18n="drawer.waiting">Fotoğraf bekleniyor</span>
           </figcaption>
         </figure>
 
         <div class="drawer__body">
-          <p class="drawer__eyebrow" id="drawerCategory">Katmerler</p>
+          <p class="drawer__eyebrow" id="drawerCategory" data-i18n="cat.katmer">Katmerler</p>
           <h2 class="drawer__title" id="drawerTitle">Klasik Katmer</h2>
-          <p class="drawer__sub" id="drawerSub">Şafakta açılır</p>
+          <p class="drawer__sub" id="drawerSub" data-i18n="items.01.note">Şafakta açılır</p>
           <div class="drawer__story" id="drawerStory"></div>
           <p class="drawer__foot">Hançerlioğlu &middot; Erdemli &middot; 1995</p>
         </div>

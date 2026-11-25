@@ -570,7 +570,7 @@
 .item__tag {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 0.7rem;
+  margin-inline-start: 0.7rem;
   padding: 0.28em 0.7em 0.24em;
   border: 1px solid var(--color-line-gold);
   border-radius: 999px;
@@ -870,7 +870,7 @@
   flex-direction: column;
   width: var(--drawer-w);
   background-color: #080706;
-  border-left: 1px solid var(--color-line-gold);
+  border-inline-start: 1px solid var(--color-line-gold);
   box-shadow: -2rem 0 6rem rgba(0, 0, 0, 0.7);
   transform: translateX(100%);
   transition: transform 0.9s var(--ease-in-out-soft);
@@ -947,8 +947,9 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  margin-left: 0.5rem;
-  padding: 0.5rem 0.25rem 0.5rem 0.75rem;
+  margin-inline-start: 0.5rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.75rem 0.25rem;
   font-size: var(--fs-micro);
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
@@ -1245,7 +1246,7 @@
 
   .drawer__panel {
     width: 100%;
-    border-left: 0;
+    border-inline-start: 0;
   }
 
   .drawer__media {
@@ -1322,4 +1323,36 @@
   .js [data-cover] {
     opacity: 1;
   }
+}
+
+html[dir="rtl"] .collection__close-arrow,
+html[dir="rtl"] .drawer__step > span {
+  scale: -1 1;
+}
+
+html[dir="rtl"] .item__cue {
+  transform: translateX(0.625rem);
+}
+
+html[dir="rtl"] .item.is-hover .item__cue {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .item.is-hover .item__cue-arrow {
+  transform: translateX(-0.25rem);
+}
+
+html[dir="rtl"] .cover__back:hover .cover__back-arrow {
+  transform: translateX(0.375rem);
+}
+
+html[dir="rtl"] .drawer__panel {
+  right: auto;
+  left: 0;
+  box-shadow: 2rem 0 6rem rgba(0, 0, 0, 0.7);
+  transform: translateX(-100%);
+}
+
+html[dir="rtl"] .drawer.is-open .drawer__panel {
+  transform: translateX(0);
 }

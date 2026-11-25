@@ -2,13 +2,23 @@
 <html lang="tr" class="no-js">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      var lang = "tr";
+      try { lang = localStorage.getItem("hancerlioglu-lang") || "tr"; } catch (error) {}
+      if (lang !== "en" && lang !== "ar") lang = "tr";
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      if (lang !== "tr") document.documentElement.classList.add("is-i18n-wait");
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050505">
   <meta name="color-scheme" content="dark">
 
-  <title>Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler</title>
-  <meta name="description" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar. Alata, Erdemoğlu Bulvarı, Mersin.">
-  <meta name="keywords" content="Hançerlioğlu, Hançerlioğlu resmi, Hançerlioğlu Erdemli, Hançerlioğlu Mersin, geleneksel tatlı, katmer, künefe, baklava, Erdemli tatlıcısı, Alata">
+  <title data-i18n="meta.homeTitle">Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler</title>
+  <meta name="description" data-i18n-content="meta.homeDescription" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar. Alata, Erdemoğlu Bulvarı, Mersin.">
+  <meta name="keywords" data-i18n-content="meta.homeKeywords" content="Hançerlioğlu, Hançerlioğlu resmi, Hançerlioğlu Erdemli, Hançerlioğlu Mersin, geleneksel tatlı, katmer, künefe, baklava, Erdemli tatlıcısı, Alata">
   <meta name="author" content="Hançerlioğlu">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,16 +30,16 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hançerlioğlu">
   <meta property="og:url" content="https://www.hancerlioglu.shop/">
-  <meta property="og:title" content="Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler">
-  <meta property="og:description" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar.">
+  <meta property="og:title" data-i18n-content="meta.homeTitle" content="Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler">
+  <meta property="og:description" data-i18n-content="meta.homeDescriptionShort" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar.">
   <meta property="og:image" content="https://www.hancerlioglu.shop/assets/collection/logo.png">
-  <meta property="og:image:alt" content="Hançerlioğlu logosu">
+  <meta property="og:image:alt" data-i18n-content="meta.logo" content="Hançerlioğlu logosu">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler">
-  <meta name="twitter:description" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar.">
+  <meta name="twitter:title" data-i18n-content="meta.homeTitle" content="Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı &amp; Lezzetler">
+  <meta name="twitter:description" data-i18n-content="meta.homeDescriptionShort" content="Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar.">
   <meta name="twitter:image" content="https://www.hancerlioglu.shop/assets/collection/logo.png">
-  <meta name="twitter:image:alt" content="Hançerlioğlu logosu">
+  <meta name="twitter:image:alt" data-i18n-content="meta.logo" content="Hançerlioğlu logosu">
 
   <link rel="icon" href="assets/collection/logo.png" type="image/png">
 
@@ -114,6 +124,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script defer src="i18n.js"></script>
   <script defer src="app.js"></script>
 
   <script>document.documentElement.classList.replace("no-js", "js");</script>
@@ -121,15 +132,15 @@
 
 <body class="page is-loading">
 
-  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">İçeriğe geç</a>
 
   <!-- ============================================================
        PRELOADER
        ============================================================ -->
-  <div class="preloader" id="preloader" role="progressbar" aria-label="Yükleniyor" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="preloader" id="preloader" role="progressbar" data-i18n-aria-label="preloader.loading" aria-label="Yükleniyor" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="preloader__inner">
       <p class="preloader__mark">Hançerlioğlu</p>
-      <p class="preloader__tagline">Erdemli &middot; 1995</p>
+      <p class="preloader__tagline" data-i18n="preloader.place">Erdemli &middot; 1995</p>
       <div class="preloader__counter">
         <span class="preloader__number" id="preloaderNumber">0</span><span class="preloader__percent">%</span>
       </div>
@@ -159,25 +170,33 @@
        ============================================================ -->
   <header class="header" id="header">
     <div class="header__inner">
-      <a class="header__brand" href="#hero" data-cursor="link" aria-label="Hançerlioğlu — ana sayfa">
+      <a class="header__brand" href="#hero" data-cursor="link" data-i18n-aria-label="nav.home" aria-label="Hançerlioğlu — ana sayfa">
         <span class="header__brand-mark">Hançerlioğlu</span>
         <span class="header__brand-sub">Erdemli</span>
       </a>
 
-      <nav class="header__nav" aria-label="Ana menü">
+      <nav class="header__nav" data-i18n-aria-label="nav.primary" aria-label="Ana menü">
         <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="#legacy" data-cursor="link"><span class="header__link-index">01</span><span class="header__link-label">Kurucu</span></a></li>
-          <li class="header__item"><a class="header__link" href="#heritage" data-cursor="link"><span class="header__link-index">02</span><span class="header__link-label">Tarihçe</span></a></li>
-          <li class="header__item"><a class="header__link" href="#craft" data-cursor="link"><span class="header__link-index">03</span><span class="header__link-label">Zanaat</span></a></li>
-          <li class="header__item"><a class="header__link" href="collection.html" data-cursor="link"><span class="header__link-index">04</span><span class="header__link-label">Koleksiyon</span></a></li>
-          <li class="header__item"><a class="header__link" href="#house" data-cursor="link"><span class="header__link-index">05</span><span class="header__link-label">Ev</span></a></li>
+          <li class="header__item"><a class="header__link" href="#legacy" data-cursor="link"><span class="header__link-index">01</span><span class="header__link-label" data-i18n="nav.founder">Kurucu</span></a></li>
+          <li class="header__item"><a class="header__link" href="#heritage" data-cursor="link"><span class="header__link-index">02</span><span class="header__link-label" data-i18n="nav.history">Tarihçe</span></a></li>
+          <li class="header__item"><a class="header__link" href="#craft" data-cursor="link"><span class="header__link-index">03</span><span class="header__link-label" data-i18n="nav.craft">Zanaat</span></a></li>
+          <li class="header__item"><a class="header__link" href="collection.html" data-cursor="link"><span class="header__link-index">04</span><span class="header__link-label" data-i18n="nav.collection">Koleksiyon</span></a></li>
+          <li class="header__item"><a class="header__link" href="#house" data-cursor="link"><span class="header__link-index">05</span><span class="header__link-label" data-i18n="nav.house">Ev</span></a></li>
         </ul>
       </nav>
 
-      <p class="header__meta">Kur. <span class="header__meta-year">1995</span></p>
+      <div class="lang" role="group" data-i18n-aria-label="lang.group" aria-label="Dil">
+        <button class="lang__btn is-active" type="button" data-lang="tr" aria-pressed="true" data-cursor="link">TR</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" data-cursor="link">EN</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false" data-cursor="link">AR</button>
+      </div>
+
+      <p class="header__meta"><span data-i18n="nav.established">Kur.</span> <span class="header__meta-year" data-bidi="ltr">1995</span></p>
 
       <button class="header__toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="menu" data-cursor="link">
-        <span class="header__toggle-label" data-menu-label="open">Menü</span>
+        <span class="header__toggle-label" data-menu-label="open" data-i18n="nav.menu">Menü</span>
         <span class="header__toggle-lines" aria-hidden="true"><span></span><span></span></span>
       </button>
     </div>
@@ -188,15 +207,22 @@
        ============================================================ -->
   <div class="menu" id="menu" aria-hidden="true">
     <div class="menu__backdrop"></div>
-    <nav class="menu__inner" aria-label="Menü">
+    <nav class="menu__inner" data-i18n-aria-label="nav.menu" aria-label="Menü">
       <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link" href="#legacy" data-menu-link><span class="menu__link-index">01</span><span class="menu__link-text">Kurucu</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#heritage" data-menu-link><span class="menu__link-index">02</span><span class="menu__link-text">Tarihçe</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#craft" data-menu-link><span class="menu__link-index">03</span><span class="menu__link-text">Zanaat</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="collection.html" data-menu-link><span class="menu__link-index">04</span><span class="menu__link-text">Koleksiyon</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#house" data-menu-link><span class="menu__link-index">05</span><span class="menu__link-text">Ev</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#legacy" data-menu-link><span class="menu__link-index">01</span><span class="menu__link-text" data-i18n="nav.founder">Kurucu</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#heritage" data-menu-link><span class="menu__link-index">02</span><span class="menu__link-text" data-i18n="nav.history">Tarihçe</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#craft" data-menu-link><span class="menu__link-index">03</span><span class="menu__link-text" data-i18n="nav.craft">Zanaat</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="collection.html" data-menu-link><span class="menu__link-index">04</span><span class="menu__link-text" data-i18n="nav.collection">Koleksiyon</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#house" data-menu-link><span class="menu__link-index">05</span><span class="menu__link-text" data-i18n="nav.house">Ev</span></a></li>
       </ul>
-      <p class="menu__note">Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin</p>
+      <div class="lang lang--menu" role="group" data-i18n-aria-label="lang.group" aria-label="Dil">
+        <button class="lang__btn is-active" type="button" data-lang="tr" aria-pressed="true" data-cursor="link">TR</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="en" aria-pressed="false" data-cursor="link">EN</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button class="lang__btn" type="button" data-lang="ar" aria-pressed="false" data-cursor="link">AR</button>
+      </div>
+      <p class="menu__note" data-bidi="ltr" data-i18n="nav.address">Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin</p>
     </nav>
   </div>
 
@@ -223,30 +249,30 @@
             <span class="hero__overline-rule" aria-hidden="true"></span>
             <span>Hançerlioğlu</span>
           </span>
-          <span class="hero__title" data-hero="title" data-split>1995’ten beri <em>ustalık</em></span>
+          <span class="hero__title" data-hero="title" data-split data-i18n-html="hero.title">1995’ten beri <em>ustalık</em></span>
         </h1>
 
-        <p class="hero__lede" data-hero="lede" data-split>Metin Hançerlioğlu'nun Erdemli’de açtığı tezgâhtan bugüne; elde açılan yufka, fıstık ve değişmeyen bir ölçü.</p>
+        <p class="hero__lede" data-hero="lede" data-split data-i18n="hero.lede">Metin Hançerlioğlu'nun Erdemli’de açtığı tezgâhtan bugüne; elde açılan yufka, fıstık ve değişmeyen bir ölçü.</p>
       </div>
 
       <div class="hero__footer">
         <dl class="hero__facts" data-hero="facts">
           <div class="hero__fact">
-            <dt class="hero__fact-label">Kuruluş</dt>
+            <dt class="hero__fact-label" data-i18n="hero.founded">Kuruluş</dt>
             <dd class="hero__fact-value">1995</dd>
           </div>
           <div class="hero__fact">
-            <dt class="hero__fact-label">Usta</dt>
+            <dt class="hero__fact-label" data-i18n="hero.master">Usta</dt>
             <dd class="hero__fact-value">Metin Hançerlioğlu</dd>
           </div>
           <div class="hero__fact">
-            <dt class="hero__fact-label">Köken</dt>
+            <dt class="hero__fact-label" data-i18n="hero.origin">Köken</dt>
             <dd class="hero__fact-value">Erdemli</dd>
           </div>
         </dl>
 
         <div class="hero__cue" data-hero="cue">
-          <span class="hero__cue-label">Kaydırın</span>
+          <span class="hero__cue-label" data-i18n="hero.scroll">Kaydırın</span>
           <span class="hero__cue-line" aria-hidden="true"><span class="hero__cue-dot"></span></span>
         </div>
       </div>
@@ -279,9 +305,9 @@
       <div class="philosophy__inner">
         <p class="section-label" data-reveal="fade">
           <span class="section-label__index">—</span>
-          <span class="section-label__text">Felsefe</span>
+          <span class="section-label__text" data-i18n="philosophy.label">Felsefe</span>
         </p>
-        <h2 class="philosophy__statement" id="philosophyHeading" data-philosophy>Tatlı yapmıyoruz. 1995’te verilen bir sözü tutuyoruz — her yufka yaprağı ışıktan okunacak kadar ince gerilsin, adımızı taşımayan hiçbir şey tezgâhtan çıkmasın.</h2>
+        <h2 class="philosophy__statement" id="philosophyHeading" data-philosophy data-i18n="philosophy.statement">Tatlı yapmıyoruz. 1995’te verilen bir sözü tutuyoruz — her yufka yaprağı ışıktan okunacak kadar ince gerilsin, adımızı taşımayan hiçbir şey tezgâhtan çıkmasın.</h2>
       </div>
     </section>
 
@@ -295,7 +321,7 @@
           <figure class="legacy__sticky">
             <div class="media media--portrait" data-parallax>
               <div class="media__inner" data-parallax-inner>
-                <img class="media__img" src="assets\collection\Founder2.jpeg" alt="Hançerlioğlu - Metin Hançerlioğlu, Erdemli’deki atölyenin mermer tezgâhında" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\Founder2.jpeg" data-i18n-alt="legacy.alt" alt="Hançerlioğlu - Metin Hançerlioğlu, Erdemli’deki atölyenin mermer tezgâhında" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">Hançerlioğlu</span>
                   <span class="media__fallback-text">Kurucu portresi &middot; 1995</span>
@@ -304,7 +330,7 @@
             </div>
             <figcaption class="legacy__caption" data-reveal="fade">
               <span class="legacy__caption-rule" aria-hidden="true"></span>
-              Metin Hançerlioğlu, mermer tezgâhın başında, Erdemli.
+              <span data-i18n="legacy.caption">Metin Hançerlioğlu, mermer tezgâhın başında, Erdemli.</span>
             </figcaption>
           </figure>
         </div>
@@ -312,35 +338,35 @@
         <div class="legacy__body">
           <p class="section-label" data-reveal="fade">
             <span class="section-label__index">01</span>
-            <span class="section-label__text">Kurucu</span>
+            <span class="section-label__text" data-i18n="nav.founder">Kurucu</span>
           </p>
 
-          <h2 class="legacy__title" id="legacyHeading" data-reveal="lines" data-split>Her şeyin başladığı <em>eller</em></h2>
+          <h2 class="legacy__title" id="legacyHeading" data-reveal="lines" data-split data-i18n-html="legacy.title">Her şeyin başladığı <em>eller</em></h2>
 
           <div class="legacy__prose">
-            <p class="legacy__text" data-reveal="lines" data-split>1995’te, Erdemli’de, Metin Hançerlioğlu dört tepsi genişliğinde bir oda açtı. Bir mermer tezgâhı, elde dövülmüş bir tavası ve yufkanın ışık geçene kadar gerilebileceğine dair bir inancı vardı.</p>
-            <p class="legacy__text" data-reveal="lines" data-split>Kestirme yolları, başkalarının borcu reddettiği gibi reddetti. Yağ şafakta sadeleştirilir, fıstık teker teker açılırdı. Yırtılan yaprak satılmaz, kenara konurdu. Ev, atmaya razı olduğu şeyin üstüne kuruldu.</p>
-            <p class="legacy__text" data-reveal="lines" data-split>Yıllar geçti. Tezgâh aynı taş. Ölçü yerinden oynamadı.</p>
+            <p class="legacy__text" data-reveal="lines" data-split data-i18n="legacy.p1">1995’te, Erdemli’de, Metin Hançerlioğlu dört tepsi genişliğinde bir oda açtı. Bir mermer tezgâhı, elde dövülmüş bir tavası ve yufkanın ışık geçene kadar gerilebileceğine dair bir inancı vardı.</p>
+            <p class="legacy__text" data-reveal="lines" data-split data-i18n="legacy.p2">Kestirme yolları, başkalarının borcu reddettiği gibi reddetti. Yağ şafakta sadeleştirilir, fıstık teker teker açılırdı. Yırtılan yaprak satılmaz, kenara konurdu. Ev, atmaya razı olduğu şeyin üstüne kuruldu.</p>
+            <p class="legacy__text" data-reveal="lines" data-split data-i18n="legacy.p3">Yıllar geçti. Tezgâh aynı taş. Ölçü yerinden oynamadı.</p>
           </div>
 
           <dl class="legacy__stats" data-reveal="fade">
             <div class="legacy__stat">
-              <dt class="legacy__stat-label">Kuruluş</dt>
+              <dt class="legacy__stat-label" data-i18n="legacy.founded">Kuruluş</dt>
               <dd class="legacy__stat-value" data-count="1995" data-count-plain>1995</dd>
             </div>
             <div class="legacy__stat">
-              <dt class="legacy__stat-label">Tepside yaprak</dt>
+              <dt class="legacy__stat-label" data-i18n="legacy.leaves">Tepside yaprak</dt>
               <dd class="legacy__stat-value" data-count="40">40</dd>
             </div>
             <div class="legacy__stat">
-              <dt class="legacy__stat-label">Şehir</dt>
+              <dt class="legacy__stat-label" data-i18n="legacy.city">Şehir</dt>
               <dd class="legacy__stat-value">Erdemli</dd>
             </div>
           </dl>
 
-          <p class="legacy__signature" data-reveal="fade" aria-label="Metin Hançerlioğlu'nun imzası">
+          <p class="legacy__signature" data-reveal="fade" data-i18n-aria-label="legacy.signature" aria-label="Metin Hançerlioğlu'nun imzası">
             <span class="legacy__signature-name">Metin Hançerlioğlu</span>
-            <span class="legacy__signature-role">Kurucu &middot; 1995</span>
+            <span class="legacy__signature-role" data-i18n="legacy.role">Kurucu &middot; 1995</span>
           </p>
         </div>
 
@@ -354,10 +380,10 @@
       <div class="heritage__head">
         <p class="section-label" data-reveal="fade">
           <span class="section-label__index">02</span>
-          <span class="section-label__text">Tarihçe</span>
+          <span class="section-label__text" data-i18n="nav.history">Tarihçe</span>
         </p>
-        <h2 class="heritage__title" id="heritageHeading" data-reveal="lines" data-split>İki durak</h2>
-        <p class="heritage__intro" data-reveal="lines" data-split>Biri tezgâhın kurulduğu yıl. Öteki, evin bugünkü yerine ve ölçeğine kavuştuğu yıl.</p>
+        <h2 class="heritage__title" id="heritageHeading" data-reveal="lines" data-split data-i18n="heritage.title">İki durak</h2>
+        <p class="heritage__intro" data-reveal="lines" data-split data-i18n="heritage.intro">Biri tezgâhın kurulduğu yıl. Öteki, evin bugünkü yerine ve ölçeğine kavuştuğu yıl.</p>
       </div>
 
       <div class="heritage__timeline" id="timeline">
@@ -372,15 +398,15 @@
             <div class="timeline__marker" aria-hidden="true"><span class="timeline__dot"></span></div>
             <div class="timeline__content" data-timeline-content>
               <p class="timeline__year">1995</p>
-              <h3 class="timeline__title">İlk tezgâh</h3>
-              <p class="timeline__text">Metin Hançerlioğlu, Erdemli’de kapıyı açar. Bir mermer, bir tava, dört tepsi. Ölçü o gün konur ve bir daha tartışılmaz.</p>
+              <h3 class="timeline__title" data-i18n="heritage.first">İlk tezgâh</h3>
+              <p class="timeline__text" data-i18n="heritage.firstText">Metin Hançerlioğlu, Erdemli’de kapıyı açar. Bir mermer, bir tava, dört tepsi. Ölçü o gün konur ve bir daha tartışılmaz.</p>
             </div>
             <figure class="media media--square timeline__media" data-timeline-media>
               <div class="media__inner">
-                <img class="media__img" src="assets\collection\Founder2.jpeg" alt="Hançerlioğlu - Metin Hançerlioğlu, 1995’te kurduğu tezgâhın başında" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\Founder2.jpeg" data-i18n-alt="heritage.alt1995" alt="Hançerlioğlu - Metin Hançerlioğlu, 1995’te kurduğu tezgâhın başında" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">1995</span>
-                  <span class="media__fallback-text">Kuruluş</span>
+                  <span class="media__fallback-text" data-i18n="heritage.fallbackFounded">Kuruluş</span>
                 </span>
               </div>
             </figure>
@@ -391,14 +417,14 @@
             <div class="timeline__content" data-timeline-content>
               <p class="timeline__year">2025</p>
               <h3 class="timeline__title">Erdemoğlu</h3>
-              <p class="timeline__text">Ev bugünkü ölçeğine kavuşur. Erdemoğlu Bulvarı’ndaki atölye açılır; katmer, künefe ve baklava aynı çatı altında, aynı ölçüyle toplanır.</p>
+              <p class="timeline__text" data-i18n="heritage.secondText">Ev bugünkü ölçeğine kavuşur. Erdemoğlu Bulvarı’ndaki atölye açılır; katmer, künefe ve baklava aynı çatı altında, aynı ölçüyle toplanır.</p>
             </div>
             <figure class="media media--square timeline__media" data-timeline-media>
               <div class="media__inner">
-                <img class="media__img" src="assets\collection\Founder2 (2).jpeg" alt="Hançerlioğlu - 2025’de Erdemoğlu Bulvarı’ndaki atölyede baklava tepsi" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\Founder2 (2).jpeg" data-i18n-alt="heritage.alt2025" alt="Hançerlioğlu - 2025’de Erdemoğlu Bulvarı’ndaki atölyede baklava tepsi" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">2025</span>
-                  <span class="media__fallback-text">Genişleme</span>
+                  <span class="media__fallback-text" data-i18n="heritage.fallbackGrowth">Genişleme</span>
                 </span>
               </div>
             </figure>
@@ -419,13 +445,13 @@
             <div class="craft__intro">
               <p class="section-label" data-reveal="fade">
                 <span class="section-label__index">03</span>
-                <span class="section-label__text">Zanaat</span>
+                <span class="section-label__text" data-i18n="nav.craft">Zanaat</span>
               </p>
-              <h2 class="craft__heading" id="craftHeading" data-reveal="lines" data-split>Tatlının <em>sanatı</em></h2>
-              <p class="craft__heading-text" data-reveal="lines" data-split>Üç disiplin. Her birinin kendi saati, kendi metali ve kendi sessizliği vardır.</p>
+              <h2 class="craft__heading" id="craftHeading" data-reveal="lines" data-split data-i18n-html="craft.title">Tatlının <em>sanatı</em></h2>
+              <p class="craft__heading-text" data-reveal="lines" data-split data-i18n="craft.intro">Üç disiplin. Her birinin kendi saati, kendi metali ve kendi sessizliği vardır.</p>
               <p class="craft__hint" data-reveal="fade" aria-hidden="true">
                 <span class="craft__hint-line"></span>
-                <span>Kaydırın</span>
+                <span data-i18n="craft.scroll">Kaydırın</span>
               </p>
             </div>
           </article>
@@ -433,22 +459,22 @@
           <article class="craft__panel" data-craft-panel>
             <figure class="media media--landscape craft__media" data-craft-media>
               <div class="media__inner" data-craft-inner>
-                <img class="media__img" src="assets\collection\baklavaki.jpeg" alt="Hançerlioğlu - Kırk yapraklı fıstıklı baklava tepsisi" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\baklavaki.jpeg" data-i18n-alt="craft.altBaklava" alt="Hançerlioğlu - Kırk yapraklı fıstıklı baklava tepsisi" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">Baklava</span>
-                  <span class="media__fallback-text">Kırk yaprak ışık</span>
+                  <span class="media__fallback-text" data-i18n="craft.baklavaSub">Kırk yaprak ışık</span>
                 </span>
               </div>
             </figure>
             <div class="craft__panel-body">
               <p class="craft__panel-index">01 / 03</p>
               <h3 class="craft__panel-title">Baklava</h3>
-              <p class="craft__panel-sub">Kırk yaprak ışık</p>
-              <p class="craft__panel-text">Kırk yaprak yufka; her biri basılı bir sayfa okunacak kadar inceltilir, şafakta sadeleştirilmiş yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, yaprakları birbirinden ayıran sıcaklık farkıyla şerbetle buluşur.</p>
+              <p class="craft__panel-sub" data-i18n="craft.baklavaSub">Kırk yaprak ışık</p>
+              <p class="craft__panel-text" data-i18n="craft.baklavaText">Kırk yaprak yufka; her biri basılı bir sayfa okunacak kadar inceltilir, şafakta sadeleştirilmiş yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, yaprakları birbirinden ayıran sıcaklık farkıyla şerbetle buluşur.</p>
               <ul class="craft__specs">
-                <li class="craft__spec"><span class="craft__spec-key">Yaprak</span><span class="craft__spec-value">40</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Yağ</span><span class="craft__spec-value">Şafakta sade</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Dinlenme</span><span class="craft__spec-value">6 saat</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.yaprak">Yaprak</span><span class="craft__spec-value" data-i18n="spec.v.40">40</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.yag">Yağ</span><span class="craft__spec-value" data-i18n="spec.v.safakta-sade">Şafakta sade</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.dinlenme">Dinlenme</span><span class="craft__spec-value" data-i18n="spec.v.6-saat">6 saat</span></li>
               </ul>
             </div>
           </article>
@@ -456,22 +482,22 @@
           <article class="craft__panel" data-craft-panel>
             <figure class="media media--landscape craft__media" data-craft-media>
               <div class="media__inner" data-craft-inner>
-                <img class="media__img" src="assets\collection\hasır.jpeg" alt="Hançerlioğlu - Peynirin tel tel uzadığı künefe" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\hasır.jpeg" data-i18n-alt="craft.altKune" alt="Hançerlioğlu - Peynirin tel tel uzadığı künefe" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">Künefe</span>
-                  <span class="media__fallback-text">Ateş ve tel</span>
+                  <span class="media__fallback-text" data-i18n="craft.kuneSub">Ateş ve tel</span>
                 </span>
               </div>
             </figure>
             <div class="craft__panel-body">
               <p class="craft__panel-index">02 / 03</p>
               <h3 class="craft__panel-title">Künefe</h3>
-              <p class="craft__panel-sub">Ateş ve tel</p>
-              <p class="craft__panel-text">Saç teli inceliğinde kadayıf, aynı sabah çekilmiş tuzsuz peynirin etrafına dizilir; elde dövülmüş bakırda, açık ateşte çevrilir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak biter, bir nefes sonrası yoktur.</p>
+              <p class="craft__panel-sub" data-i18n="craft.kuneSub">Ateş ve tel</p>
+              <p class="craft__panel-text" data-i18n="craft.kuneText">Saç teli inceliğinde kadayıf, aynı sabah çekilmiş tuzsuz peynirin etrafına dizilir; elde dövülmüş bakırda, açık ateşte çevrilir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak biter, bir nefes sonrası yoktur.</p>
               <ul class="craft__specs">
-                <li class="craft__spec"><span class="craft__spec-key">Kap</span><span class="craft__spec-value">Dövme bakır</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Peynir</span><span class="craft__spec-value">Aynı sabah</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Servis</span><span class="craft__spec-value">90 saniye</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.kap">Kap</span><span class="craft__spec-value" data-i18n="spec.v.dovme-bakir">Dövme bakır</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.peynir">Peynir</span><span class="craft__spec-value" data-i18n="spec.v.ayni-sabah">Aynı sabah</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.servis">Servis</span><span class="craft__spec-value" data-i18n="spec.v.90-saniye">90 saniye</span></li>
               </ul>
             </div>
           </article>
@@ -479,30 +505,30 @@
           <article class="craft__panel" data-craft-panel>
             <figure class="media media--landscape craft__media" data-craft-media>
               <div class="media__inner" data-craft-inner>
-                <img class="media__img" src="assets\collection\klasikatmer.jpeg" alt="Hançerlioğlu - İnce açılmış katmer hamuru, kaymak ve fıstıkla" loading="lazy" decoding="async" data-media-img>
+                <img class="media__img" src="assets\collection\klasikatmer.jpeg" data-i18n-alt="craft.altKatmer" alt="Hançerlioğlu - İnce açılmış katmer hamuru, kaymak ve fıstıkla" loading="lazy" decoding="async" data-media-img>
                 <span class="media__fallback" aria-hidden="true">
                   <span class="media__fallback-mark">Katmer</span>
-                  <span class="media__fallback-text">Şafak ritüeli</span>
+                  <span class="media__fallback-text" data-i18n="craft.katmerSub">Şafak ritüeli</span>
                 </span>
               </div>
             </figure>
             <div class="craft__panel-body">
               <p class="craft__panel-index">03 / 03</p>
               <h3 class="craft__panel-title">Katmer</h3>
-              <p class="craft__panel-sub">Şafak ritüeli</p>
-              <p class="craft__panel-text">Sofra genişliğinde, neredeyse saydam olana kadar havaya savrulur; sonra manda kaymağı ve iri çekilmiş fıstığın üstüne kapanır. Katmer ilk ışığa aittir. Bekletilmez, ısıtılmaz, gönderilmez. Yapıldığı yerde yenir.</p>
+              <p class="craft__panel-sub" data-i18n="craft.katmerSub">Şafak ritüeli</p>
+              <p class="craft__panel-text" data-i18n="craft.katmerText">Sofra genişliğinde, neredeyse saydam olana kadar havaya savrulur; sonra manda kaymağı ve iri çekilmiş fıstığın üstüne kapanır. Katmer ilk ışığa aittir. Bekletilmez, ısıtılmaz, gönderilmez. Yapıldığı yerde yenir.</p>
               <ul class="craft__specs">
-                <li class="craft__spec"><span class="craft__spec-key">Saat</span><span class="craft__spec-value">İlk ışık</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Kaymak</span><span class="craft__spec-value">Manda</span></li>
-                <li class="craft__spec"><span class="craft__spec-key">Ömür</span><span class="craft__spec-value">Bir saat</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.saat">Saat</span><span class="craft__spec-value" data-i18n="spec.v.ilk-isik">İlk ışık</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.kaymak">Kaymak</span><span class="craft__spec-value" data-i18n="spec.v.manda">Manda</span></li>
+                <li class="craft__spec"><span class="craft__spec-key" data-i18n="spec.k.omur">Ömür</span><span class="craft__spec-value" data-i18n="spec.v.bir-saat">Bir saat</span></li>
               </ul>
             </div>
           </article>
 
           <article class="craft__panel craft__panel--outro">
             <blockquote class="craft__quote">
-              <p class="craft__quote-text" data-reveal="lines" data-split>“Şeker ucuzdur. Zaman değildir. Biz ikincisini satarız.”</p>
-              <footer class="craft__quote-cite" data-reveal="fade">Metin Hançerlioğlu &middot; 1995</footer>
+              <p class="craft__quote-text" data-reveal="lines" data-split data-i18n-html="craft.quote">“Şeker ucuzdur. Zaman değildir. Biz ikincisini satarız.”</p>
+              <footer class="craft__quote-cite" data-reveal="fade" data-i18n="craft.cite">Metin Hançerlioğlu &middot; 1995</footer>
             </blockquote>
           </article>
 
@@ -517,13 +543,13 @@
       <div class="house__inner">
         <p class="section-label" data-reveal="fade">
           <span class="section-label__index">05</span>
-          <span class="section-label__text">Ev</span>
+          <span class="section-label__text" data-i18n="nav.house">Ev</span>
         </p>
-        <h2 class="house__title" id="houseHeading" data-reveal="lines" data-split>Hâlâ burada, hâlâ <em>ağır</em></h2>
-        <p class="house__text" data-reveal="lines" data-split>Erdemoğlu Bulvarı’ndaki atölye, 1995’te konulan saati tutar. Kepenkler dörtte kalkar. Mermer soğuktur. İlk tepsi, sokak uyanmadan çıkar — yaprak yaprak.</p>
+        <h2 class="house__title" id="houseHeading" data-reveal="lines" data-split data-i18n-html="house.title">Hâlâ burada, hâlâ <em>ağır</em></h2>
+        <p class="house__text" data-reveal="lines" data-split data-i18n="house.text">Erdemoğlu Bulvarı’ndaki atölye, 1995’te konulan saati tutar. Kepenkler dörtte kalkar. Mermer soğuktur. İlk tepsi, sokak uyanmadan çıkar — yaprak yaprak.</p>
         <a class="house__link" href="collection.html" data-reveal="fade" data-cursor="link">
-          <span class="house__link-label">Koleksiyonun tümünü görün</span>
-          <span class="house__link-meta">Kırk iki eser</span>
+          <span class="house__link-label" data-i18n="house.cta">Koleksiyonun tümünü görün</span>
+          <span class="house__link-meta" data-i18n="house.count">Kırk iki eser</span>
           <span class="house__link-arrow" aria-hidden="true">→</span>
         </a>
         <p class="house__mark" data-reveal="fade" aria-hidden="true">✦</p>
@@ -539,37 +565,36 @@
         <div class="visit__copy">
           <p class="section-label visit__line" data-visit-line>
             <span class="section-label__index">06</span>
-            <span class="section-label__text">Ziyaret</span>
+            <span class="section-label__text" data-i18n="visit.label">Ziyaret</span>
           </p>
 
-          <h2 class="visit__title visit__line" id="visitHeading" data-visit-line>Ziyaret Edin</h2>
-          <p class="visit__english visit__line" data-visit-line>Erdemoğlu Bulvarı’ndaki kapı</p>
+          <h2 class="visit__title visit__line" id="visitHeading" data-visit-line data-i18n="visit.title">Ziyaret Edin</h2>
+          <p class="visit__english visit__line" data-visit-line data-i18n="visit.english">Erdemoğlu Bulvarı’ndaki kapı</p>
 
-          <p class="visit__lede visit__line" data-visit-line>Kepenkler şehirden önce kalkar. İlk tepsi için gelin, mermer hâlâ soğukken; ya da bakır çoktan ateşteyken. Kapı, 1995’te açılan kapıdır.</p>
+          <p class="visit__lede visit__line" data-visit-line data-i18n="visit.lede">Kepenkler şehirden önce kalkar. İlk tepsi için gelin, mermer hâlâ soğukken; ya da bakır çoktan ateşteyken. Kapı, 1995’te açılan kapıdır.</p>
 
           <address class="visit__address visit__line" data-visit-line>
-            <span class="visit__address-label">Atölye</span>
-            Alata, Erdemoğlu Blv. No : 183 A<br>
-            33730 Erdemli/Mersin
+            <span class="visit__address-label" data-i18n="visit.workshop">Atölye</span>
+            <span data-bidi="ltr" data-i18n-html="footer.address">Alata, Erdemoğlu Blv. No : 183 A<br>33730 Erdemli/Mersin</span>
           </address>
 
           <dl class="visit__hours visit__line" data-visit-line>
             <div class="visit__hour">
-              <dt class="visit__hour-key">Katmer</dt>
+              <dt class="visit__hour-key" data-i18n="visit.katmer">Katmer</dt>
               <dd class="visit__hour-value">04:00 — 09:00</dd>
             </div>
             <div class="visit__hour">
-              <dt class="visit__hour-key">Ev</dt>
+              <dt class="visit__hour-key" data-i18n="visit.house">Ev</dt>
               <dd class="visit__hour-value">09:00 — 22:00</dd>
             </div>
             <div class="visit__hour">
-              <dt class="visit__hour-key">Kapalı</dt>
-              <dd class="visit__hour-value">Yılın ilk günü</dd>
+              <dt class="visit__hour-key" data-i18n="visit.closed">Kapalı</dt>
+              <dd class="visit__hour-value" data-i18n="visit.closedValue">Yılın ilk günü</dd>
             </div>
           </dl>
 
           <a class="visit__directions visit__line" data-visit-line data-cursor="link" href="https://www.google.com/maps/search/?api=1&amp;query=Alata%2C%20Erdemo%C4%9Flu%20Blv.%20No%20%3A%20183%20A%2C%2033730%20Erdemli%2FMersin" target="_blank" rel="noopener noreferrer">
-            <span>Haritada açın</span>
+            <span data-i18n="visit.map">Haritada açın</span>
             <span class="visit__directions-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
@@ -583,7 +608,7 @@
             -->
             <iframe
               class="visit__iframe"
-              title="Hançerlioğlu atölyesinin haritası: Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin"
+              data-i18n-title="visit.mapTitle" title="Hançerlioğlu atölyesinin haritası: Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin"
               src="https://maps.google.com/maps?q=Alata%2C%20Erdemo%C4%9Flu%20Blv.%20No%20%3A%20183%20A%2C%2033730%20Erdemli%2FMersin&amp;z=16&amp;hl=tr&amp;output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -593,7 +618,7 @@
           </div>
           <p class="visit__caption">
             <span class="visit__caption-mark" aria-hidden="true"></span>
-            Erdemli &middot; Mersin
+            <span data-i18n="visit.caption">Erdemli &middot; Mersin</span>
           </p>
         </div>
 
@@ -610,42 +635,42 @@
 
       <div class="footer__brand">
         <p class="footer__mark" data-footer-reveal>Hançerlioğlu</p>
-        <p class="footer__tagline" data-footer-reveal>1995’ten beri Erdemli’de, elde tutulan bir ustalık.</p>
+        <p class="footer__tagline" data-footer-reveal data-i18n="footer.tagline">1995’ten beri Erdemli’de, elde tutulan bir ustalık.</p>
       </div>
 
       <div class="footer__columns">
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Atölye</h3>
-          <address class="footer__address" data-footer-reveal>
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.workshop">Atölye</h3>
+          <address class="footer__address" data-footer-reveal data-bidi="ltr" data-i18n-html="footer.address">
             Alata, Erdemoğlu Blv. No : 183 A<br>
             33730 Erdemli/Mersin
           </address>
         </div>
 
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Saatler</h3>
-          <p class="footer__lines" data-footer-reveal>
-            Katmer &middot; 04:00 — 09:00<br>
-            Ev &middot; 09:00 — 22:00<br>
-            Yılın ilk günü kapalı
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.hours">Saatler</h3>
+          <p class="footer__lines" data-footer-reveal data-bidi="ltr">
+            <span data-i18n="footer.katmer">Katmer</span> · <span>04:00 — 09:00</span><br>
+            <span data-i18n="footer.open">Ev</span> · <span>09:00 — 22:00</span><br>
+            <span data-i18n="footer.closed">Yılın ilk günü kapalı</span>
           </p>
         </div>
 
         <div class="footer__column">
-          <h3 class="footer__column-title" data-footer-reveal>Başka yerde</h3>
+          <h3 class="footer__column-title" data-footer-reveal data-i18n="footer.elsewhere">Başka yerde</h3>
           <ul class="footer__social">
             <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="https://www.instagram.com/hancerlioglu_/" target="_blank" rel="noopener noreferrer" data-cursor="link">Instagram<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
-            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#footer" data-cursor="link">Günce<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
-            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#footer" data-cursor="link">Basın<span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
+            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#footer" data-cursor="link"><span data-i18n="footer.journal">Günce</span><span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
+            <li class="footer__social-item" data-footer-reveal><a class="footer__social-link" href="#footer" data-cursor="link"><span data-i18n="footer.press">Basın</span><span class="footer__social-arrow" aria-hidden="true">↗</span></a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer__bar">
-        <p class="footer__copy" data-footer-reveal>&copy; <span id="year">2026</span> Hançerlioğlu &middot; Erdemli. Tüm hakları saklıdır.</p>
-        <p class="footer__credit" data-footer-reveal>1995’ten beri, ağır ağır.</p>
+        <p class="footer__copy" data-footer-reveal>&copy; <span id="year" data-bidi="ltr">2026</span> <span data-i18n="footer.rights">Hançerlioğlu · Erdemli. Tüm hakları saklıdır.</span></p>
+        <p class="footer__credit" data-footer-reveal data-i18n="footer.credit">1995’ten beri, ağır ağır.</p>
         <button class="footer__top" id="backToTop" type="button" data-cursor="link" data-footer-reveal>
-          <span>Başa dönün</span>
+          <span data-i18n="footer.top">Başa dönün</span>
           <span class="footer__top-arrow" aria-hidden="true">↑</span>
         </button>
       </div>
