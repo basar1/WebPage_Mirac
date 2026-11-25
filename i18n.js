@@ -94,13 +94,13 @@
   }
 
   function syncMapLanguage() {
-    var frame = document.querySelector(".visit__iframe");
-    if (!frame) return;
-    var src = frame.getAttribute("src") || "";
     var hl = current === "ar" ? "ar" : current;
-    if (src.indexOf("hl=") === -1) return;
-    var next = src.replace(/hl=[a-z]{2}/, "hl=" + hl);
-    if (next !== src) frame.setAttribute("src", next);
+    document.querySelectorAll(".visit__iframe, .branch__iframe").forEach(function (frame) {
+      var src = frame.getAttribute("src") || "";
+      if (src.indexOf("hl=") === -1) return;
+      var next = src.replace(/hl=[a-z]{2}/, "hl=" + hl);
+      if (next !== src) frame.setAttribute("src", next);
+    });
   }
 
   function apply(root) {

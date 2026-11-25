@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Hançerlioğlu — Ustalık Eserleri
+   Hançerlioğlu Lezzetleri
    Page layer. Loaded AFTER style.css and inherits every design token,
    the media placeholder system, the preloader, cursor, header, overlay
    menu, scroll progress and footer from it.
@@ -193,8 +193,16 @@
   color: var(--color-text-dim);
 }
 
+.cover__signature {
+  max-width: 48ch;
+  margin-top: 0.85rem;
+  font-weight: 200;
+  line-height: 1.7;
+  color: var(--color-text-dim);
+}
+
 .cover__lede {
-  max-width: 44ch;
+  max-width: 48ch;
   margin-top: clamp(1.75rem, 4vh, 2.75rem);
   font-size: var(--fs-lede);
   line-height: 1.75;
@@ -596,6 +604,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
+  white-space: nowrap;
   font-size: var(--fs-micro);
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
@@ -726,7 +735,7 @@
   }
 
   .item__inner {
-    grid-template-columns: 3.25rem minmax(0, 1fr) minmax(0, 13rem) 5.5rem;
+    grid-template-columns: 3.25rem minmax(0, 1fr) minmax(0, 13rem) max-content;
     gap: clamp(1rem, 2vw, 2rem);
     padding: clamp(1.15rem, 2.1vw, 1.85rem) 0;
   }

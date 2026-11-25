@@ -619,7 +619,7 @@ p {
 .header__list {
   display: flex;
   align-items: center;
-  gap: clamp(1.5rem, 3vw, 3rem);
+  gap: clamp(0.7rem, 1.15vw, 1.35rem);
 }
 
 .header__link {
@@ -629,9 +629,10 @@ p {
   gap: 0.5rem;
   padding-bottom: 0.25rem;
   font-size: var(--fs-micro);
-  letter-spacing: var(--tracking-wide);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text);
+  white-space: nowrap;
   transition: color 0.45s var(--ease-out-soft);
 }
 
@@ -749,7 +750,7 @@ p {
   align-items: baseline;
   gap: 1rem;
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 11vw, 4rem);
+  font-size: clamp(1.65rem, 6.4vw, 3.15rem);
   line-height: 1.05;
   color: var(--color-cream);
   opacity: 0;
@@ -871,6 +872,40 @@ p {
   letter-spacing: -0.03em;
   text-wrap: balance;
   max-width: 15ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem 1.75rem;
+  margin-top: clamp(1.75rem, 4vh, 2.75rem);
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--color-line-gold);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  transition: color 0.45s var(--ease-out-soft), border-color 0.45s var(--ease-out-soft);
+}
+
+.hero__btn--ghost {
+  border-bottom-color: var(--color-line);
+  color: var(--color-cream);
+}
+
+.hero__btn-arrow {
+  transition: transform 0.45s var(--ease-out-soft);
+}
+
+.hero__btn:hover .hero__btn-arrow {
+  transform: translateX(0.45rem);
 }
 
 .hero__lede {
@@ -1015,6 +1050,19 @@ p {
   text-wrap: pretty;
 }
 
+.philosophy__prose {
+  display: grid;
+  gap: 1.15rem;
+  max-width: 62ch;
+}
+
+.philosophy__text {
+  font-size: var(--fs-lede);
+  font-weight: 200;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
 .philosophy__statement .split__word {
   color: var(--color-cream);
   opacity: 0.14;
@@ -1084,7 +1132,7 @@ p {
 }
 
 .legacy__title {
-  max-width: 14ch;
+  max-width: 18ch;
   margin: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(2rem, 4vw, 3.25rem);
   font-size: var(--fs-h2);
   line-height: 1.02;
@@ -1291,6 +1339,11 @@ p {
   color: var(--color-gold);
 }
 
+.timeline__year--word {
+  font-size: clamp(1.65rem, 3.2vw, 2.75rem);
+  letter-spacing: 0;
+}
+
 .timeline__title {
   margin-top: 0.75rem;
   font-size: clamp(1.25rem, 2.2vw, 1.875rem);
@@ -1354,7 +1407,7 @@ p {
 }
 
 .craft__heading-text {
-  max-width: 34ch;
+  max-width: 46ch;
   font-size: var(--fs-lede);
   font-weight: 200;
   color: var(--color-text);
@@ -1549,7 +1602,14 @@ p {
 }
 
 .house__title {
+  max-width: 22ch;
   font-size: var(--fs-h2);
+}
+
+.house__prose {
+  display: grid;
+  gap: 1rem;
+  max-width: 58ch;
 }
 
 .house__text {
@@ -1802,6 +1862,155 @@ p {
 
 
 /* ==========================================================================
+   16b. WORLD & BRANCHES
+   ========================================================================== */
+
+.world,
+.branches {
+  padding: var(--section-y) var(--gutter);
+}
+
+.world__inner,
+.branches__head {
+  display: grid;
+  justify-items: center;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.world__title,
+.branches__title {
+  max-width: 20ch;
+  font-size: var(--fs-h2);
+}
+
+.world__prose,
+.branches__intro {
+  max-width: 58ch;
+}
+
+.world__text,
+.branches__intro,
+.branch__text {
+  font-size: var(--fs-lede);
+  font-weight: 200;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.world__prose {
+  display: grid;
+  gap: 1rem;
+}
+
+.world__badge,
+.branch__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--color-line-gold);
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-micro);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.branches__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: var(--max-width);
+  margin: clamp(2.5rem, 6vh, 4.5rem) auto 0;
+}
+
+.branch {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  min-width: 0;
+  padding: clamp(1.35rem, 2.4vw, 2.1rem);
+  border: 1px solid var(--color-line);
+  background-color: rgba(244, 244, 240, 0.02);
+}
+
+.branch--soon {
+  border-color: var(--color-line-gold);
+}
+
+.branch__title {
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+  line-height: 1.15;
+  color: var(--color-cream);
+  overflow-wrap: anywhere;
+}
+
+.branch__text {
+  font-size: 1rem;
+}
+
+.branch__address {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-text-dim);
+}
+
+.branch__frame {
+  position: relative;
+  width: 100%;
+  margin-top: 0.35rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #080705;
+  border: 1px solid rgba(212, 175, 55, 0.34);
+  box-shadow: 0 1.25rem 2.75rem rgba(0, 0, 0, 0.42);
+}
+
+.branch__iframe {
+  position: absolute;
+  top: -108px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 156px);
+  border: 0;
+  filter: grayscale(100%) invert(100%) contrast(85%) sepia(24%) saturate(75%) brightness(0.9);
+}
+
+.branch__veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(5, 5, 5, 0.5) 0%, rgba(5, 5, 5, 0) 22%, rgba(5, 5, 5, 0) 76%, rgba(5, 5, 5, 0.58) 100%),
+    radial-gradient(120% 90% at 50% 46%, transparent 42%, rgba(5, 5, 5, 0.4) 100%);
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.16);
+}
+
+.branch__map {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.15rem;
+  font-size: var(--fs-micro);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.branch__badge {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+
+/* ==========================================================================
    17. FOOTER
    ========================================================================== */
 
@@ -1821,12 +2030,21 @@ p {
 }
 
 .footer__mark {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.22em 0.32em;
   font-family: var(--font-display);
   font-size: clamp(2.15rem, 6.2vw, 5.75rem);
   line-height: 0.9;
   letter-spacing: 0.06em;
-  text-indent: 0.06em;
   color: var(--color-gold);
+}
+
+.footer__mark-year {
+  font-size: 0.38em;
+  letter-spacing: 0.12em;
+  color: var(--color-cream);
 }
 
 .footer__tagline {
@@ -1852,6 +2070,19 @@ p {
   letter-spacing: var(--tracking-micro);
   text-transform: uppercase;
   color: var(--color-gold);
+}
+
+.footer__place {
+  display: block;
+  margin-top: 1.15rem;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.footer__place:first-child {
+  margin-top: 0;
 }
 
 .footer__address,
@@ -1938,7 +2169,7 @@ p {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header__nav {
     display: none;
   }
@@ -2053,6 +2284,15 @@ p {
 
   .timeline__entry:nth-child(odd) .timeline__text {
     margin-inline-start: 0;
+  }
+
+  .branches__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .world__title,
+  .branches__title {
+    max-width: 18ch;
   }
 
   .footer__columns {
@@ -2208,9 +2448,7 @@ html[dir="rtl"] .philosophy__statement {
   font-family: "Cairo", var(--font-display);
 }
 
-html[dir="rtl"] .timeline__year,
 html[dir="rtl"] .legacy__stat-value,
-html[dir="rtl"] .hero__fact-value,
 html[dir="rtl"] .visit__hour-value,
 html[dir="rtl"] .header__meta-year,
 html[dir="rtl"] .preloader__counter,
@@ -2241,6 +2479,13 @@ html[dir="rtl"] .item__tag,
 html[dir="rtl"] .lang,
 html[dir="rtl"] .visit__directions,
 html[dir="rtl"] .house__link,
+html[dir="rtl"] .hero__btn,
+html[dir="rtl"] .world__badge,
+html[dir="rtl"] .branch__badge,
+html[dir="rtl"] .branch__map,
+html[dir="rtl"] .footer__place,
+html[dir="rtl"] .visit__address-label,
+html[dir="rtl"] .media__fallback-mark,
 html[dir="rtl"] .item__cue,
 html[dir="rtl"] .preloader__tagline {
   letter-spacing: 0.01em;
@@ -2262,9 +2507,14 @@ html[dir="rtl"] .hero__title {
 }
 
 html[dir="rtl"] .house__link-arrow,
+html[dir="rtl"] .hero__btn-arrow,
 html[dir="rtl"] .cover__back-arrow,
 html[dir="rtl"] .item__cue-arrow {
   scale: -1 1;
+}
+
+html[dir="rtl"] .hero__btn:hover .hero__btn-arrow {
+  transform: translateX(-0.45rem);
 }
 
 html[dir="rtl"] .house__link:hover .house__link-arrow {

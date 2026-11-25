@@ -503,6 +503,7 @@
     var lede = $('[data-hero="lede"]');
     var facts = $('[data-hero="facts"]');
     var factItems = $$(".hero__fact");
+    var actions = $('[data-hero="actions"]');
     var cue = $('[data-hero="cue"]');
 
     var titleLines = splitText(title, { lines: true }).lines;
@@ -533,6 +534,7 @@
       .fromTo(overline, { autoAlpha: 0, y: 26 }, { autoAlpha: 1, y: 0, duration: 1.1 }, 0.2)
       .to(titleLines, { yPercent: 0, duration: 1.5, stagger: 0.11 }, 0.28)
       .to(ledeLines, { yPercent: 0, duration: 1.25, stagger: 0.075 }, 0.62)
+      .fromTo(actions, { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 1 }, 0.72)
       .set(facts, { autoAlpha: 1 }, 0.7)
       .from(factItems, { autoAlpha: 0, y: 24, duration: 1.05, stagger: 0.09 }, 0.7)
       .fromTo(cue, { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 1 }, 0.85)
@@ -690,7 +692,7 @@
     });
 
     window.addEventListener("resize", function () {
-      if (menuIsOpen && window.innerWidth > 1024) close();
+      if (menuIsOpen && window.innerWidth > 1280) close();
     });
 
     doc.addEventListener("i18n:change", function () {
@@ -1343,6 +1345,8 @@
       initHeritage();
       initCraft();
       revealWithin($("#house"), {});
+      revealWithin($("#world"), {});
+      revealWithin($("#branches"), {});
       initVisit();
       initFooter();
 

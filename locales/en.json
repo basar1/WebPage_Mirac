@@ -8,112 +8,130 @@
     "home": "Hançerlioğlu — home",
     "primary": "Primary menu",
     "menu": "Menu",
-    "founder": "Founder",
-    "history": "History",
-    "craft": "Craft",
-    "collection": "Collection",
-    "house": "House",
+    "founder": "Our Founder",
+    "craft": "Our Mastery",
     "established": "Est.",
-    "close": "Close"
+    "close": "Close",
+    "homeLink": "Home",
+    "story": "Our Story",
+    "products": "Our Products",
+    "branches": "Our Branches",
+    "contact": "Contact"
   },
   "preloader": {
     "loading": "Loading",
     "place": "Erdemli · 1995",
-    "collection": "Works of mastery · Masterworks"
+    "collection": "Our products · Erdemli"
   },
   "footer": {
-    "tagline": "A craft kept in the hand in Erdemli, since 1995.",
+    "tagline": "Flavour, drawn from tradition.",
     "workshop": "Workshop",
     "hours": "Hours",
     "elsewhere": "Elsewhere",
     "journal": "Journal",
-    "credit": "Slowly, since 1995.",
     "top": "Back to top",
-    "rights": "Hançerlioğlu · Erdemli. All rights reserved.",
+    "rights": "Hançerlioğlu. All rights reserved.",
     "katmer": "Katmer",
-    "open": "House",
+    "open": "Hançerlioğlu",
     "closed": "Closed on the first day of the year",
-    "address": "Alata, Erdemoğlu Blv. No : 183 A<br>33730 Erdemli/Mersin",
     "press": "Press",
-    "home": "House"
+    "home": "Hançerlioğlu",
+    "mark": "HANÇERLİOĞLU"
   },
   "meta": {
     "logo": "Hançerlioğlu logo",
-    "homeTitle": "Hançerlioğlu | Official website — traditional sweets",
-    "homeDescription": "The official Hançerlioğlu website. Katmer, künefe, baklava and traditional sweets in Erdemli since 1995. Alata, Erdemoğlu Boulevard, Mersin.",
-    "homeDescriptionShort": "The official Hançerlioğlu website. Katmer, künefe, baklava and traditional sweets in Erdemli since 1995.",
+    "homeTitle": "HANÇERLİOĞLU | 1995",
+    "homeDescription": "The official Hançerlioğlu website. The journey of flavour Metin Hançerlioğlu began in Erdemli in 1995. Katmer, künefe, baklava and traditional desserts. Alata, Erdemoğlu Boulevard, Mersin.",
+    "homeDescriptionShort": "The official Hançerlioğlu website. A journey of flavour begun in Erdemli in 1995.",
     "homeKeywords": "Hançerlioğlu, official Hançerlioğlu, Erdemli, Mersin, traditional sweets, katmer, künefe, baklava, Alata",
-    "collectionTitle": "Hançerlioğlu Collection | Works of mastery — Erdemli",
-    "collectionDescription": "The Hançerlioğlu collection: katmer, künefe, kadayıf, baklava, ice cream and kaymak. Forty-two works, kept in the hand in Erdemli since 1995.",
-    "collectionDescriptionShort": "Forty-two works across seven disciplines. In Erdemli, by hand, since 1995. The official Hançerlioğlu collection.",
-    "collectionKeywords": "Hançerlioğlu collection, katmer, künefe, baklava, Erdemli sweets, kadayıf, ice cream, kaymak"
+    "collectionTitle": "Our Products — HANÇERLİOĞLU | 1995",
+    "collectionDescription": "Hançerlioğlu products: künefe, katmer, baklava, kadayıf, ice cream, kaymak and drinks. In Erdemli since 1995.",
+    "collectionDescriptionShort": "From traditional desserts to original recipes, the mastery of Hançerlioğlu. Erdemli, 1995.",
+    "collectionKeywords": "Hançerlioğlu products, katmer, künefe, baklava, Erdemli sweets, kadayıf, ice cream, kaymak"
   },
   "hero": {
-    "title": "Mastery,<br><em>since 1995</em>",
-    "lede": "From the counter Metin Hançerlioğlu opened in Erdemli to this day: yufka stretched by hand, pistachio, and a measure that has not changed.",
+    "title": "Flavour, carried<br><em>since 1995</em>",
+    "lede": "We carry forward the journey of flavour Metin Hançerlioğlu began in Erdemli, with our traditional way of making and the mastery of years.",
     "founded": "Founded",
-    "master": "Master",
-    "origin": "Origin",
-    "scroll": "Scroll"
+    "master": "Our Founder",
+    "origin": "Where we began",
+    "scroll": "Scroll",
+    "mark": "HANÇERLİOĞLU",
+    "originValue": "Erdemli, Mersin",
+    "founderName": "Metin Hançerlioğlu",
+    "storyCta": "Discover our story",
+    "productsCta": "Explore our products"
   },
   "philosophy": {
-    "label": "Philosophy",
-    "statement": "We do not make sweets. We keep a promise made in 1995 — that every sheet of yufka be stretched thin enough to read the light through it, and that nothing leave the counter unless it can carry our name."
+    "label": "Our philosophy",
+    "title": "Unchanging quality, mastery from one generation to the next",
+    "p1": "Since 1995 we have brought our traditional recipes together with ingredients we choose with care and with the experience of years.",
+    "p2": "Without compromising on quality, we aim to offer the same care and the same flavour in every product.",
+    "p3": "We go on toward the future open to what is new, while keeping the values we took from our past."
   },
   "legacy": {
     "caption": "Metin Hançerlioğlu, at the marble counter, Erdemli.",
-    "title": "The <em>hands</em> it began with",
-    "p1": "In 1995, in Erdemli, Metin Hançerlioğlu opened a room four trays wide. A marble counter, a pan hammered by hand, and a belief that yufka could be stretched until the light passed through it.",
-    "p2": "He refused shortcuts the way other people refuse a debt. Butter was clarified at dawn, and the pistachio was opened piece by piece. A torn sheet was not sold; it was set aside. The house was built on what it was willing to throw away.",
-    "p3": "The years passed. The counter is the same stone. The measure has not moved.",
+    "title": "A journey <em>begun by a master</em>",
+    "p1": "The story of Hançerlioğlu was born in 1995, with the journey of flavour that Metin Hançerlioğlu began in Erdemli.",
+    "p2": "His love of the craft, the value he gave to labour and his sense of quality are the foundation of the Hançerlioğlu name today.",
+    "p3": "Our brand, grown over the years, goes on, keeping the values we received from our founder.",
     "founded": "Founded",
     "leaves": "Leaves on a tray",
     "city": "City",
     "signature": "Metin Hançerlioğlu’s signature",
-    "role": "Founder · 1995",
-    "alt": "Hançerlioğlu — Metin Hançerlioğlu at the marble counter of the Erdemli workshop"
+    "role": "Founder",
+    "portrait": "Portrait of our founder · 1995",
+    "alt": "Hançerlioğlu — Metin Hançerlioğlu at the marble counter of the Erdemli workshop",
+    "name": "Metin Hançerlioğlu"
   },
   "heritage": {
-    "title": "Two stops",
-    "intro": "One is the year the counter was set. The other is the year the house reached the place and the scale it has today.",
-    "first": "The first counter",
-    "firstText": "Metin Hançerlioğlu opens the door in Erdemli. One marble, one pan, four trays. The measure is set that day, and it is never argued again.",
-    "secondText": "The house reaches the scale it has today. The workshop on Erdemoğlu Boulevard opens; katmer, künefe and baklava are gathered under one roof, to the same measure.",
+    "title": "Hançerlioğlu, from then until now",
+    "intro": "The journey of flavour that began in Erdemli in 1995 continues to grow, still bound to our traditions.",
     "alt1995": "Hançerlioğlu — Metin Hançerlioğlu at the counter he founded in 1995",
     "alt2025": "Hançerlioğlu — a tray of baklava in the Erdemoğlu Boulevard workshop, 2025",
-    "fallbackFounded": "Founding",
-    "fallbackGrowth": "Expansion"
+    "m1": "Where our story begins",
+    "m1Text": "The journey of flavour began when Metin Hançerlioğlu laid the foundations of our brand in Erdemli.",
+    "m2": "Growth and renewal",
+    "m2Text": "With our new branch we widened the ground we serve, and developed our capacity and the variety of what we make.",
+    "soon": "Soon",
+    "m3": "Aleppo, Syria",
+    "m3Text": "We are carrying the story that began in Erdemli beyond the borders of Turkey. With our first branch abroad, to open in Aleppo, we step onto a journey of international growth.",
+    "future": "The future",
+    "m4": "From Erdemli to the world",
+    "m4Text": "Keeping our traditions and our sense of quality, we aim to meet our guests with the flavours of Hançerlioğlu in other cities and countries."
   },
   "craft": {
-    "title": "The <em>art</em> of the sweet",
-    "intro": "Three disciplines. Each has its own hour, its own metal, and its own quiet.",
+    "title": "Mastery, drawn <em>from tradition</em>",
+    "intro": "We bring the experience of years together with ingredients we choose with care and with our traditional ways of making.",
     "scroll": "Scroll",
-    "baklavaSub": "Forty leaves of light",
-    "kuneSub": "Fire and strand",
-    "katmerSub": "A dawn ritual",
-    "baklavaText": "Forty sheets of yufka, each thinned until a printed page could be read through it, layered with butter clarified at dawn and chosen Antep pistachio. It bakes in copper, rests, and meets the syrup at the difference in heat that keeps the leaves apart.",
-    "kuneText": "Kadayıf as fine as a hair is laid around unsalted cheese drawn that morning, and turned in hand-hammered copper over an open fire. The master watches the sound, not the clock: when the sizzle drops half a tone, the plate is finished. There is no moment after.",
-    "katmerText": "It is thrown into the air, the width of a table, until it is nearly transparent, then closed over water-buffalo cream and coarsely ground pistachio. Katmer belongs to the first light. It is not held, not reheated, not sent out. It is eaten where it is made.",
-    "quote": "“Sugar is cheap. Time is not. We sell the second.”",
-    "cite": "Metin Hançerlioğlu · 1995",
+    "baklavaText": "Paper-thin yufka, Antep pistachio and a şerbet prepared with mastery. We bring the traditional flavour of baklava to the table.",
+    "kuneText": "Crisp kadayıf, our own künefe cheese and a balanced şerbet. We serve the traditional flavour of künefe warm.",
+    "katmerText": "We enrich our traditional katmer — paper-thin dough, kaymak and Antep pistachio — with further flavours.",
     "altBaklava": "Hançerlioğlu — a tray of pistachio baklava, forty leaves",
     "altKune": "Hançerlioğlu — künefe, the cheese pulling strand by strand",
-    "altKatmer": "Hançerlioğlu — katmer dough opened thin, with cream and pistachio"
+    "altKatmer": "Hançerlioğlu — katmer dough opened thin, with cream and pistachio",
+    "intro2": "Every product is prepared with the same care and the same sense of quality.",
+    "baklava": "Baklava",
+    "kune": "Künefe",
+    "katmer": "Katmer",
+    "kadayif": "Kadayıf",
+    "kadayifText": "We bring the kadayıf we prepare in the traditional way together with ingredients we choose with care.",
+    "altKadayif": "Hançerlioğlu — traditional kadayıf"
   },
   "house": {
-    "title": "Still here, still <em>deliberate</em>",
-    "text": "The workshop on Erdemoğlu Boulevard keeps the hour set in 1995. The shutters go up at four. The marble is cold. The first tray comes out before the street wakes — leaf by leaf.",
-    "cta": "See the whole collection",
-    "count": "Forty-two works"
+    "title": "A tradition of flavour that began in <em>Erdemli</em>",
+    "cta": "Explore our products",
+    "label": "Hançerlioğlu",
+    "p1": "We continue today, with the same passion and the same sense of quality, the story that began in Erdemli in 1995.",
+    "p2": "We bring our traditional desserts together with new flavours, and we receive our guests in the warmth of Hançerlioğlu.",
+    "p3": "For us, every product is a part of labour, of mastery and of the experience of years."
   },
   "visit": {
-    "label": "Visit",
-    "title": "Visit",
-    "english": "The door on Erdemoğlu Boulevard",
-    "lede": "The shutters rise before the city does. Come for the first tray, while the marble is still cold, or once the copper is already on the fire. The door is the one that opened in 1995.",
-    "workshop": "Workshop",
+    "label": "Contact",
+    "title": "Get in touch",
+    "lede": "You may reach us about our products, our branches, your orders and requests to work together.",
     "katmer": "Katmer",
-    "house": "House",
+    "house": "Hançerlioğlu",
     "closed": "Closed",
     "closedValue": "The first day of the year",
     "map": "Open in maps",
@@ -128,13 +146,11 @@
       "kap": "Vessel",
       "peynir": "Cheese",
       "servis": "Service",
-      "saat": "Hour",
-      "kaymak": "Cream",
-      "omur": "Life",
+      "omur": "Shelf life",
       "hazirlik": "Preparation",
       "firin": "Oven",
       "katlama": "Fold",
-      "dolgu": "Filling",
+      "dolgu": "Ingredients",
       "cikolata": "Chocolate",
       "temperleme": "Tempering",
       "fistik": "Pistachio",
@@ -146,7 +162,7 @@
       "uretim": "Production",
       "dizim": "Arrangement",
       "tatlandirici": "Sweetener",
-      "surup": "Syrup",
+      "surup": "Şerbet",
       "kadayif": "Kadayıf",
       "ates": "Fire",
       "katman": "Layer",
@@ -165,18 +181,11 @@
       "sut": "Milk",
       "zaman": "Time",
       "demleme": "Brewing",
-      "bardak": "Glass",
-      "sise": "Bottle",
-      "cesit": "Kind"
+      "bardak": "Glass"
     },
     "v": {
-      "40": "40",
-      "safakta-sade": "Clarified at dawn",
-      "6-saat": "6 hours",
       "dovme-bakir": "Hammered copper",
       "ayni-sabah": "The same morning",
-      "90-saniye": "90 seconds",
-      "ilk-isik": "First light",
       "manda": "Water buffalo",
       "bir-saat": "One hour",
       "safak-vakti": "At dawn",
@@ -261,326 +270,374 @@
       "su-ile-once-su": "With water — water first",
       "cift-demlik": "A double pot",
       "ince-belli": "A slim-waisted glass",
-      "kenarda": "On the side",
-      "cam": "Glass",
-      "masada-acilir": "Opened at the table",
-      "buzlu": "Over ice",
-      "sade-ya-da-limonlu": "Plain, or with lemon",
-      "buz-gibi": "Ice cold",
-      "sade-ya-da-maden": "Still or sparkling",
-      "her-seyden-once": "Before anything else"
+      "kenarda": "On the side"
     }
   },
   "cover": {
-    "catalog": "Catalogue · MMXXVI",
-    "line1": "Mastery",
-    "line2": "<em>Works</em>",
-    "english": "Masterworks",
-    "lede": "Erdemli does not claim to have invented these sweets. It inherited them and has not let them go. Below is the whole practice of the house — leaf, strand, fire and cold — in the order the day builds them, and as it builds them.",
-    "disciplines": "Disciplines",
+    "catalog": "Our products",
+    "line1": "Every flavour",
+    "line2": "<em>Mastery</em>",
+    "english": "Our signature delicacies",
+    "lede": "From our traditional desserts to our original recipes, discover the flavours we prepare with care.",
+    "disciplines": "Categories",
     "seven": "Seven",
-    "works": "Works",
+    "works": "Product",
     "fortytwo": "Forty-two",
     "workshop": "Workshop",
-    "cue": "Enter the index"
+    "cue": "Go to the product categories",
+    "signature": "The particular products in which traditional tastes meet inventive recipes."
   },
   "catnav": {
     "aria": "Categories",
-    "label": "Index",
-    "note": "Each work opens onto its own story.<br>\r\n              Choose a name to read it."
+    "label": "Product categories",
+    "note": "Each product can be explored.<br>Choose a name to view it."
   },
   "cat": {
     "katmer": "Katmer",
     "kune": "Künefe",
     "kadayif": "Kadayıf",
     "baklava": "Baklava",
-    "ice": "Ice cream",
-    "kaymak": "Kaymak",
+    "ice": "Ice cream and kaymak",
     "drinks": "Drinks",
     "katmerGloss": "Leaves of dawn",
     "kuneGloss": "Fire and strand",
     "kadayifGloss": "Fine strands",
     "baklavaGloss": "Forty leaves",
     "iceGloss": "The cold room",
-    "kaymakGloss": "The cream of the milk",
     "drinksGloss": "What comes alongside",
-    "count13": "Thirteen works",
-    "count9": "Nine works",
-    "count3": "Three works",
-    "count6": "Six works",
-    "count1": "One work",
-    "count7": "Seven works",
+    "count13": "Thirteen products",
+    "count9": "Nine products",
+    "count3": "Three products",
+    "count7": "Seven products",
     "katmerNote": "The dough is thrown into the air until it is thin enough to be read through a table. Katmer belongs to the hour before the city wakes; every form below is a separate answer to the same fold.",
     "kuneNote": "Hammered copper over an open fire, and cheese drawn that morning. The master watches the sound, not the clock: when the sizzle drops half a tone, the plate is finished.",
     "kadayifNote": "The strand of the künefe is parted from the cheese and left to stand on its own. Butter, pistachio and patience. There is nothing else to hide behind.",
     "baklavaNote": "Forty leaves on the tray, each opened until a printed page could be read through it. The house has never changed that number, and it has never been asked to.",
-    "iceNote": "Salep and mastic are turned slowly enough that the result is taken with a knife, not a scoop. The cold room is the only place in the workshop the fire never reaches.",
-    "kaymakNote": "A single entry, because there is a single method. Everything in this catalogue that carries kaymak begins here, at four in the morning.",
-    "drinksNote": "What is carried to the table beside the plate. Two of them are made here and take as long as any work in this catalogue. The rest arrive cold, in glass, without being asked twice."
+    "iceNote": "Salep and mastic are turned slowly enough that the result is taken with a knife, not a scoop. Kaymak is lifted at four in the morning; everything in this catalogue that carries it begins there.",
+    "drinksNote": "What is carried to the table beside the plate. Two of them are made here and take as long as any product in this catalogue. The rest arrive cold, in glass, without being asked twice.",
+    "other": "Other desserts",
+    "otherGloss": "The further shelf",
+    "otherNote": "Recipes prepared with the same care, beyond the principal categories."
   },
   "catalog": {
-    "close": "Forty-two works, one measure. What is not in this catalogue is not made in this house.",
-    "return": "Return home",
-    "cue": "Story",
+    "close": "Forty-two products, one measure. What is not in this catalogue is not made in this house.",
+    "return": "Back to the homepage",
+    "cue": "View the product",
     "signature": "Signature"
   },
   "drawer": {
-    "prev": "Previous work",
-    "next": "Next work",
+    "prev": "Previous product",
+    "next": "Next product",
     "waiting": "Photograph to come"
   },
   "items": {
     "10": {
-      "note": "Rolled twice",
-      "story": "A twist rolled twice: cream in the inner turns, chocolate in the outer. It is the most exacting piece in the section, and it is made only when it has been ordered.",
-      "aria": "Read the story: Burma Katmer, Çikolatalı Kaymaklı",
-      "alt": "Hançerlioğlu - Burma Katmer, Çikolatalı Kaymaklı, Rolled twice"
+      "name": "Chocolate and kaymak burma katmer",
+      "note": "Burma katmer enriched with kaymak and chocolate.",
+      "story": "Burma katmer enriched with kaymak and chocolate.",
+      "aria": "View the product: Chocolate and kaymak burma katmer",
+      "alt": "Hançerlioğlu - Chocolate and kaymak burma katmer"
     },
     "11": {
-      "note": "The thickness of a reed",
-      "story": "It is rolled to the thickness of a reed and baked until it snaps rather than bends. It is the most delicate thing to leave the workshop, and the only piece we refuse to put in a box.",
-      "aria": "Read the story: Çubuk Katmer",
-      "alt": "Hançerlioğlu - Çubuk Katmer, The thickness of a reed"
+      "name": "Stick katmer",
+      "note": "Our crisp katmer, formed as a fine stick.",
+      "story": "Our crisp katmer, formed as a fine stick.",
+      "aria": "View the product: Stick katmer",
+      "alt": "Hançerlioğlu - Stick katmer"
     },
     "12": {
-      "note": "A ring, with chocolate",
-      "story": "The sheet is brought into a ring, the chocolate is closed inside the join, and it is baked until the seam disappears entirely. It is meant to be eaten standing, by hand. The street has always eaten it that way.",
-      "aria": "Read the story: Çikolatalı Simit",
-      "alt": "Hançerlioğlu - Çikolatalı Simit, A ring, with chocolate"
+      "name": "Chocolate simit katmer",
+      "note": "A chocolate katmer shaped as a simit.",
+      "story": "A chocolate katmer shaped as a simit.",
+      "aria": "View the product: Chocolate simit katmer",
+      "alt": "Hançerlioğlu - Chocolate simit katmer"
     },
     "13": {
-      "note": "A ring, with cream",
-      "story": "The same ring is filled with cream taken that morning and closed before the sheet cools. Cream inside the dough does not survive into a second day, so it is made in short batches, twice a day.",
-      "aria": "Read the story: Kaymaklı Simit",
-      "alt": "Hançerlioğlu - Kaymaklı Simit, A ring, with cream"
+      "name": "Kaymak simit katmer",
+      "note": "A kaymak katmer shaped as a simit.",
+      "story": "A kaymak katmer shaped as a simit.",
+      "aria": "View the product: Kaymak simit katmer",
+      "alt": "Hançerlioğlu - Kaymak simit katmer"
     },
     "14": {
-      "note": "Copper, fire, strand",
-      "story": "Kadayıf drawn as fine as hair is wrapped around unsalted cheese from the same morning and turned on hammered copper over an open fire. No part of it can be prepared ahead, so it is ordered last and eaten first.",
-      "aria": "Read the story: Klasik Künefe",
-      "alt": "Hançerlioğlu - Klasik Künefe, Copper, fire, strand"
+      "name": "Classic künefe",
+      "note": "Our traditional künefe, made with tel kadayıf, our own künefe cheese and şerbet.",
+      "story": "Our traditional künefe, made with tel kadayıf, our own künefe cheese and şerbet.",
+      "aria": "View the product: Classic künefe",
+      "alt": "Hançerlioğlu - Classic künefe"
     },
     "15": {
-      "note": "Woven like a mat",
-      "story": "The kadayıf is woven like a mat instead of being pressed flat, so the fire reaches the cheese through the gaps rather than from the edge. It comes off the flame like a woven mat. That is exactly what the name means.",
-      "aria": "Read the story: Hasır Künefe",
-      "alt": "Hançerlioğlu - Hasır Künefe, Woven like a mat"
+      "name": "Hasır künefe",
+      "note": "Our künefe, made with the crisp texture of hasır kadayıf.",
+      "story": "Our künefe, made with the crisp texture of hasır kadayıf.",
+      "aria": "View the product: Hasır künefe",
+      "alt": "Hançerlioğlu - Hasır künefe"
     },
     "16": {
-      "note": "Lower in sugar, the same fire",
-      "story": "It is built exactly as the classic, with stevia in place of the syrup. Sugar is the only thing removed. The copper, the cheese and the flame stay, and so does the time it takes.",
-      "aria": "Read the story: Stevia Künefe",
-      "alt": "Hançerlioğlu - Stevia Künefe, Lower in sugar, the same fire"
+      "name": "Stevia künefe",
+      "note": "Künefe made with our own şerbet, sweetened with stevia.",
+      "story": "Künefe made with our own şerbet, sweetened with stevia.",
+      "aria": "View the product: Stevia künefe",
+      "alt": "Hançerlioğlu - Stevia künefe"
     },
     "17": {
-      "note": "The pasha’s share",
-      "story": "It sits deeper in the pan, wider across, and it arrives under a heavier crown of pistachio than the house usually allows. It is meant to be shared, and it comes to the table with more than one fork.",
-      "aria": "Read the story: Paşa Künefe",
-      "alt": "Hançerlioğlu - Paşa Künefe, The pasha’s share"
+      "name": "Paşa künefe",
+      "note": "One of our künefe varieties, enriched with Antep pistachio.",
+      "story": "One of our künefe varieties, enriched with Antep pistachio.",
+      "aria": "View the product: Paşa künefe",
+      "alt": "Hançerlioğlu - Paşa künefe"
     },
     "18": {
-      "note": "Cut like glass",
-      "story": "The kadayıf is cut short and crystalline, and it holds the light the way cut glass does. It is crisper than the classic and allows very little slow handling, because a short strand takes colour in seconds.",
-      "aria": "Read the story: Billuriye",
-      "alt": "Hançerlioğlu - Billuriye, Cut like glass"
+      "name": "Billuriye",
+      "note": "Our traditional sweet, distinguished by its crisp kadayıf.",
+      "story": "Our traditional sweet, distinguished by its crisp kadayıf.",
+      "aria": "View the product: Billuriye",
+      "alt": "Hançerlioğlu - Billuriye"
     },
     "19": {
-      "note": "Crystal, with a vein of cream",
-      "story": "A vein of water-buffalo cream runs through the middle of the billuriye, so the crystalline edge meets something soft every time. The contrast lasts only a few minutes. That is the whole reason it is served quickly.",
-      "aria": "Read the story: Billurzade",
-      "alt": "Hançerlioğlu - Billurzade, Crystal, with a vein of cream"
+      "name": "Billurzade",
+      "note": "Our own recipe, where Billuriye meets kaymak.",
+      "story": "Our own recipe, where Billuriye meets kaymak.",
+      "aria": "View the product: Billurzade",
+      "alt": "Hançerlioğlu - Billurzade"
     },
     "20": {
-      "note": "Buried in green",
-      "story": "It is buried under Antep pistachio, ground coarse so that each piece stays separate. The kadayıf underneath is barely visible, and that is the point: what you eat is the pistachio. The strand is only the method.",
-      "aria": "Read the story: Fıstıkzade",
-      "alt": "Hançerlioğlu - Fıstıkzade, Buried in green"
+      "name": "Fıstıkzade",
+      "note": "Our künefe, in which Antep pistachio comes to the fore.",
+      "story": "Our künefe, in which Antep pistachio comes to the fore.",
+      "aria": "View the product: Fıstıkzade",
+      "alt": "Hançerlioğlu - Fıstıkzade"
     },
     "21": {
-      "note": "Two halves, one plate",
-      "story": "A single copper plate is divided down the middle: a mound of pistachio on one side, the woven mat on the other. It exists because the table could not decide. The two are worth arguing over more than explaining.",
-      "aria": "Read the story: Yarım Fıstıkzade ve Yarım Hasır",
-      "alt": "Hançerlioğlu - Yarım Fıstıkzade ve Yarım Hasır, Two halves, one plate"
+      "name": "Half Fıstıkzade and half Hasır",
+      "note": "Two different künefe flavours, on one plate.",
+      "story": "Two different künefe flavours, on one plate.",
+      "aria": "View the product: Half Fıstıkzade and half Hasır",
+      "alt": "Hançerlioğlu - Half Fıstıkzade and half Hasır"
     },
     "22": {
-      "note": "A new form, the old method",
-      "story": "Two rounds of kadayıf close over cheese and pistachio, and the edges are pressed on the flame until they join. A new form, carrying an entirely old method. It is the house’s one real concession to the present.",
-      "aria": "Read the story: Burger Künefe",
-      "alt": "Hançerlioğlu - Burger Künefe, A new form, the old method"
+      "name": "Künefe burger",
+      "note": "The traditional flavour of künefe, served as an inventive burger.",
+      "story": "The traditional flavour of künefe, served as an inventive burger.",
+      "aria": "View the product: Künefe burger",
+      "alt": "Hançerlioğlu - Künefe burger"
     },
     "23": {
-      "note": "Buttered, strand by strand",
-      "story": "Fine kadayıf is buttered strand by strand and filled with pistachio before it meets the fire. It is baked slowly so the outside gilds while the centre stays soft. Hurry it, and the colour comes without the texture.",
-      "aria": "Read the story: Fıstıklı Tel Kadayıf",
-      "alt": "Hançerlioğlu - Fıstıklı Tel Kadayıf, Buttered, strand by strand"
+      "name": "Pistachio tel kadayıf",
+      "note": "Our traditional sweet of tel kadayıf and Antep pistachio.",
+      "story": "Our traditional sweet of tel kadayıf and Antep pistachio.",
+      "aria": "View the product: Pistachio tel kadayıf",
+      "alt": "Hançerlioğlu - Pistachio tel kadayıf"
     },
     "24": {
-      "note": "A crystal cut, on its own",
-      "story": "The crystal cut leaves the copper pan and comes as a dish of its own: brittle, bright, and brought to the syrup only at the last moment. Held any longer, the whole point softens and disappears.",
-      "aria": "Read the story: Billuriye Kadayıf",
-      "alt": "Hançerlioğlu - Billuriye Kadayıf, A crystal cut, on its own"
+      "name": "Billuriye kadayıf",
+      "note": "Our kadayıf, distinguished by its crisp texture.",
+      "story": "Our kadayıf, distinguished by its crisp texture.",
+      "aria": "View the product: Billuriye kadayıf",
+      "alt": "Hançerlioğlu - Billuriye kadayıf"
     },
     "25": {
-      "note": "Nothing between pistachio and strand",
-      "story": "The mound of pistachio is laid over kadayıf rather than künefe: no cheese, no cream, nothing between the pistachio and the strand. It is the plainest work in the catalogue, and the hardest to hide behind.",
-      "aria": "Read the story: Fıstıkzade Kadayıf",
-      "alt": "Hançerlioğlu - Fıstıkzade Kadayıf, Nothing between pistachio and strand"
+      "name": "Fıstıkzade kadayıf",
+      "note": "Our kadayıf, enriched with Antep pistachio.",
+      "story": "Our kadayıf, enriched with Antep pistachio.",
+      "aria": "View the product: Fıstıkzade kadayıf",
+      "alt": "Hançerlioğlu - Fıstıkzade kadayıf"
     },
     "26": {
-      "note": "Forty leaves of light",
-      "story": "Forty sheets of yufka, each opened thin enough to be read through like a printed page, are layered with clarified butter and chosen Antep pistachio. It bakes in copper, rests, and meets the syrup at the exact difference in heat that keeps the leaves apart.",
-      "aria": "Read the story: Fıstıklı Baklava",
-      "alt": "Hançerlioğlu - Fıstıklı Baklava, Forty leaves of light"
+      "name": "Pistachio baklava",
+      "note": "Our traditional baklava, of paper-thin pastry and Antep pistachio.",
+      "story": "Our traditional baklava, of paper-thin pastry and Antep pistachio.",
+      "aria": "View the product: Pistachio baklava",
+      "alt": "Hançerlioğlu - Pistachio baklava"
     },
     "27": {
-      "note": "A particular slice",
-      "story": "The baklava is cut long and narrow instead of in the usual diamond, which changes both the path of the syrup between the leaves and the way a corner breaks on the fork. The same tray, read differently.",
-      "aria": "Read the story: Özel Dilim Baklava",
-      "alt": "Hançerlioğlu - Özel Dilim Baklava, A particular slice"
+      "name": "Special-slice baklava",
+      "note": "Traditional baklava, presented as a special slice.",
+      "story": "Traditional baklava, presented as a special slice.",
+      "aria": "View the product: Special-slice baklava",
+      "alt": "Hançerlioğlu - Special-slice baklava"
     },
     "28": {
-      "note": "Cold, with milk",
-      "story": "It rests in the cold and is finished with milk instead of syrup. It is a summer dish, and the only baklava in the house that is not eaten hot. What keeps the leaves apart is the cold, not the sugar.",
-      "aria": "Read the story: Soğuk Baklava",
-      "alt": "Hançerlioğlu - Soğuk Baklava, Cold, with milk"
+      "name": "Cold baklava",
+      "note": "Our cold baklava, made with a milky şerbet and a cool, fresh flavour.",
+      "story": "Our cold baklava, made with a milky şerbet and a cool, fresh flavour.",
+      "aria": "View the product: Cold baklava",
+      "alt": "Hançerlioğlu - Cold baklava"
     },
     "29": {
-      "note": "With a hot knife",
-      "story": "It is cut from the block with a heated knife. Salep and mastic are turned slowly enough to hold a square edge. That is the only honest test of whether it was made properly.",
-      "aria": "Read the story: Sade Dilim",
-      "alt": "Hançerlioğlu - Sade Dilim, With a hot knife"
+      "name": "Plain slice ice cream",
+      "note": "Plain ice cream of a dense body, served in slices.",
+      "story": "Plain ice cream of a dense body, served in slices.",
+      "aria": "View the product: Plain slice ice cream",
+      "alt": "Hançerlioğlu - Plain slice ice cream"
     },
     "30": {
-      "note": "A vein of pistachio paste",
-      "story": "The same slice leans on a vein of pistachio paste, ground in the house to a coarse, oily green. The paste is never sweetened. It is there for weight and colour, not for sugar.",
-      "aria": "Read the story: Fıstık Ezmeli Dilim",
-      "alt": "Hançerlioğlu - Fıstık Ezmeli Dilim, A vein of pistachio paste"
+      "name": "Pistachio-paste slice ice cream",
+      "note": "Sliced ice cream enriched with pistachio paste.",
+      "story": "Sliced ice cream enriched with pistachio paste.",
+      "aria": "View the product: Pistachio-paste slice ice cream",
+      "alt": "Hançerlioğlu - Pistachio-paste slice ice cream"
     },
     "31": {
-      "note": "Pressed by hand",
-      "story": "The plain baton is pressed into the mould by hand and held at the only temperature that will keep its edge. Nothing is added. It is the base recipe, set in the middle so the others can be judged against it.",
-      "aria": "Read the story: Baton Sade",
-      "alt": "Hançerlioğlu - Baton Sade, Pressed by hand"
+      "name": "Plain baton ice cream",
+      "note": "Classic plain ice cream, served as a baton.",
+      "story": "Classic plain ice cream, served as a baton.",
+      "aria": "View the product: Plain baton ice cream",
+      "alt": "Hançerlioğlu - Plain baton ice cream"
     },
     "32": {
-      "note": "Rolled until no white remains",
-      "story": "The baton is rolled in ground Antep pistachio until no white is left on the surface. It is done while the block is still firm, so the pistachio sits on the outside instead of being pressed in.",
-      "aria": "Read the story: Baton Fıstıklı",
-      "alt": "Hançerlioğlu - Baton Fıstıklı, Rolled until no white remains"
+      "name": "Pistachio baton ice cream",
+      "note": "A baton of ice cream coated in pistachio.",
+      "story": "A baton of ice cream coated in pistachio.",
+      "aria": "View the product: Pistachio baton ice cream",
+      "alt": "Hançerlioğlu - Pistachio baton ice cream"
     },
     "33": {
-      "note": "A shell that cracks",
-      "story": "It is dipped in dark chocolate that sets hard against the cold and cracks cleanly at the first bite. The shell is thin on purpose: enough to snap, not enough to chew.",
-      "aria": "Read the story: Baton Çikolatalı",
-      "alt": "Hançerlioğlu - Baton Çikolatalı, A shell that cracks"
+      "name": "Chocolate baton ice cream",
+      "note": "A baton of ice cream coated in chocolate.",
+      "story": "A baton of ice cream coated in chocolate.",
+      "aria": "View the product: Chocolate baton ice cream",
+      "alt": "Hançerlioğlu - Chocolate baton ice cream"
     },
     "34": {
-      "note": "Pulled by the arm",
-      "story": "It is worked with a long-handled paddle until it stretches like dough and can hang from the arm without falling. Salep gives it that pull. It comes the old way: cut with a knife, not scooped.",
-      "aria": "Read the story: Kol Dondurma",
-      "alt": "Hançerlioğlu - Kol Dondurma, Pulled by the arm"
+      "name": "Kol ice cream",
+      "note": "Kol ice cream, with its traditional texture.",
+      "story": "Kol ice cream, with its traditional texture.",
+      "aria": "View the product: Kol ice cream",
+      "alt": "Hançerlioğlu - Kol ice cream"
     },
     "35": {
-      "note": "Lifted at dawn",
-      "story": "Water-buffalo milk is held on the lowest flame through the night, until the cream rises and settles as a single sheet. It is lifted at dawn, rolled, and comes with nothing but honey or pistachio. Anything more would be an argument with it.",
-      "aria": "Read the story: Süt Kaymak",
-      "alt": "Hançerlioğlu - Süt Kaymak, Lifted at dawn"
+      "name": "Milk kaymak",
+      "note": "Kaymak, dense in body, with the flavour of milk.",
+      "story": "Kaymak, dense in body, with the flavour of milk.",
+      "aria": "View the product: Milk kaymak",
+      "alt": "Hançerlioğlu - Milk kaymak"
     },
     "36": {
-      "note": "A foam that is not broken",
-      "story": "It is ground to a powder and cooked slowly in a copper cezve so the foam rises once and is never broken. Water comes first, always. The coffee is reached with a clean mouth.",
-      "aria": "Read the story: Türk Kahvesi",
-      "alt": "Hançerlioğlu - Türk Kahvesi, A foam that is not broken"
+      "name": "Turkish coffee",
+      "note": "The flavour of traditional Turkish coffee.",
+      "story": "The flavour of traditional Turkish coffee.",
+      "aria": "View the product: Turkish coffee",
+      "alt": "Hançerlioğlu - Turkish coffee"
     },
     "37": {
-      "note": "A slim glass, a double pot",
-      "story": "It is brewed in a double pot and poured to the colour the guest asks for, from a deep red down to a pale amber. A slim glass, a saucer, two cubes of sugar beside it. It is not stirred for you.",
-      "aria": "Read the story: Çay",
-      "alt": "Hançerlioğlu - Çay, A slim glass, a double pot"
+      "name": "Tea",
+      "note": "Brewed tea, served alongside our sweets.",
+      "story": "Brewed tea, served alongside our sweets.",
+      "aria": "View the product: Tea",
+      "alt": "Hançerlioğlu - Tea"
     },
     "38": {
-      "note": "Ice cold, in glass",
-      "story": "It is kept in the coldest part of the refrigerator and opened at the table, not behind the counter. Glass bottles only. The house has never served a can, and has no intention of starting.",
-      "aria": "Read the story: Kola",
-      "alt": "Hançerlioğlu - Kola, Ice cold, in glass"
+      "name": "Cola",
+      "aria": "View the product: Cola",
+      "alt": "Hançerlioğlu - Cola"
     },
     "39": {
-      "note": "With a slice, if you ask",
-      "story": "Chilled, in glass, poured over ice, and with a slice of lemon if the table wants one. It cuts through a heavy plate of pistachio more cleanly than anything else on this list.",
-      "aria": "Read the story: Fanta",
-      "alt": "Hançerlioğlu - Fanta, With a slice, if you ask"
+      "name": "Fanta",
+      "aria": "View the product: Fanta",
+      "alt": "Hançerlioğlu - Fanta"
     },
     "40": {
-      "note": "Cold and clear",
-      "story": "This is the drink the house sets against its sweetest plates, because it leaves nothing on the palate. Cold, clear, and deliberately alone.",
-      "aria": "Read the story: Sprite",
-      "alt": "Hançerlioğlu - Sprite, Cold and clear"
+      "name": "Sprite",
+      "aria": "View the product: Sprite",
+      "alt": "Hançerlioğlu - Sprite"
     },
     "41": {
-      "note": "The traditional close",
-      "story": "Plain, or touched with lemon, and as cold as the refrigerator allows. This is what closes a heavy plate. Regulars ask for it before the meal is finished.",
-      "aria": "Read the story: Soda",
-      "alt": "Hançerlioğlu - Soda, The traditional close"
+      "name": "Soda",
+      "aria": "View the product: Soda",
+      "alt": "Hançerlioğlu - Soda"
     },
     "42": {
-      "note": "Before anything else",
-      "story": "Still or sparkling, it is put on the table before a single order is taken. It is the first thing to arrive, and the only thing no one has to ask for.",
-      "aria": "Read the story: Su",
-      "alt": "Hançerlioğlu - Su, Before anything else"
+      "name": "Water",
+      "aria": "View the product: Water",
+      "alt": "Hançerlioğlu - Water"
     },
     "01": {
-      "note": "Opened at dawn",
-      "story": "The dough is thrown into the air until it is the width of a table and nearly transparent, then closed over water-buffalo cream and coarsely chopped Antep pistachio. It belongs to dawn: it is not held, not reheated, and not taken out of the room where it was made.",
-      "aria": "Read the story: Klasik Katmer",
-      "alt": "Hançerlioğlu - Klasik Katmer, Opened at dawn"
+      "name": "Classic katmer",
+      "note": "Our traditional katmer: dough rolled paper-thin, with kaymak and Antep pistachio.",
+      "story": "Our traditional katmer: dough rolled paper-thin, with kaymak and Antep pistachio.",
+      "aria": "View the product: Classic katmer",
+      "alt": "Hançerlioğlu - Classic katmer"
     },
     "02": {
-      "note": "A muska fold, with cream",
-      "story": "The same transparent sheet is folded into the triangle called muska. Inside there is nothing but water-buffalo cream and pistachio; the fold itself holds the close, not a seal.",
-      "aria": "Read the story: Kaymaklı Muska",
-      "alt": "Hançerlioğlu - Kaymaklı Muska, A muska fold, with cream"
+      "name": "Kaymak muska katmer",
+      "note": "Crisp dough folded into a muska and met with kaymak.",
+      "story": "Crisp dough folded into a muska and met with kaymak.",
+      "aria": "View the product: Kaymak muska katmer",
+      "alt": "Hançerlioğlu - Kaymak muska katmer"
     },
     "03": {
-      "note": "A muska fold, with chocolate",
-      "story": "The muska fold is given to dark chocolate that melts from nothing but the heat the stone has held. The corners stay crisp and the centre gives way. That is the whole reason it is eaten at once.",
-      "aria": "Read the story: Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Çikolatalı Muska, A muska fold, with chocolate"
+      "name": "Chocolate muska katmer",
+      "note": "The harmony of crisp muska dough and chocolate.",
+      "story": "The harmony of crisp muska dough and chocolate.",
+      "aria": "View the product: Chocolate muska katmer",
+      "alt": "Hançerlioğlu - Chocolate muska katmer"
     },
     "04": {
-      "note": "The two, kept apart",
-      "story": "Inside a single fold, chocolate and water-buffalo cream sit in separate layers so that neither overwhelms the other. The sheet between them is what keeps both readable.",
-      "aria": "Read the story: Çikolatalı Kaymaklı Muska",
-      "alt": "Hançerlioğlu - Çikolatalı Kaymaklı Muska, The two, kept apart"
+      "name": "Chocolate and kaymak muska katmer",
+      "note": "Our muska katmer, where chocolate and kaymak come together.",
+      "story": "Our muska katmer, where chocolate and kaymak come together.",
+      "aria": "View the product: Chocolate and kaymak muska katmer",
+      "alt": "Hançerlioğlu - Chocolate and kaymak muska katmer"
     },
     "05": {
-      "note": "Belgian couverture",
-      "story": "Belgian couverture is tempered and spread in one thin coat before the fold is closed. It is darker than the house chocolate, and plainly richer, so the pistachio is held back on purpose.",
-      "aria": "Read the story: Belçika Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Belçika Çikolatalı Muska, Belgian couverture"
+      "name": "Belgian chocolate muska katmer",
+      "note": "A crisp muska katmer made with Belgian chocolate.",
+      "story": "A crisp muska katmer made with Belgian chocolate.",
+      "aria": "View the product: Belgian chocolate muska katmer",
+      "alt": "Hançerlioğlu - Belgian chocolate muska katmer"
     },
     "06": {
-      "note": "White, against the green",
-      "story": "White chocolate is set against the deep green of Antep pistachio — the only place the house allows a contrast this high. It is sweeter than everything around it, and it is deliberately the smallest portion we cut.",
-      "aria": "Read the story: Beyaz Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Beyaz Çikolatalı Muska, White, against the green"
+      "name": "White chocolate muska katmer",
+      "note": "Our muska katmer, made with white chocolate.",
+      "story": "Our muska katmer, made with white chocolate.",
+      "aria": "View the product: White chocolate muska katmer",
+      "alt": "Hançerlioğlu - White chocolate muska katmer"
     },
     "07": {
-      "note": "For a whole table",
-      "story": "Katmer laid for a table, not for one person: it is spread edge to edge on a copper tray and cut only at the moment it is carried out. The centre stays soft. The rim, against the metal, turns crisp.",
-      "aria": "Read the story: Tepsi Katmer",
-      "alt": "Hançerlioğlu - Tepsi Katmer, For a whole table"
+      "name": "Tray katmer",
+      "note": "A traditional katmer, to share with the people you love.",
+      "story": "A traditional katmer, to share with the people you love.",
+      "aria": "View the product: Tray katmer",
+      "alt": "Hançerlioğlu - Tray katmer"
     },
     "08": {
-      "note": "Rolled, cream drawn through",
-      "story": "The sheet is rolled around a pin, gathered along its length and twisted. The cream is not spread on top; it is drawn through the folds, so it shows in the cut rather than on the surface.",
-      "aria": "Read the story: Burma Katmer, Kaymaklı",
-      "alt": "Hançerlioğlu - Burma Katmer, Kaymaklı, Rolled, cream drawn through"
+      "name": "Kaymak burma katmer",
+      "note": "Our kaymak katmer, rolled into a coil.",
+      "story": "Our kaymak katmer, rolled into a coil.",
+      "aria": "View the product: Kaymak burma katmer",
+      "alt": "Hançerlioğlu - Kaymak burma katmer"
     },
     "09": {
-      "note": "Rolled, with chocolate",
-      "story": "The same twist, this time wrapped around dark chocolate softened on the stone. Cut across, the spiral reads as a dark thread turning inside the pale sheet.",
-      "aria": "Read the story: Burma Katmer, Çikolatalı",
-      "alt": "Hançerlioğlu - Burma Katmer, Çikolatalı, Rolled, with chocolate"
+      "name": "Chocolate burma katmer",
+      "note": "Crisp burma dough, met with chocolate.",
+      "story": "Crisp burma dough, met with chocolate.",
+      "aria": "View the product: Chocolate burma katmer",
+      "alt": "Hançerlioğlu - Chocolate burma katmer"
     }
+  },
+  "world": {
+    "label": "International growth",
+    "title": "From Erdemli to the world",
+    "p1": "The story that began in 1995 is now crossing borders.",
+    "p2": "Set on carrying our traditional flavours to other geographies, we are preparing to open our first branch abroad in the city of Aleppo, in Syria.",
+    "p3": "Hançerlioğlu, in Aleppo very soon.",
+    "badge": "ALEPPO · SYRIA · SOON"
+  },
+  "branches": {
+    "label": "Our branches",
+    "title": "Different addresses, the same mastery",
+    "intro": "Discover the unchanging flavour of Hançerlioğlu, and its hospitality, in our branches.",
+    "centreTitle": "Erdemli centre",
+    "centreText": "The address where our traditional flavours and the mastery of Hançerlioğlu can be discovered.",
+    "centreAddress": "Merkez, Kazım Karabekir Cd. 68/D<br>33730 Erdemli/Mersin",
+    "centreMapTitle": "Hançerlioğlu Erdemli centre: Merkez, Kazım Karabekir Cd. 68/D, 33730 Erdemli/Mersin",
+    "shoreTitle": "Erdemli shore",
+    "shoreText": "Our shore branch, where the flavours of Hançerlioğlu can be tasted in an easy atmosphere.",
+    "shoreAddress": "Alata, Erdemoğlu Blv. No : 183 A<br>33730 Erdemli/Mersin",
+    "shoreMapTitle": "Hançerlioğlu Erdemli shore: Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin",
+    "aleppoTitle": "Aleppo branch — Syria",
+    "aleppoText": "The first step of our international growth. At your service very soon.",
+    "soon": "Soon"
   }
 }

@@ -8,112 +8,130 @@
     "home": "Hançerlioğlu — ana sayfa",
     "primary": "Ana menü",
     "menu": "Menü",
-    "founder": "Kurucu",
-    "history": "Tarihçe",
-    "craft": "Zanaat",
-    "collection": "Koleksiyon",
-    "house": "Ev",
+    "founder": "Kurucumuz",
+    "craft": "Ustalığımız",
     "established": "Kur.",
-    "close": "Kapat"
+    "close": "Kapat",
+    "homeLink": "Ana Sayfa",
+    "story": "Hikâyemiz",
+    "products": "Ürünlerimiz",
+    "branches": "Şubelerimiz",
+    "contact": "İletişim"
   },
   "preloader": {
     "loading": "Yükleniyor",
     "place": "Erdemli · 1995",
-    "collection": "Ustalık Eserleri · Başyapıtlar"
+    "collection": "Ürünlerimiz · Erdemli"
   },
   "footer": {
-    "tagline": "1995’ten beri Erdemli’de, elde tutulan bir ustalık.",
+    "tagline": "Gelenekten Gelen Lezzet.",
     "workshop": "Atölye",
     "hours": "Saatler",
     "elsewhere": "Başka yerde",
     "journal": "Günce",
-    "credit": "1995’ten beri, ağır ağır.",
     "top": "Başa dönün",
-    "rights": "Hançerlioğlu · Erdemli. Tüm hakları saklıdır.",
+    "rights": "Hançerlioğlu. Tüm hakları saklıdır.",
     "katmer": "Katmer",
-    "open": "Ev",
+    "open": "Hançerlioğlu",
     "closed": "Yılın ilk günü kapalı",
-    "address": "Alata, Erdemoğlu Blv. No : 183 A<br>33730 Erdemli/Mersin",
     "press": "Basın",
-    "home": "Ev"
+    "home": "Hançerlioğlu",
+    "mark": "HANÇERLİOĞLU"
   },
   "meta": {
     "logo": "Hançerlioğlu logosu",
-    "homeTitle": "Hançerlioğlu | Resmi Web Sitesi - Geleneksel Tatlı & Lezzetler",
-    "homeDescription": "Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar. Alata, Erdemoğlu Bulvarı, Mersin.",
-    "homeDescriptionShort": "Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de katmer, künefe, baklava ve geleneksel tatlılar.",
+    "homeTitle": "HANÇERLİOĞLU | 1995",
+    "homeDescription": "Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de, Metin Hançerlioğlu’nun başlattığı lezzet yolculuğu. Katmer, künefe, baklava ve geleneksel tatlılar. Alata, Erdemoğlu Bulvarı, Mersin.",
+    "homeDescriptionShort": "Hançerlioğlu’nun resmi web sitesi. 1995’ten beri Erdemli’de, Metin Hançerlioğlu’nun başlattığı lezzet yolculuğu.",
     "homeKeywords": "Hançerlioğlu, Hançerlioğlu resmi, Hançerlioğlu Erdemli, Hançerlioğlu Mersin, geleneksel tatlı, katmer, künefe, baklava, Erdemli tatlıcısı, Alata",
-    "collectionTitle": "Hançerlioğlu Koleksiyon | Ustalık Eserleri - Erdemli",
-    "collectionDescription": "Hançerlioğlu koleksiyonu: katmer, künefe, kadayıf, baklava, dondurma ve kaymak. 1995’ten beri Erdemli’de, elde tutulan kırk iki eser.",
-    "collectionDescriptionShort": "Yedi disiplinde kırk iki eser. 1995’ten beri Erdemli’de, elde. Hançerlioğlu resmi koleksiyonu.",
-    "collectionKeywords": "Hançerlioğlu koleksiyon, Hançerlioğlu katmer, Hançerlioğlu künefe, Hançerlioğlu baklava, Erdemli tatlı, kadayıf, dondurma, kaymak"
+    "collectionTitle": "Ürünlerimiz — HANÇERLİOĞLU | 1995",
+    "collectionDescription": "Hançerlioğlu ürünleri: künefe, katmer, baklava, kadayıf, dondurma, kaymak ve içecekler. 1995’ten beri Erdemli’de.",
+    "collectionDescriptionShort": "Geleneksel tatlılardan özgün tariflere, Hançerlioğlu ustalığı. Erdemli, 1995.",
+    "collectionKeywords": "Hançerlioğlu ürünleri, Hançerlioğlu katmer, Hançerlioğlu künefe, Hançerlioğlu baklava, Erdemli tatlı, kadayıf, dondurma, kaymak"
   },
   "hero": {
-    "title": "1995’ten beri <em>ustalık</em>",
-    "lede": "Metin Hançerlioğlu'nun Erdemli’de açtığı tezgâhtan bugüne; elde açılan yufka, fıstık ve değişmeyen bir ölçü.",
+    "title": "1995’ten Bugüne Gelen <em>Lezzet</em>",
+    "lede": "Metin Hançerlioğlu’nun Erdemli’de başlattığı lezzet yolculuğunu, geleneksel üretim anlayışımız ve yılların verdiği ustalıkla sürdürüyoruz.",
     "founded": "Kuruluş",
-    "master": "Usta",
-    "origin": "Köken",
-    "scroll": "Kaydırın"
+    "master": "Kurucumuz",
+    "origin": "Doğduğumuz Yer",
+    "scroll": "Kaydırın",
+    "mark": "HANÇERLİOĞLU",
+    "originValue": "Erdemli, Mersin",
+    "founderName": "Metin Hançerlioğlu",
+    "storyCta": "Hikâyemizi Keşfedin",
+    "productsCta": "Ürünlerimizi İnceleyin"
   },
   "philosophy": {
-    "label": "Felsefe",
-    "statement": "Tatlı yapmıyoruz. 1995’te verilen bir sözü tutuyoruz — her yufka yaprağı ışıktan okunacak kadar ince gerilsin, adımızı taşımayan hiçbir şey tezgâhtan çıkmasın."
+    "label": "Felsefemiz",
+    "title": "Değişmeyen Kalite, Nesilden Nesile Ustalık",
+    "p1": "1995’ten bu yana geleneksel tariflerimizi, özenle seçtiğimiz malzemeler ve yılların verdiği tecrübeyle buluşturuyoruz.",
+    "p2": "Kaliteden ödün vermeden, her ürünümüzde aynı özeni ve lezzeti sunmayı amaçlıyoruz.",
+    "p3": "Geçmişimizden aldığımız değerleri korurken yeniliklere açık bir anlayışla geleceğe ilerliyoruz."
   },
   "legacy": {
     "caption": "Metin Hançerlioğlu, mermer tezgâhın başında, Erdemli.",
-    "title": "Her şeyin başladığı <em>eller</em>",
-    "p1": "1995’te, Erdemli’de, Metin Hançerlioğlu dört tepsi genişliğinde bir oda açtı. Bir mermer tezgâhı, elde dövülmüş bir tavası ve yufkanın ışık geçene kadar gerilebileceğine dair bir inancı vardı.",
-    "p2": "Kestirme yolları, başkalarının borcu reddettiği gibi reddetti. Yağ şafakta sadeleştirilir, fıstık teker teker açılırdı. Yırtılan yaprak satılmaz, kenara konurdu. Ev, atmaya razı olduğu şeyin üstüne kuruldu.",
-    "p3": "Yıllar geçti. Tezgâh aynı taş. Ölçü yerinden oynamadı.",
+    "title": "Bir Ustanın Başlattığı <em>Yolculuk</em>",
+    "p1": "Hançerlioğlu’nun hikâyesi, 1995 yılında Metin Hançerlioğlu’nun Erdemli’de başlattığı lezzet yolculuğuyla doğdu.",
+    "p2": "Mesleğine duyduğu sevgi, emeğe verdiği değer ve kalite anlayışı, bugün Hançerlioğlu markasının temelini oluşturuyor.",
+    "p3": "Yıllar içinde büyüyen markamız, kurucumuzdan aldığımız değerleri koruyarak yoluna devam ediyor.",
     "founded": "Kuruluş",
     "leaves": "Tepside yaprak",
     "city": "Şehir",
     "signature": "Metin Hançerlioğlu'nun imzası",
-    "role": "Kurucu · 1995",
-    "alt": "Hançerlioğlu - Metin Hançerlioğlu, Erdemli’deki atölyenin mermer tezgâhında"
+    "role": "Kurucu",
+    "portrait": "Kurucumuz portresi · 1995",
+    "alt": "Hançerlioğlu - Metin Hançerlioğlu, Erdemli’deki atölyenin mermer tezgâhında",
+    "name": "Metin Hançerlioğlu"
   },
   "heritage": {
-    "title": "İki durak",
-    "intro": "Biri tezgâhın kurulduğu yıl. Öteki, evin bugünkü yerine ve ölçeğine kavuştuğu yıl.",
-    "first": "İlk tezgâh",
-    "firstText": "Metin Hançerlioğlu, Erdemli’de kapıyı açar. Bir mermer, bir tava, dört tepsi. Ölçü o gün konur ve bir daha tartışılmaz.",
-    "secondText": "Ev bugünkü ölçeğine kavuşur. Erdemoğlu Bulvarı’ndaki atölye açılır; katmer, künefe ve baklava aynı çatı altında, aynı ölçüyle toplanır.",
+    "title": "Dünden Bugüne Hançerlioğlu",
+    "intro": "1995 yılında Erdemli’de başlayan lezzet yolculuğumuz, geleneklerimize bağlı kalarak büyümeye devam ediyor.",
     "alt1995": "Hançerlioğlu - Metin Hançerlioğlu, 1995’te kurduğu tezgâhın başında",
     "alt2025": "Hançerlioğlu - 2025’de Erdemoğlu Bulvarı’ndaki atölyede baklava tepsi",
-    "fallbackFounded": "Kuruluş",
-    "fallbackGrowth": "Genişleme"
+    "m1": "Hikâyemizin Başlangıcı",
+    "m1Text": "Metin Hançerlioğlu tarafından Erdemli’de temelleri atılan markamızın lezzet yolculuğu başladı.",
+    "m2": "Büyüme ve Yenilenme",
+    "m2Text": "Yeni şubemizle hizmet alanımızı genişlettik, üretim kapasitemizi ve ürün çeşitliliğimizi geliştirdik.",
+    "soon": "Yakında",
+    "m3": "Halep, Suriye",
+    "m3Text": "Erdemli’de başlayan hikâyemizi Türkiye sınırlarının ötesine taşıyoruz. Halep’te açılacak ilk yurt dışı şubemizle uluslararası büyüme yolculuğumuza adım atıyoruz.",
+    "future": "Gelecek",
+    "m4": "Erdemli’den Dünyaya",
+    "m4Text": "Geleneklerimizi ve kalite anlayışımızı koruyarak Hançerlioğlu lezzetlerini farklı şehirlerde ve ülkelerde misafirlerimizle buluşturmayı hedefliyoruz."
   },
   "craft": {
-    "title": "Tatlının <em>sanatı</em>",
-    "intro": "Üç disiplin. Her birinin kendi saati, kendi metali ve kendi sessizliği vardır.",
+    "title": "Gelenekten Gelen <em>Ustalık</em>",
+    "intro": "Yılların tecrübesini, özenle seçtiğimiz malzemeler ve geleneksel üretim yöntemlerimizle bir araya getiriyoruz.",
     "scroll": "Kaydırın",
-    "baklavaSub": "Kırk yaprak ışık",
-    "kuneSub": "Ateş ve tel",
-    "katmerSub": "Şafak ritüeli",
-    "baklavaText": "Kırk yaprak yufka; her biri basılı bir sayfa okunacak kadar inceltilir, şafakta sadeleştirilmiş yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, yaprakları birbirinden ayıran sıcaklık farkıyla şerbetle buluşur.",
-    "kuneText": "Saç teli inceliğinde kadayıf, aynı sabah çekilmiş tuzsuz peynirin etrafına dizilir; elde dövülmüş bakırda, açık ateşte çevrilir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak biter, bir nefes sonrası yoktur.",
-    "katmerText": "Sofra genişliğinde, neredeyse saydam olana kadar havaya savrulur; sonra manda kaymağı ve iri çekilmiş fıstığın üstüne kapanır. Katmer ilk ışığa aittir. Bekletilmez, ısıtılmaz, gönderilmez. Yapıldığı yerde yenir.",
-    "quote": "“Şeker ucuzdur. Zaman değildir. Biz ikincisini satarız.”",
-    "cite": "Metin Hançerlioğlu · 1995",
+    "baklavaText": "İncecik açılan yufkalar, Antep fıstığı ve ustalıkla hazırlanan şerbet. Geleneksel baklava lezzetini sofralarınıza taşıyoruz.",
+    "kuneText": "Çıtır kadayıf, özel künefe peyniri ve dengeli şerbetiyle geleneksel künefe lezzetini sıcak olarak sunuyoruz.",
+    "katmerText": "İncecik açılan hamuru, kaymağı ve Antep fıstığıyla hazırlanan geleneksel katmerlerimizi farklı lezzetlerle zenginleştiriyoruz.",
     "altBaklava": "Hançerlioğlu - Kırk yapraklı fıstıklı baklava tepsisi",
     "altKune": "Hançerlioğlu - Peynirin tel tel uzadığı künefe",
-    "altKatmer": "Hançerlioğlu - İnce açılmış katmer hamuru, kaymak ve fıstıkla"
+    "altKatmer": "Hançerlioğlu - İnce açılmış katmer hamuru, kaymak ve fıstıkla",
+    "intro2": "Her ürünümüzü aynı özen ve kalite anlayışıyla hazırlıyoruz.",
+    "baklava": "Baklava",
+    "kune": "Künefe",
+    "katmer": "Katmer",
+    "kadayif": "Kadayıf",
+    "kadayifText": "Geleneksel üretim anlayışımızla hazırladığımız kadayıflarımızı, özenle seçtiğimiz malzemelerle buluşturuyoruz.",
+    "altKadayif": "Hançerlioğlu - Geleneksel kadayıf"
   },
   "house": {
-    "title": "Hâlâ burada, hâlâ <em>ağır</em>",
-    "text": "Erdemoğlu Bulvarı’ndaki atölye, 1995’te konulan saati tutar. Kepenkler dörtte kalkar. Mermer soğuktur. İlk tepsi, sokak uyanmadan çıkar — yaprak yaprak.",
-    "cta": "Koleksiyonun tümünü görün",
-    "count": "Kırk iki eser"
+    "title": "Erdemli’de Başlayan Bir Lezzet <em>Geleneği</em>",
+    "cta": "Ürünlerimizi İnceleyin",
+    "label": "Hançerlioğlu",
+    "p1": "1995 yılında Erdemli’de başlayan hikâyemizi, bugün aynı tutku ve kalite anlayışıyla sürdürüyoruz.",
+    "p2": "Geleneksel tatlılarımızı yenilikçi lezzetlerimizle buluşturuyor, misafirlerimizi Hançerlioğlu’nun sıcak atmosferinde ağırlıyoruz.",
+    "p3": "Bizim için her ürün emeğin, ustalığın ve yılların tecrübesinin bir parçasıdır."
   },
   "visit": {
-    "label": "Ziyaret",
-    "title": "Ziyaret Edin",
-    "english": "Erdemoğlu Bulvarı’ndaki kapı",
-    "lede": "Kepenkler şehirden önce kalkar. İlk tepsi için gelin, mermer hâlâ soğukken; ya da bakır çoktan ateşteyken. Kapı, 1995’te açılan kapıdır.",
-    "workshop": "Atölye",
+    "label": "İletişim",
+    "title": "Bizimle İletişime Geçin",
+    "lede": "Ürünlerimiz, şubelerimiz, siparişleriniz ve iş birliği talepleriniz hakkında bizimle iletişime geçebilirsiniz.",
     "katmer": "Katmer",
-    "house": "Ev",
+    "house": "Hançerlioğlu",
     "closed": "Kapalı",
     "closedValue": "Yılın ilk günü",
     "map": "Haritada açın",
@@ -128,13 +146,11 @@
       "kap": "Kap",
       "peynir": "Peynir",
       "servis": "Servis",
-      "saat": "Saat",
-      "kaymak": "Kaymak",
-      "omur": "Ömür",
+      "omur": "Saklama Süresi",
       "hazirlik": "Hazırlık",
       "firin": "Fırın",
       "katlama": "Katlama",
-      "dolgu": "Dolgu",
+      "dolgu": "İçerik",
       "cikolata": "Çikolata",
       "temperleme": "Temperleme",
       "fistik": "Fıstık",
@@ -146,7 +162,7 @@
       "uretim": "Üretim",
       "dizim": "Dizim",
       "tatlandirici": "Tatlandırıcı",
-      "surup": "Şurup",
+      "surup": "Şerbet",
       "kadayif": "Kadayıf",
       "ates": "Ateş",
       "katman": "Katman",
@@ -165,18 +181,11 @@
       "sut": "Süt",
       "zaman": "Zaman",
       "demleme": "Demleme",
-      "bardak": "Bardak",
-      "sise": "Şişe",
-      "cesit": "Çeşit"
+      "bardak": "Bardak"
     },
     "v": {
-      "40": "40",
-      "safakta-sade": "Şafakta sade",
-      "6-saat": "6 saat",
       "dovme-bakir": "Dövme bakır",
       "ayni-sabah": "Aynı sabah",
-      "90-saniye": "90 saniye",
-      "ilk-isik": "İlk ışık",
       "manda": "Manda",
       "bir-saat": "Bir saat",
       "safak-vakti": "Şafak vakti",
@@ -261,326 +270,374 @@
       "su-ile-once-su": "Su ile, önce su",
       "cift-demlik": "Çift demlik",
       "ince-belli": "İnce belli",
-      "kenarda": "Kenarda",
-      "cam": "Cam",
-      "masada-acilir": "Masada açılır",
-      "buzlu": "Buzlu",
-      "sade-ya-da-limonlu": "Sade ya da limonlu",
-      "buz-gibi": "Buz gibi",
-      "sade-ya-da-maden": "Sade ya da maden",
-      "her-seyden-once": "Her şeyden önce"
+      "kenarda": "Kenarda"
     }
   },
   "cover": {
-    "catalog": "Katalog · MMXXVI",
-    "line1": "Ustalık",
-    "line2": "<em>Eserleri</em>",
-    "english": "Başyapıtlar",
-    "lede": "Erdemli bu tatlıları icat ettiğini söylemez; onları devralır ve elinden bırakmaz. Aşağıda evin bütün pratiği durur — yaprak, tel, ateş ve soğuk — günün onları kurduğu sırayla, kurulduğu gibi.",
-    "disciplines": "Disiplinler",
+    "catalog": "Ürünlerimiz",
+    "line1": "Her Lezzette",
+    "line2": "<em>Ustalık</em>",
+    "english": "İmza Lezzetlerimiz",
+    "lede": "Geleneksel tatlılarımızdan özgün tariflerimize, özenle hazırladığımız birbirinden özel lezzetlerimizi keşfedin.",
+    "disciplines": "Kategoriler",
     "seven": "Yedi",
-    "works": "Eser",
+    "works": "Ürün",
     "fortytwo": "Kırk iki",
     "workshop": "Atölye",
-    "cue": "Dizine geçin"
+    "cue": "Ürün kategorilerine geçin",
+    "signature": "Geleneksel tatları yenilikçi tariflerle buluşturduğumuz özel ürünlerimiz."
   },
   "catnav": {
     "aria": "Kategoriler",
-    "label": "Dizin",
-    "note": "\r\n              Her eser kendi öyküsüne açılır.<br>\r\n              Okumak için bir ad seçin.\r\n            "
+    "label": "Ürün Kategorileri",
+    "note": "Her ürün incelenir.<br>İncelemek için bir ad seçin."
   },
   "cat": {
     "katmer": "Katmerler",
     "kune": "Künefeler",
     "kadayif": "Kadayıflar",
     "baklava": "Baklavalar",
-    "ice": "Dondurmalar",
-    "kaymak": "Kaymak",
+    "ice": "Dondurmalar ve Kaymak",
     "drinks": "İçecekler",
     "katmerGloss": "Şafağın yaprakları",
     "kuneGloss": "Ateş ve tel",
     "kadayifGloss": "İnce teller",
     "baklavaGloss": "Kırk yaprak",
     "iceGloss": "Soğuk oda",
-    "kaymakGloss": "Sütün kaymağı",
     "drinksGloss": "Eşlik edenler",
-    "count13": "On üç eser",
-    "count9": "Dokuz eser",
-    "count3": "Üç eser",
-    "count6": "Altı eser",
-    "count1": "Bir eser",
-    "count7": "Yedi eser",
+    "count13": "On üç ürün",
+    "count9": "Dokuz ürün",
+    "count3": "Üç ürün",
+    "count7": "Yedi ürün",
     "katmerNote": "Hamur, bir masanın içinden okunacağı inceliğe dek havaya atılır. Katmer, kent uyanmadan önceki saate aittir; aşağıdaki her biçim, aynı kata verilmiş ayrı bir cevaptır.",
     "kuneNote": "Açık ateşin üzerinde dövme bakır ve aynı sabah çekilmiş peynir. Usta saate değil sese bakar: cızırtı yarım ton düşünce tabak bitmiştir.",
     "kadayifNote": "Künefenin teli, peynirden ayrılarak kendi başına bırakılır. Tereyağı, fıstık ve sabır; arkasına saklanacak başka bir şey yoktur.",
     "baklavaNote": "Tepside kırk yaprak; her biri, basılı bir sayfanın içinden okunacağı inceliğe dek açılır. Ev bu sayıyı hiç değiştirmedi ve hiç değiştirmesi istenmedi.",
-    "iceNote": "Salep ve sakız, sonuç kepçeyle değil bıçakla alınacak kadar yavaş çevrilir. Soğuk oda, atölyede ateşin hiç ulaşmadığı tek yerdir.",
-    "kaymakNote": "Tek kayıt, çünkü tek bir usul vardır. Bu katalogda kaymak taşıyan her şey, sabahın dördünde burada başlar.",
-    "drinksNote": "Sofraya yanında götürülenler. İkisi burada yapılır ve bu katalogdaki herhangi bir eser kadar zaman ister; geri kalanı soğuk, camda ve ikinci kez sorulmadan gelir."
+    "iceNote": "Salep ve sakız, sonuç kepçeyle değil bıçakla alınacak kadar yavaş çevrilir. Kaymak ise sabahın dördünde kaldırılır; bu katalogda onu taşıyan her şey orada başlar.",
+    "drinksNote": "Sofraya yanında götürülenler. İkisi burada yapılır ve bu katalogdaki herhangi bir ürün kadar zaman ister; geri kalanı soğuk, camda ve ikinci kez sorulmadan gelir.",
+    "other": "Diğer Tatlılar",
+    "otherGloss": "Yan raflar",
+    "otherNote": "Ana kategorilerin dışında, aynı özenle hazırlanan tarifler."
   },
   "catalog": {
-    "close": "Kırk iki eser, tek ölçü. Bu katalogda olmayan, bu evde yapılmaz.",
-    "return": "Eve dönün",
-    "cue": "Öykü",
+    "close": "Kırk iki ürün, tek ölçü. Bu katalogda olmayan, bu evde yapılmaz.",
+    "return": "Ana sayfaya dönün",
+    "cue": "Ürünü İncele",
     "signature": "İmza"
   },
   "drawer": {
-    "prev": "Önceki eser",
-    "next": "Sonraki eser",
+    "prev": "Önceki ürün",
+    "next": "Sonraki ürün",
     "waiting": "Fotoğraf bekleniyor"
   },
   "items": {
     "10": {
-      "note": "İki kez sarılmış",
-      "story": "İki kez sarılan bir burgu: iç kıvrımlarda kaymak, dış kıvrımlarda çikolata. Bu bölümün teknik olarak en nazlı işidir; yalnızca ısmarlandığında yapılır.",
-      "aria": "Öyküyü okuyun: Burma Katmer, Çikolatalı Kaymaklı",
-      "alt": "Hançerlioğlu - Burma Katmer &middot; Çikolatalı Kaymaklı"
+      "name": "Çikolatalı Kaymaklı Burma Katmer",
+      "note": "Kaymak ve çikolatayla zenginleştirilen burma katmer.",
+      "story": "Kaymak ve çikolatayla zenginleştirilen burma katmer.",
+      "aria": "Ürünü inceleyin: Çikolatalı Kaymaklı Burma Katmer",
+      "alt": "Hançerlioğlu - Çikolatalı Kaymaklı Burma Katmer"
     },
     "11": {
-      "note": "Kamış inceliğinde",
-      "story": "Kamış inceliğinde sarılır ve bükülmek yerine çıt diye kırılana dek pişer. Atölyeden çıkan en nazik şeydir ve kutuya koymayı reddettiğimiz tek parçadır.",
-      "aria": "Öyküyü okuyun: Çubuk Katmer",
+      "name": "Çubuk Katmer",
+      "note": "İnce çubuk formuyla hazırlanan çıtır katmerimiz.",
+      "story": "İnce çubuk formuyla hazırlanan çıtır katmerimiz.",
+      "aria": "Ürünü inceleyin: Çubuk Katmer",
       "alt": "Hançerlioğlu - Çubuk Katmer"
     },
     "12": {
-      "note": "Halka, çikolata",
-      "story": "Yaprak bir halkaya getirilir, çikolata birleşim yerinin içine kapatılır ve dikiş bütünüyle kaybolana dek pişer. Ayakta, elle yenmek içindir; sokak onu hep böyle yedi.",
-      "aria": "Öyküyü okuyun: Çikolatalı Simit",
-      "alt": "Hançerlioğlu - Çikolatalı Simit"
+      "name": "Çikolatalı Simit Katmer",
+      "note": "Simit şeklinde hazırlanan çikolatalı katmer.",
+      "story": "Simit şeklinde hazırlanan çikolatalı katmer.",
+      "aria": "Ürünü inceleyin: Çikolatalı Simit Katmer",
+      "alt": "Hançerlioğlu - Çikolatalı Simit Katmer"
     },
     "13": {
-      "note": "Halka, kaymak",
-      "story": "Aynı halka, aynı sabah alınan kaymakla doldurulur ve yaprak soğumadan kapatılır. Kaymak hamurun içinde ikinci güne dayanmaz; bu yüzden kısa partiler halinde, günde iki kez yapılır.",
-      "aria": "Öyküyü okuyun: Kaymaklı Simit",
-      "alt": "Hançerlioğlu - Kaymaklı Simit"
+      "name": "Kaymaklı Simit Katmer",
+      "note": "Simit şeklinde hazırlanan kaymaklı katmer.",
+      "story": "Simit şeklinde hazırlanan kaymaklı katmer.",
+      "aria": "Ürünü inceleyin: Kaymaklı Simit Katmer",
+      "alt": "Hançerlioğlu - Kaymaklı Simit Katmer"
     },
     "14": {
-      "note": "Bakır, ateş, tel",
-      "story": "Saç inceliğinde çekilen kadayıf, aynı sabah alınan tuzsuz peyniri sarar ve elde dövülmüş bakırın üzerinde, açık ateşte çevrilir. Hiçbir parçası önceden hazırlanamaz; bu yüzden en son istenir ve ilk yenir.",
-      "aria": "Öyküyü okuyun: Klasik Künefe",
+      "name": "Klasik Künefe",
+      "note": "Tel kadayıf, özel künefe peyniri ve şerbetle hazırlanan geleneksel künefe lezzetimiz.",
+      "story": "Tel kadayıf, özel künefe peyniri ve şerbetle hazırlanan geleneksel künefe lezzetimiz.",
+      "aria": "Ürünü inceleyin: Klasik Künefe",
       "alt": "Hançerlioğlu - Klasik Künefe"
     },
     "15": {
-      "note": "Hasır gibi örülmüş",
-      "story": "Kadayıf düz sıkıştırmak yerine hasır gibi örülür; ateş peynire kenardan değil, aralıklardan ulaşır. Alevden bir hasır gibi iner — adı da tam olarak budur.",
-      "aria": "Öyküyü okuyun: Hasır Künefe",
+      "name": "Hasır Künefe",
+      "note": "Hasır kadayıfın çıtır dokusuyla hazırlanan özel künefemiz.",
+      "story": "Hasır kadayıfın çıtır dokusuyla hazırlanan özel künefemiz.",
+      "aria": "Ürünü inceleyin: Hasır Künefe",
       "alt": "Hançerlioğlu - Hasır Künefe"
     },
     "16": {
-      "note": "Düşük kalori, aynı ateş",
-      "story": "Klasik ile aynı kurulur, şerbetin yerini stevia alır. Alınan tek şey şekerdir — bakır, peynir ve alev yerinde durur; aldığı zaman da.",
-      "aria": "Öyküyü okuyun: Stevia Künefe",
+      "name": "Stevia Künefe",
+      "note": "Stevia ile tatlandırılan özel şerbetimizle hazırlanan künefe.",
+      "story": "Stevia ile tatlandırılan özel şerbetimizle hazırlanan künefe.",
+      "aria": "Ürünü inceleyin: Stevia Künefe",
       "alt": "Hançerlioğlu - Stevia Künefe"
     },
     "17": {
-      "note": "Paşanın payı",
-      "story": "Tavada daha derin, ende daha geniş ve evin olağan elinden daha ağır bir fıstık tacıyla gelir. Birden fazla kişinin bölüşmesi içindir ve birden fazla çatalla iner.",
-      "aria": "Öyküyü okuyun: Paşa Künefe",
+      "name": "Paşa Künefe",
+      "note": "Antep fıstığıyla zenginleştirilen özel künefe çeşitlerimizden biri.",
+      "story": "Antep fıstığıyla zenginleştirilen özel künefe çeşitlerimizden biri.",
+      "aria": "Ürünü inceleyin: Paşa Künefe",
       "alt": "Hançerlioğlu - Paşa Künefe"
     },
     "18": {
-      "note": "Cam gibi kesilmiş",
-      "story": "Kadayıf kısa ve billur kesilir; kesme cam gibi ışığı tutar. Klasikten daha çıtırdır ve yavaş ele pek izin vermez, çünkü kısa tel saniyeler içinde renk alır.",
-      "aria": "Öyküyü okuyun: Billuriye",
+      "name": "Billuriye",
+      "note": "Çıtır kadayıf dokusuyla öne çıkan geleneksel lezzetimiz.",
+      "story": "Çıtır kadayıf dokusuyla öne çıkan geleneksel lezzetimiz.",
+      "aria": "Ürünü inceleyin: Billuriye",
       "alt": "Hançerlioğlu - Billuriye"
     },
     "19": {
-      "note": "Billur, kaymak damarıyla",
-      "story": "Billuriyenin ortasından bir manda kaymağı damarı geçer; billur kenar her seferinde yumuşak bir şeyle karşılaşır. Karşıtlık yalnızca birkaç dakika tutar — hızlı servisin bütün gerekçesi budur.",
-      "aria": "Öyküyü okuyun: Billurzade",
+      "name": "Billurzade",
+      "note": "Billuriye lezzetinin kaymakla buluştuğu özel tarifimiz.",
+      "story": "Billuriye lezzetinin kaymakla buluştuğu özel tarifimiz.",
+      "aria": "Ürünü inceleyin: Billurzade",
       "alt": "Hançerlioğlu - Billurzade"
     },
     "20": {
-      "note": "Yeşile gömülü",
-      "story": "Her tanesi ayrı kalsın diye iri çekilmiş Antep fıstığının altına gömülür. Alttaki kadayıf güçlükle görünür ve mesele tam olarak budur — yemek fıstıktır, tel yalnızca usuldür.",
-      "aria": "Öyküyü okuyun: Fıstıkzade",
+      "name": "Fıstıkzade",
+      "note": "Antep fıstığının ön plana çıktığı özel künefemiz.",
+      "story": "Antep fıstığının ön plana çıktığı özel künefemiz.",
+      "aria": "Ürünü inceleyin: Fıstıkzade",
       "alt": "Hançerlioğlu - Fıstıkzade"
     },
     "21": {
-      "note": "İki yarım, tek tabak",
-      "story": "Tek bakır tabak ortasından bölünür: bir yanda fıstık yığını, öte yanda hasır örgü. Sofra karar veremediği için vardır; ikisi anlatılmaktan çok tartışılmaya değer.",
-      "aria": "Öyküyü okuyun: Yarım Fıstıkzade ve Yarım Hasır",
-      "alt": "Hançerlioğlu - Yarım Fıstıkzade &amp; Yarım Hasır"
+      "name": "Yarım Fıstıkzade & Yarım Hasır",
+      "note": "İki farklı künefe lezzeti, tek tabakta.",
+      "story": "İki farklı künefe lezzeti, tek tabakta.",
+      "aria": "Ürünü inceleyin: Yarım Fıstıkzade & Yarım Hasır",
+      "alt": "Hançerlioğlu - Yarım Fıstıkzade & Yarım Hasır"
     },
     "22": {
-      "note": "Yeni biçim, eski usul",
-      "story": "İki yuvarlak kadayıf, peynir ve fıstığın üzerine kapanır; kenarlar birleşene dek alevde bastırılır. Yeni bir biçim, bütünüyle eski bir usulü taşır — evin bugüne verdiği tek gerçek taviz budur.",
-      "aria": "Öyküyü okuyun: Burger Künefe",
+      "name": "Burger Künefe",
+      "note": "Geleneksel künefe lezzetinin yenilikçi burger sunumu.",
+      "story": "Geleneksel künefe lezzetinin yenilikçi burger sunumu.",
+      "aria": "Ürünü inceleyin: Burger Künefe",
       "alt": "Hançerlioğlu - Burger Künefe"
     },
     "23": {
-      "note": "Tel tel yağlanmış",
-      "story": "Tel tel yağlanan ince kadayıf, ateşle karşılaşmadan önce fıstıkla doldurulur. Dışı yaldızlanırken ortası yumuşak kalsın diye yavaş pişer — acele edilirse renk gelir, doku gelmez.",
-      "aria": "Öyküyü okuyun: Fıstıklı Tel Kadayıf",
+      "name": "Fıstıklı Tel Kadayıf",
+      "note": "Tel kadayıf ve Antep fıstığıyla hazırlanan geleneksel tatlımız.",
+      "story": "Tel kadayıf ve Antep fıstığıyla hazırlanan geleneksel tatlımız.",
+      "aria": "Ürünü inceleyin: Fıstıklı Tel Kadayıf",
       "alt": "Hançerlioğlu - Fıstıklı Tel Kadayıf"
     },
     "24": {
-      "note": "Billur kesim, tek başına",
-      "story": "Billur kesim bakır tavadan çıkarılır ve kendi başına bir yemek olarak gelir: gevrek, parlak ve şerbetle ancak son anda buluşur. Biraz daha bekletilirse bütün mesele yumuşayıp kaybolur.",
-      "aria": "Öyküyü okuyun: Billuriye Kadayıf",
+      "name": "Billuriye Kadayıf",
+      "note": "Çıtır dokusuyla öne çıkan özel kadayıf lezzetimiz.",
+      "story": "Çıtır dokusuyla öne çıkan özel kadayıf lezzetimiz.",
+      "aria": "Ürünü inceleyin: Billuriye Kadayıf",
       "alt": "Hançerlioğlu - Billuriye Kadayıf"
     },
     "25": {
-      "note": "Fıstık ile tel arasında hiçbir şey",
-      "story": "Fıstık yığını künefenin değil kadayıfın üzerine serilir: peynir yok, kaymak yok, fıstık ile tel arasında hiçbir şey yok. Katalogdaki en sade iştir ve arkasına saklanması en zor olanıdır.",
-      "aria": "Öyküyü okuyun: Fıstıkzade Kadayıf",
+      "name": "Fıstıkzade Kadayıf",
+      "note": "Antep fıstığıyla zenginleştirilen özel kadayıfımız.",
+      "story": "Antep fıstığıyla zenginleştirilen özel kadayıfımız.",
+      "aria": "Ürünü inceleyin: Fıstıkzade Kadayıf",
       "alt": "Hançerlioğlu - Fıstıkzade Kadayıf"
     },
     "26": {
-      "note": "Kırk yaprak ışık",
-      "story": "Kırk yaprak yufka, her biri basılı bir sayfanın içinden okunacak incelikte açılır; sade yağ ve seçilmiş Antep fıstığıyla katlanır. Bakırda pişer, dinlenir, sonra yaprakları birbirinden ayrı tutan tam ısı farkıyla şerbetle buluşur.",
-      "aria": "Öyküyü okuyun: Fıstıklı Baklava",
+      "name": "Fıstıklı Baklava",
+      "note": "İncecik yufkalar ve Antep fıstığıyla hazırlanan geleneksel baklavamız.",
+      "story": "İncecik yufkalar ve Antep fıstığıyla hazırlanan geleneksel baklavamız.",
+      "aria": "Ürünü inceleyin: Fıstıklı Baklava",
       "alt": "Hançerlioğlu - Fıstıklı Baklava"
     },
     "27": {
-      "note": "Özel dilim",
-      "story": "Baklava dilimi yerine uzun ve dar kesilir; şerbetin yapraklar arasındaki yolu da, köşenin çatalda kırılışı da değişir. Aynı tepsi, başka türlü okunmuş.",
-      "aria": "Öyküyü okuyun: Özel Dilim Baklava",
+      "name": "Özel Dilim Baklava",
+      "note": "Özel dilim sunumuyla geleneksel baklava lezzeti.",
+      "story": "Özel dilim sunumuyla geleneksel baklava lezzeti.",
+      "aria": "Ürünü inceleyin: Özel Dilim Baklava",
       "alt": "Hançerlioğlu - Özel Dilim Baklava"
     },
     "28": {
-      "note": "Soğuk, sütle",
-      "story": "Soğukta dinlenir ve şerbet yerine sütle tamamlanır. Bir yaz yemeğidir ve evde sıcak yenmeyen tek baklavadır — yaprakları ayrı tutan şeker değil, soğuktur.",
-      "aria": "Öyküyü okuyun: Soğuk Baklava",
+      "name": "Soğuk Baklava",
+      "note": "Sütlü şerbeti ve ferah lezzetiyle hazırlanan soğuk baklavamız.",
+      "story": "Sütlü şerbeti ve ferah lezzetiyle hazırlanan soğuk baklavamız.",
+      "aria": "Ürünü inceleyin: Soğuk Baklava",
       "alt": "Hançerlioğlu - Soğuk Baklava"
     },
     "29": {
-      "note": "Sıcak bıçakla",
-      "story": "Bloktan ısıtılmış bıçakla kesilir. Salep ve sakız, kare bir kenarı tutacak kadar yavaş çevrilir; doğru yapılıp yapılmadığının tek dürüst sınavı budur.",
-      "aria": "Öyküyü okuyun: Sade Dilim",
-      "alt": "Hançerlioğlu - Sade Dilim"
+      "name": "Sade Dilim Dondurma",
+      "note": "Yoğun kıvamıyla dilimlenerek sunulan sade dondurma.",
+      "story": "Yoğun kıvamıyla dilimlenerek sunulan sade dondurma.",
+      "aria": "Ürünü inceleyin: Sade Dilim Dondurma",
+      "alt": "Hançerlioğlu - Sade Dilim Dondurma"
     },
     "30": {
-      "note": "Fıstık ezmesi damarı",
-      "story": "Aynı dilim, evde iri ve yağlı bir yeşile çekilmiş fıstık ezmesinin damarına yaslanır. Ezme hiç tatlandırılmaz; şeker için değil, ağırlık ve renk için oradadır.",
-      "aria": "Öyküyü okuyun: Fıstık Ezmeli Dilim",
-      "alt": "Hançerlioğlu - Fıstık Ezmeli Dilim"
+      "name": "Fıstık Ezmeli Dilim Dondurma",
+      "note": "Fıstık ezmesiyle zenginleştirilen dilim dondurma.",
+      "story": "Fıstık ezmesiyle zenginleştirilen dilim dondurma.",
+      "aria": "Ürünü inceleyin: Fıstık Ezmeli Dilim Dondurma",
+      "alt": "Hançerlioğlu - Fıstık Ezmeli Dilim Dondurma"
     },
     "31": {
-      "note": "Elde preslenmiş",
-      "story": "Sade baton, kalıba elle bastırılır ve kenarını koruyacağı tek ısıda tutulur. Üzerine bir şey eklenmez; hükmedilsin diye ortada duran temel tariftir.",
-      "aria": "Öyküyü okuyun: Baton Sade",
-      "alt": "Hançerlioğlu - Baton &middot; Sade"
+      "name": "Sade Baton Dondurma",
+      "note": "Baton şeklinde sunulan klasik sade dondurma.",
+      "story": "Baton şeklinde sunulan klasik sade dondurma.",
+      "aria": "Ürünü inceleyin: Sade Baton Dondurma",
+      "alt": "Hançerlioğlu - Sade Baton Dondurma"
     },
     "32": {
-      "note": "Tümü yeşile bulanana dek",
-      "story": "Baton, yüzeyde hiç beyaz kalmayana dek çekilmiş Antep fıstığının içinde yuvarlanır. Blok hâlâ sertken yapılır; fıstık içine gömülmek yerine dışarıda oturur.",
-      "aria": "Öyküyü okuyun: Baton Fıstıklı",
-      "alt": "Hançerlioğlu - Baton &middot; Fıstıklı"
+      "name": "Fıstıklı Baton Dondurma",
+      "note": "Fıstıkla kaplanan özel baton dondurma.",
+      "story": "Fıstıkla kaplanan özel baton dondurma.",
+      "aria": "Ürünü inceleyin: Fıstıklı Baton Dondurma",
+      "alt": "Hançerlioğlu - Fıstıklı Baton Dondurma"
     },
     "33": {
-      "note": "Çatlayan bir kabuk",
-      "story": "Soğuğa karşı sertleşen ve ilk ısırıkta temiz çatlayan bitter çikolataya batırılır. Kabuk bilerek incedir — çıtırdayacak kadar, çiğnenecek kadar değil.",
-      "aria": "Öyküyü okuyun: Baton Çikolatalı",
-      "alt": "Hançerlioğlu - Baton &middot; Çikolatalı"
+      "name": "Çikolatalı Baton Dondurma",
+      "note": "Çikolata kaplamalı baton dondurma.",
+      "story": "Çikolata kaplamalı baton dondurma.",
+      "aria": "Ürünü inceleyin: Çikolatalı Baton Dondurma",
+      "alt": "Hançerlioğlu - Çikolatalı Baton Dondurma"
     },
     "34": {
-      "note": "Kolla çekilen",
-      "story": "Hamur gibi uzayana ve koldan düşmeden asılabilene dek uzun saplı kürekle çalışılır. Salep kıvamında, esnektir; eski usulle gelir — bıçakla kesilir, kepçelenmez.",
-      "aria": "Öyküyü okuyun: Kol Dondurma",
+      "name": "Kol Dondurma",
+      "note": "Geleneksel dokusuyla kol dondurma lezzeti.",
+      "story": "Geleneksel dokusuyla kol dondurma lezzeti.",
+      "aria": "Ürünü inceleyin: Kol Dondurma",
       "alt": "Hançerlioğlu - Kol Dondurma"
     },
     "35": {
-      "note": "Şafakta kaldırılır",
-      "story": "Manda sütü, gece boyunca kaymak yükselip tek bir tabaka halinde oturana dek en kısık ateşte tutulur. Şafakta kaldırılır, dürülür ve baldan ya da fıstıktan başka bir şeyle gelmez — fazlası onunla tartışmak olur.",
-      "aria": "Öyküyü okuyun: Süt Kaymak",
+      "name": "Süt Kaymak",
+      "note": "Yoğun kıvamı ve süt lezzetiyle kaymak.",
+      "story": "Yoğun kıvamı ve süt lezzetiyle kaymak.",
+      "aria": "Ürünü inceleyin: Süt Kaymak",
       "alt": "Hançerlioğlu - Süt Kaymak"
     },
     "36": {
-      "note": "Bozulmayan köpük",
-      "story": "Toz haline gelene dek çekilir ve köpük tam bir kez yükselip hiç bozulmasın diye bakır cezvede yavaş pişer. Önce su gelir, her zaman — kahveye temiz bir ağızla varılır.",
-      "aria": "Öyküyü okuyun: Türk Kahvesi",
+      "name": "Türk Kahvesi",
+      "note": "Geleneksel Türk kahvesi lezzeti.",
+      "story": "Geleneksel Türk kahvesi lezzeti.",
+      "aria": "Ürünü inceleyin: Türk Kahvesi",
       "alt": "Hançerlioğlu - Türk Kahvesi"
     },
     "37": {
-      "note": "İnce belli, çift demlik",
-      "story": "Çift demlikte demlenir ve misafirin istediği renge, tavşan kanından açık kehribara dek dökülür. İnce belli bardak, tabak, yanında iki kesme şeker — sizin için karıştırılmaz.",
-      "aria": "Öyküyü okuyun: Çay",
+      "name": "Çay",
+      "note": "Tatlılarımıza eşlik eden demleme çay.",
+      "story": "Tatlılarımıza eşlik eden demleme çay.",
+      "aria": "Ürünü inceleyin: Çay",
       "alt": "Hançerlioğlu - Çay"
     },
     "38": {
-      "note": "Buz gibi, camda",
-      "story": "Dolabın en soğuk yerinde tutulur ve tezgâhın arkasında değil, sofrada açılır. Yalnızca cam şişe — ev hiç kutu servis etmedi ve etmeye de niyeti yoktur.",
-      "aria": "Öyküyü okuyun: Kola",
+      "name": "Kola",
+      "aria": "Ürünü inceleyin: Kola",
       "alt": "Hançerlioğlu - Kola"
     },
     "39": {
-      "note": "İstenirse bir dilimle",
-      "story": "Soğutulmuş, camda, buzun üzerine dökülür; sofra isterse bir limon dilimiyle. Ağır bir fıstık tabağını bu listedeki her şeyden daha temiz keser.",
-      "aria": "Öyküyü okuyun: Fanta",
+      "name": "Fanta",
+      "aria": "Ürünü inceleyin: Fanta",
       "alt": "Hançerlioğlu - Fanta"
     },
     "40": {
-      "note": "Soğuk ve duru",
-      "story": "Evin en tatlı tabakların karşısına koyduğu içecektir, çünkü damakta hiçbir şey bırakmaz. Soğuk, duru ve bilerek yalnız.",
-      "aria": "Öyküyü okuyun: Sprite",
+      "name": "Sprite",
+      "aria": "Ürünü inceleyin: Sprite",
       "alt": "Hançerlioğlu - Sprite"
     },
     "41": {
-      "note": "Geleneksel kapanış",
-      "story": "Sade ya da limon değmiş, dolabın izin verdiği kadar soğuk çekilir. Ağır bir tabağı kapatan budur; müdavimler yemeği bitirmeden ister.",
-      "aria": "Öyküyü okuyun: Soda",
+      "name": "Soda",
+      "aria": "Ürünü inceleyin: Soda",
       "alt": "Hançerlioğlu - Soda"
     },
     "42": {
-      "note": "Her şeyden önce",
-      "story": "Düz ya da mineralli, tek bir sipariş alınmadan sofraya konur. Masaya ilk varan odur ve kimsenin istemek zorunda olmadığı tek şeydir.",
-      "aria": "Öyküyü okuyun: Su",
+      "name": "Su",
+      "aria": "Ürünü inceleyin: Su",
       "alt": "Hançerlioğlu - Su"
     },
     "01": {
-      "note": "Şafakta açılır",
-      "story": "Hamur, bir masa genişliğinde ve neredeyse saydam olana dek havaya atılır; sonra manda kaymağı ve iri kıyılmış Antep fıstığının üzerine kapanır. Şafağa aittir: bekletilmez, yeniden ısıtılmaz ve yapıldığı odanın dışına çıkarılmaz.",
-      "aria": "Öyküyü okuyun: Klasik Katmer",
+      "name": "Klasik Katmer",
+      "note": "İncecik açılan hamur, kaymak ve Antep fıstığıyla hazırlanan geleneksel katmerimiz.",
+      "story": "İncecik açılan hamur, kaymak ve Antep fıstığıyla hazırlanan geleneksel katmerimiz.",
+      "aria": "Ürünü inceleyin: Klasik Katmer",
       "alt": "Hançerlioğlu - Klasik Katmer"
     },
     "02": {
-      "note": "Muska katı, kaymak",
-      "story": "Aynı saydam yaprak, muska denen üçgene katlanır. İçinde manda kaymağından ve fıstıktan başka bir şey yoktur; kapanışı bir mühür değil, katın kendisi tutar.",
-      "aria": "Öyküyü okuyun: Kaymaklı Muska",
-      "alt": "Hançerlioğlu - Kaymaklı Muska"
+      "name": "Kaymaklı Muska Katmer",
+      "note": "Muska şeklinde katlanan çıtır hamurun kaymakla buluştuğu lezzet.",
+      "story": "Muska şeklinde katlanan çıtır hamurun kaymakla buluştuğu lezzet.",
+      "aria": "Ürünü inceleyin: Kaymaklı Muska Katmer",
+      "alt": "Hançerlioğlu - Kaymaklı Muska Katmer"
     },
     "03": {
-      "note": "Muska katı, çikolata",
-      "story": "Muska katı, taşın tuttuğu ısıdan başka bir şeyle erimeyen bitter çikolataya bırakılır. Köşeler çıtır kalır, orta kısım teslim olur; hemen yenmesinin bütün gerekçesi budur.",
-      "aria": "Öyküyü okuyun: Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Çikolatalı Muska"
+      "name": "Çikolatalı Muska Katmer",
+      "note": "Çıtır muska hamuru ve çikolatanın uyumu.",
+      "story": "Çıtır muska hamuru ve çikolatanın uyumu.",
+      "aria": "Ürünü inceleyin: Çikolatalı Muska Katmer",
+      "alt": "Hançerlioğlu - Çikolatalı Muska Katmer"
     },
     "04": {
-      "note": "İkisi, ayrı durur",
-      "story": "Tek katın içinde çikolata ve manda kaymağı, biri diğerini boğmasın diye ayrı katmanlarda durur. İkisini okunur tutan, aralarındaki yapraktır.",
-      "aria": "Öyküyü okuyun: Çikolatalı Kaymaklı Muska",
-      "alt": "Hançerlioğlu - Çikolatalı Kaymaklı Muska"
+      "name": "Çikolatalı Kaymaklı Muska Katmer",
+      "note": "Çikolata ve kaymağın bir araya geldiği özel muska katmerimiz.",
+      "story": "Çikolata ve kaymağın bir araya geldiği özel muska katmerimiz.",
+      "aria": "Ürünü inceleyin: Çikolatalı Kaymaklı Muska Katmer",
+      "alt": "Hançerlioğlu - Çikolatalı Kaymaklı Muska Katmer"
     },
     "05": {
-      "note": "Belçika kuvertürü",
-      "story": "Belçika kuvertürü temperlenir ve kat kapanmadan önce tek, ince bir tabaka halinde serilir. Evin çikolatasından daha koyu ve belirgin biçimde daha zengindir; fıstık bu yüzden bilerek geri tutulur.",
-      "aria": "Öyküyü okuyun: Belçika Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Belçika Çikolatalı Muska"
+      "name": "Belçika Çikolatalı Muska Katmer",
+      "note": "Belçika çikolatasıyla hazırlanan çıtır muska katmer.",
+      "story": "Belçika çikolatasıyla hazırlanan çıtır muska katmer.",
+      "aria": "Ürünü inceleyin: Belçika Çikolatalı Muska Katmer",
+      "alt": "Hançerlioğlu - Belçika Çikolatalı Muska Katmer"
     },
     "06": {
-      "note": "Beyaz, yeşilin karşısında",
-      "story": "Beyaz çikolata, Antep fıstığının koyu yeşiline karşı kurulur — evin bu kadar yüksek bir karşıtlığa izin verdiği tek yer. Etrafındaki her şeyden tatlıdır ve bilerek kestiğimiz en küçük paydır.",
-      "aria": "Öyküyü okuyun: Beyaz Çikolatalı Muska",
-      "alt": "Hançerlioğlu - Beyaz Çikolatalı Muska"
+      "name": "Beyaz Çikolatalı Muska Katmer",
+      "note": "Beyaz çikolatayla hazırlanan özel muska katmerimiz.",
+      "story": "Beyaz çikolatayla hazırlanan özel muska katmerimiz.",
+      "aria": "Ürünü inceleyin: Beyaz Çikolatalı Muska Katmer",
+      "alt": "Hançerlioğlu - Beyaz Çikolatalı Muska Katmer"
     },
     "07": {
-      "note": "Bir sofra için",
-      "story": "Bir kişi için değil, bir sofra için kurulan katmer: bakır tepsiye kenar kenara yayılır ve ancak dışarı taşındığı anda kesilir. Orta kısım yumuşak kalır, kenar metale yaslanıp çıtırlaşır.",
-      "aria": "Öyküyü okuyun: Tepsi Katmer",
+      "name": "Tepsi Katmer",
+      "note": "Sevdiklerinizle paylaşabileceğiniz geleneksel katmer lezzeti.",
+      "story": "Sevdiklerinizle paylaşabileceğiniz geleneksel katmer lezzeti.",
+      "aria": "Ürünü inceleyin: Tepsi Katmer",
       "alt": "Hançerlioğlu - Tepsi Katmer"
     },
     "08": {
-      "note": "Sarılmış, içinden kaymak",
-      "story": "Yaprak oklavanın etrafına sarılır, boyu boyunca toplanır ve burulur. Kaymak üzerine sürülmez; kıvrımların içinden çekilir, böylece yüzeyde değil kesitte görünür.",
-      "aria": "Öyküyü okuyun: Burma Katmer, Kaymaklı",
-      "alt": "Hançerlioğlu - Burma Katmer &middot; Kaymaklı"
+      "name": "Kaymaklı Burma Katmer",
+      "note": "Burgu şeklinde hazırlanan kaymaklı katmerimiz.",
+      "story": "Burgu şeklinde hazırlanan kaymaklı katmerimiz.",
+      "aria": "Ürünü inceleyin: Kaymaklı Burma Katmer",
+      "alt": "Hançerlioğlu - Kaymaklı Burma Katmer"
     },
     "09": {
-      "note": "Sarılmış, çikolata",
-      "story": "Aynı burgu, bu kez taşın üzerinde yumuşayan bitter çikolatanın etrafına sarılır. Enine kesildiğinde sarmal, soluk yaprağın içinde dönen koyu bir tel gibi durur.",
-      "aria": "Öyküyü okuyun: Burma Katmer, Çikolatalı",
-      "alt": "Hançerlioğlu - Burma Katmer &middot; Çikolatalı"
+      "name": "Çikolatalı Burma Katmer",
+      "note": "Çıtır burma hamuru ve çikolatanın buluşması.",
+      "story": "Çıtır burma hamuru ve çikolatanın buluşması.",
+      "aria": "Ürünü inceleyin: Çikolatalı Burma Katmer",
+      "alt": "Hançerlioğlu - Çikolatalı Burma Katmer"
     }
+  },
+  "world": {
+    "label": "Uluslararası Büyüme",
+    "title": "Erdemli’den Dünyaya",
+    "p1": "1995’te başlayan hikâyemiz şimdi sınırları aşıyor.",
+    "p2": "Geleneksel lezzetlerimizi farklı coğrafyalara taşıma hedefimiz doğrultusunda ilk yurt dışı şubemizi Suriye’nin Halep şehrinde açmaya hazırlanıyoruz.",
+    "p3": "Hançerlioğlu, çok yakında Halep’te.",
+    "badge": "HALEP · SURİYE · YAKINDA"
+  },
+  "branches": {
+    "label": "Şubelerimiz",
+    "title": "Farklı Adresler, Aynı Ustalık",
+    "intro": "Hançerlioğlu’nun değişmeyen lezzetini ve misafirperverliğini şubelerimizde keşfedin.",
+    "centreTitle": "Erdemli Merkez Şubesi",
+    "centreText": "Geleneksel lezzetlerimizi ve Hançerlioğlu ustalığını keşfedebileceğiniz adresimiz.",
+    "centreAddress": "Merkez, Kazım Karabekir Cd. 68/D<br>33730 Erdemli/Mersin",
+    "centreMapTitle": "Hançerlioğlu Erdemli Merkez Şubesi: Merkez, Kazım Karabekir Cd. 68/D, 33730 Erdemli/Mersin",
+    "shoreTitle": "Erdemli Sahil Şubesi",
+    "shoreText": "Hançerlioğlu lezzetlerini keyifli bir atmosferde deneyimleyebileceğiniz sahil şubemiz.",
+    "shoreAddress": "Alata, Erdemoğlu Blv. No : 183 A<br>33730 Erdemli/Mersin",
+    "shoreMapTitle": "Hançerlioğlu Erdemli Sahil Şubesi: Alata, Erdemoğlu Blv. No : 183 A, 33730 Erdemli/Mersin",
+    "aleppoTitle": "Halep Şubesi — Suriye",
+    "aleppoText": "Uluslararası büyüme yolculuğumuzun ilk adımı. Çok yakında hizmetinizde.",
+    "soon": "Yakında"
   }
 }

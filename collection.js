@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Hançerlioğlu — Ustalık Eserleri
+   Hançerlioğlu Lezzetleri
    Vanilla JS + GSAP (core & ScrollTrigger) + Lenis
    --------------------------------------------------------------------------
    00. Environment & helpers
@@ -274,6 +274,7 @@
     var title = $('[data-cover="title"]');
     var english = $('[data-cover="english"]');
     var lede = $('[data-cover="lede"]');
+    var signature = $('[data-cover="signature"]');
     var facts = $('[data-cover="facts"]');
     var factItems = $$(".cover__fact");
     var cue = $('[data-cover="cue"]');
@@ -290,6 +291,7 @@
       .to(titleLines, { yPercent: 0, duration: 1.5, stagger: 0.11 }, 0.26)
       .fromTo(english, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 1 }, 0.62)
       .fromTo(lede, { autoAlpha: 0, y: 26 }, { autoAlpha: 1, y: 0, duration: 1.15 }, 0.7)
+      .fromTo(signature, { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 1 }, 0.82)
       .set(facts, { autoAlpha: 1 }, 0.78)
       .from(factItems, { autoAlpha: 0, y: 22, duration: 1, stagger: 0.08 }, 0.78)
       .fromTo(cue, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.95 }, 0.9)
@@ -422,7 +424,7 @@
     });
 
     window.addEventListener("resize", function () {
-      if (menuIsOpen && window.innerWidth > 1024) close();
+      if (menuIsOpen && window.innerWidth > 1280) close();
     });
 
     doc.addEventListener("i18n:change", function () {
@@ -874,7 +876,16 @@
       indexEl.textContent = pad(index + 1);
       categoryEl.textContent = categoryOf(item);
       titleEl.textContent = titleOf(item);
-      subEl.textContent = note ? note.textContent.trim() : "";
+      var subText = note ? note.textContent.replace(/\s+/g, " ").trim() : "";
+      var lead = story ? story.querySelector("p") : null;
+      var leadText = lead ? lead.textContent.replace(/\s+/g, " ").trim() : "";
+      if (!subText || subText === leadText) {
+        subEl.textContent = "";
+        subEl.hidden = true;
+      } else {
+        subEl.hidden = false;
+        subEl.textContent = subText;
+      }
       storyEl.innerHTML = story ? story.innerHTML : "";
 
       /* Still: doubles as the poster behind the film */
